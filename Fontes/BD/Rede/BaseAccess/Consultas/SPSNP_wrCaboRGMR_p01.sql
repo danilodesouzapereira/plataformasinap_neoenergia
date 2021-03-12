@@ -1,0 +1,1 @@
+    INSERT INTO      CaboRGMR ( fltR, fltGMR, intCaboId )    VALUES      ( [p_R], [p_GMR], [p_CaboId] );

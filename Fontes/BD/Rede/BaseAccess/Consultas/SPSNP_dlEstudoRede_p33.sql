@@ -1,0 +1,1 @@
+DELETE FROM CargaNL WHERE intEstudoId = [p_EstudoId] AND intCargaNLId = [p_EquipId];

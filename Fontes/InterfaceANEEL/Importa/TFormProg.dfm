@@ -1,0 +1,123 @@
+object FormProg: TFormProg
+  Left = 474
+  Top = 195
+  BorderIcons = [biSystemMenu]
+  Caption = 'Aguarde !'
+  ClientHeight = 167
+  ClientWidth = 331
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object panelFundo: TPanel
+    Left = 0
+    Top = 0
+    Width = 331
+    Height = 167
+    Align = alClient
+    TabOrder = 0
+    ExplicitWidth = 333
+    ExplicitHeight = 135
+    DesignSize = (
+      331
+      167)
+    object lblPorc: TLabel
+      Left = 9
+      Top = 97
+      Width = 34
+      Height = 13
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = '100 %'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Layout = tlCenter
+    end
+    object lblTitulo1: TLabel
+      Left = 10
+      Top = 29
+      Width = 314
+      Height = 17
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Opera'#231#227'o 1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblTitulo2: TLabel
+      Left = 10
+      Top = 50
+      Width = 359
+      Height = 17
+      AutoSize = False
+      Caption = 'sub-titulo'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Layout = tlCenter
+    end
+    object pbar: TProgressBar
+      Left = 7
+      Top = 71
+      Width = 317
+      Height = 19
+      TabOrder = 0
+    end
+    object butCancel: TBitBtn
+      Left = 123
+      Top = 126
+      Width = 90
+      Height = 25
+      Anchors = [akTop]
+      Cancel = True
+      Caption = 'Cancelar'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000C40E0000C40E00000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000008400008400000000000000
+        0000000000000000000000000000000084000084000000000000000000000000
+        0000000000840000840000840000000000000000000000000000000000840000
+        8400008400000000000000000000000000000000000000008400008400008400
+        0000000000000000000084000084000084000000000000000000000000000000
+        0000000000000000000000840000840000840000000000840000840000840000
+        0000000000000000000000000000000000000000000000000000000000008400
+        0084000084000084000084000000000000000000000000000000000000000000
+        0000000000000000000000000000000000840000840000840000000000000000
+        0000000000000000000000000000000000000000000000000000000000008400
+        0084000084000084000084000000000000000000000000000000000000000000
+        0000000000000000000000840000840000840000000000840000840000840000
+        0000000000000000000000000000000000000000000000008400008400008400
+        0000000000000000000084000084000084000000000000000000000000000000
+        0000000000840000840000840000000000000000000000000000000000840000
+        8400008400000000000000000000000000000000008400008400000000000000
+        0000000000000000000000000000000084000084000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000}
+      TabOrder = 1
+      OnClick = butCancelClick
+    end
+  end
+end

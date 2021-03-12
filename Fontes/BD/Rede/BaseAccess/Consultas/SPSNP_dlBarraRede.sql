@@ -1,0 +1,1 @@
+  DELETE FROM    BarraRede  WHERE    intEstudoId = [p_EstudoId] AND    intRedeId IN (SELECT intEquipId FROM TmpEquip);

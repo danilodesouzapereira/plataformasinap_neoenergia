@@ -1,0 +1,2 @@
+O modelo é o mesmo do SinapCliSrv.
+O script gerado pelo software de modelagem é compatibilizado manualmente para ser utilizado pelo access.

@@ -1,0 +1,1 @@
+Tem que saber quem são as curvas das regiões (em memória) para eliminá-las depois.

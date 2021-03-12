@@ -1,0 +1,10 @@
+Aqui era feito o seguinte teste:
+
+  -- Atualiza as demais redes que possuíam a rede anterior como MRede
+  SELECT COUNT(*) INTO conta_mredes FROM Rede WHERE intEstudoId = [p_EstudoId] AND intMRedeId = [p_RedeId];
+  IF (conta_mredes > 0) THEN
+    SELECT IIF(ISNULL(intRedeId, 0) INTO mrede_id FROM Rede WHERE intEstudoId = [p_EstudoId] AND intMRedeId = [p_RedeId] AND ROWNUM = 1;
+    UPDATE Rede SET intMRedeId = mrede_id WHERE intEstudoId = [p_EstudoId] AND intMRedeId = [p_RedeId];
+  END IF;
+  
+Isso tem que ser implementado em C.

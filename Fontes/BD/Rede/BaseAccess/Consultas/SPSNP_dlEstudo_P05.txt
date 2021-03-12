@@ -1,0 +1,1 @@
+AtençãoEsse passo corresponde à chamada de SPSNP_dlEstudoEquip([p_EstudoId], [p_RedeInclusive]);

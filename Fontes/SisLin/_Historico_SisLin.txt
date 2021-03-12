@@ -1,0 +1,29 @@
+
+// VERSÃO 12 - 21.02.2014 - Listas com linhas de mesmo número de
+//                          elementos FD (sugestão JCG) + remoção
+//                          otimizada de linhas + alterações na
+//                          interface (nome das funções).
+
+// VERSÃO 13 - 01.01.2016 - Implementação de listas de colunas, além das
+//                          listas de linhas implementadas originalmente,
+//                          permitindo tratar matrizes não simétricas sem
+//                          a inserção artificial de zeros.
+
+// VERSÃO 14 - 11.09.2016 - Inclusão das classes derivadas TSisLinCS,
+//                          TSisLinDS e TSisLinLDS, que reincorporam a
+//                          estrutura anterior à Versão 13 (matrizes
+//                          estruturalmente simétricas). Estas 3 classes
+//                          foram removidas na Versão 15 pois a estrutura
+//                          com listas de linhas e de colunas (Versão 13)
+//                          é bem mais rápida em Estimador1/Estimador3.
+
+// VERSÃO 15 - 11.09.2016 - Implementação de listas bidirecionais de linhas
+//                          e listas bidirecionais de colunas, permitindo
+//                          maior eficiência (listas bidirecionais reduzem
+//                          significativamente o número de buscas necessárias
+//                          na triangularização). Transferência de Back() e
+//                          Triang() de VTMatrizCheia para VTMatriz e
+//                          eliminação da classe VTMatrizCheia.
+
+// VERSÃO 16 - 16.12.2016 - Implementação da Decomposição QR.
+

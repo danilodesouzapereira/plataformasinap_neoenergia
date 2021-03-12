@@ -1,0 +1,1165 @@
+object FormCfgFlow: TFormCfgFlow
+  Left = 307
+  Top = 120
+  Hint = 'Diagn'#243'stico p/ fluxo de pot'#234'ncia'
+  BorderIcons = [biSystemMenu]
+  Caption = 'Diagn'#243'stico p/ fluxo de pot'#234'ncia'
+  ClientHeight = 631
+  ClientWidth = 226
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 0
+    Width = 226
+    Height = 24
+    AutoSize = True
+    ButtonWidth = 71
+    Caption = 'ToolBar1'
+    EdgeBorders = [ebBottom]
+    Images = ImageList
+    List = True
+    ParentShowHint = False
+    ShowCaptions = True
+    ShowHint = True
+    TabOrder = 0
+    object butInclui: TToolButton
+      Left = 0
+      Top = 0
+      Action = ActionConfirma
+      AutoSize = True
+    end
+    object butSair: TToolButton
+      Left = 75
+      Top = 0
+      Hint = 'Sair'
+      Action = ActionCancela
+      AutoSize = True
+    end
+    object ToolButton1: TToolButton
+      Left = 148
+      Top = 0
+      Width = 8
+      Caption = 'ToolButton1'
+      ImageIndex = 2
+      Style = tbsSeparator
+    end
+  end
+  object tcFaixaV: TTabControl
+    Left = 0
+    Top = 100
+    Width = 226
+    Height = 186
+    Align = alTop
+    MultiLine = True
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+    Tabs.Strings = (
+      'BT'
+      'MT'
+      'AT')
+    TabIndex = 1
+    OnChange = tcFaixaVChange
+    object gbGrafV: TGroupBox
+      AlignWithMargins = True
+      Left = 7
+      Top = 27
+      Width = 212
+      Height = 152
+      Align = alClient
+      Caption = 'Faixas de tens'#227'o (pu)'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      object pnlV1: TPanel
+        Left = 2
+        Top = 15
+        Width = 208
+        Height = 27
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 0
+        object lblV1: TLabel
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 86
+          Height = 21
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          Caption = 'abaixo de'
+          Layout = tlCenter
+          ExplicitLeft = 103
+          ExplicitWidth = 46
+          ExplicitHeight = 13
+        end
+        object panCorV1: TPanel
+          AlignWithMargins = True
+          Left = 181
+          Top = 3
+          Width = 21
+          Height = 21
+          Margins.Right = 6
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clGray
+          ParentBackground = False
+          TabOrder = 0
+        end
+        object edtV3: TEdit
+          AlignWithMargins = True
+          Left = 95
+          Top = 3
+          Width = 80
+          Height = 21
+          Align = alRight
+          Constraints.MinHeight = 21
+          TabOrder = 1
+          OnExit = ActionExibeLblExecute
+        end
+      end
+      object pnlV2: TPanel
+        Left = 2
+        Top = 42
+        Width = 208
+        Height = 27
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 1
+        object lblV2: TLabel
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 86
+          Height = 21
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          Caption = 'entre 0,94 e'
+          Layout = tlCenter
+          ExplicitLeft = 92
+          ExplicitWidth = 57
+          ExplicitHeight = 13
+        end
+        object panCorV2: TPanel
+          AlignWithMargins = True
+          Left = 181
+          Top = 3
+          Width = 21
+          Height = 21
+          Margins.Right = 6
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clGray
+          ParentBackground = False
+          TabOrder = 0
+        end
+        object edtV1: TEdit
+          AlignWithMargins = True
+          Left = 95
+          Top = 3
+          Width = 80
+          Height = 21
+          Align = alRight
+          Constraints.MinHeight = 21
+          TabOrder = 1
+          OnExit = ActionExibeLblExecute
+        end
+      end
+      object pnlV3: TPanel
+        Left = 2
+        Top = 69
+        Width = 208
+        Height = 27
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 2
+        object lblV3: TLabel
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 86
+          Height = 21
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          Caption = 'entre 0,97 e'
+          Layout = tlCenter
+          ExplicitLeft = 92
+          ExplicitWidth = 57
+          ExplicitHeight = 13
+        end
+        object panCorV3: TPanel
+          AlignWithMargins = True
+          Left = 181
+          Top = 3
+          Width = 21
+          Height = 21
+          Margins.Right = 6
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clGray
+          ParentBackground = False
+          TabOrder = 0
+        end
+        object edtV2: TEdit
+          AlignWithMargins = True
+          Left = 95
+          Top = 3
+          Width = 80
+          Height = 21
+          Align = alRight
+          Constraints.MinHeight = 21
+          TabOrder = 1
+          OnExit = ActionExibeLblExecute
+        end
+      end
+      object pnlV4: TPanel
+        Left = 2
+        Top = 96
+        Width = 208
+        Height = 27
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 3
+        object lblV4: TLabel
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 86
+          Height = 21
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          Caption = 'entre 1,02 e'
+          Layout = tlCenter
+          ExplicitLeft = 92
+          ExplicitWidth = 57
+          ExplicitHeight = 13
+        end
+        object lblVlimsup: TLabel
+          AlignWithMargins = True
+          Left = 95
+          Top = 3
+          Width = 80
+          Height = 21
+          Align = alRight
+          AutoSize = False
+          Caption = '1,04'
+          Layout = tlCenter
+          ExplicitLeft = 112
+        end
+        object panCorV4: TPanel
+          AlignWithMargins = True
+          Left = 181
+          Top = 3
+          Width = 21
+          Height = 21
+          Margins.Right = 6
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clGray
+          ParentBackground = False
+          TabOrder = 0
+        end
+      end
+      object pnlV5: TPanel
+        Left = 2
+        Top = 123
+        Width = 208
+        Height = 27
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 4
+        object lblV5: TLabel
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 86
+          Height = 21
+          Align = alClient
+          Alignment = taRightJustify
+          AutoSize = False
+          Caption = 'acima de'
+          Layout = tlCenter
+          ExplicitLeft = 106
+          ExplicitWidth = 43
+          ExplicitHeight = 13
+        end
+        object panCorV5: TPanel
+          AlignWithMargins = True
+          Left = 181
+          Top = 3
+          Width = 21
+          Height = 21
+          Margins.Right = 6
+          Align = alRight
+          BevelOuter = bvNone
+          Color = clGray
+          ParentBackground = False
+          TabOrder = 0
+        end
+        object edtV4: TEdit
+          AlignWithMargins = True
+          Left = 95
+          Top = 3
+          Width = 80
+          Height = 21
+          Align = alRight
+          Constraints.MinHeight = 21
+          TabOrder = 1
+          OnExit = ActionExibeLblExecute
+        end
+      end
+      object Panel2: TPanel
+        Left = 2
+        Top = 150
+        Width = 208
+        Height = 0
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 5
+      end
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 685
+    Width = 226
+    Height = 83
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 2
+  end
+  object gbGrafI: TGroupBox
+    AlignWithMargins = True
+    Left = 3
+    Top = 289
+    Width = 220
+    Height = 118
+    Align = alTop
+    Caption = 'Faixas de corrente: (% I admiss'#237'vel)'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    object Label12: TLabel
+      AlignWithMargins = True
+      Left = 5
+      Top = 18
+      Width = 73
+      Height = 13
+      Align = alTop
+      Caption = 'Chave e trecho'
+    end
+    object pnlGrafmin: TPanel
+      Left = 2
+      Top = 34
+      Width = 216
+      Height = 27
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 0
+      object lblI1: TLabel
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 90
+        Height = 21
+        Align = alClient
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = 'abaixo de'
+        Layout = tlCenter
+        ExplicitWidth = 46
+        ExplicitHeight = 13
+      end
+      object panCorI1: TPanel
+        AlignWithMargins = True
+        Left = 185
+        Top = 3
+        Width = 21
+        Height = 21
+        Margins.Right = 10
+        Align = alRight
+        BevelOuter = bvNone
+        Color = clGray
+        ParentBackground = False
+        TabOrder = 0
+      end
+      object edtI1: TEdit
+        AlignWithMargins = True
+        Left = 99
+        Top = 3
+        Width = 80
+        Height = 21
+        Align = alRight
+        Constraints.MinHeight = 21
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        OnExit = ActionExibeLblExecute
+      end
+    end
+    object pnlGrafmed: TPanel
+      Left = 2
+      Top = 61
+      Width = 216
+      Height = 27
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 1
+      object lblI2: TLabel
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 90
+        Height = 21
+        Align = alClient
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = 'entre 0,99 e'
+        Layout = tlCenter
+        ExplicitWidth = 81
+        ExplicitHeight = 13
+      end
+      object lblClimsup: TLabel
+        AlignWithMargins = True
+        Left = 99
+        Top = 3
+        Width = 80
+        Height = 21
+        Align = alRight
+        AutoSize = False
+        Caption = '0,88'
+        Layout = tlCenter
+        ExplicitLeft = 116
+      end
+      object panCorI2: TPanel
+        AlignWithMargins = True
+        Left = 185
+        Top = 3
+        Width = 21
+        Height = 21
+        Margins.Right = 10
+        Align = alRight
+        BevelOuter = bvNone
+        Color = clGray
+        ParentBackground = False
+        TabOrder = 0
+      end
+    end
+    object pnlGrafmax: TPanel
+      Left = 2
+      Top = 88
+      Width = 216
+      Height = 27
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 2
+      object lblI3: TLabel
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 90
+        Height = 21
+        Align = alClient
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = 'acima de'
+        Layout = tlCenter
+        ExplicitWidth = 43
+        ExplicitHeight = 13
+      end
+      object panCorI3: TPanel
+        AlignWithMargins = True
+        Left = 185
+        Top = 3
+        Width = 21
+        Height = 21
+        Margins.Right = 10
+        Align = alRight
+        BevelOuter = bvNone
+        Color = clGray
+        ParentBackground = False
+        TabOrder = 0
+      end
+      object edtI2: TEdit
+        AlignWithMargins = True
+        Left = 99
+        Top = 3
+        Width = 80
+        Height = 21
+        Align = alRight
+        Constraints.MinHeight = 21
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        OnExit = ActionExibeLblExecute
+      end
+    end
+  end
+  object gbGrafS: TGroupBox
+    AlignWithMargins = True
+    Left = 3
+    Top = 413
+    Width = 220
+    Height = 117
+    Align = alTop
+    Caption = 'Faixas de pot'#234'ncia: (% S nominal)'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    OnDblClick = PanelCorDblClick
+    object Label13: TLabel
+      AlignWithMargins = True
+      Left = 5
+      Top = 18
+      Width = 125
+      Height = 13
+      Align = alTop
+      Caption = 'Regulador e transformador'
+      Layout = tlCenter
+    end
+    object Panel3: TPanel
+      Left = 2
+      Top = 34
+      Width = 216
+      Height = 27
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 0
+      object lblS1: TLabel
+        AlignWithMargins = True
+        Left = 47
+        Top = 3
+        Width = 46
+        Height = 13
+        Align = alClient
+        Alignment = taRightJustify
+        Caption = 'abaixo de'
+        Layout = tlCenter
+      end
+      object panCorS1: TPanel
+        AlignWithMargins = True
+        Left = 185
+        Top = 3
+        Width = 21
+        Height = 21
+        Margins.Right = 10
+        Align = alRight
+        BevelOuter = bvNone
+        Color = clGray
+        ParentBackground = False
+        TabOrder = 0
+      end
+      object edtS1: TEdit
+        AlignWithMargins = True
+        Left = 99
+        Top = 3
+        Width = 80
+        Height = 21
+        Align = alRight
+        Constraints.MinHeight = 21
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        OnExit = ActionExibeLblExecute
+      end
+    end
+    object Panel4: TPanel
+      Left = 2
+      Top = 61
+      Width = 216
+      Height = 26
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 1
+      object lblS2: TLabel
+        AlignWithMargins = True
+        Left = 36
+        Top = 3
+        Width = 57
+        Height = 13
+        Align = alClient
+        Alignment = taRightJustify
+        Caption = 'entre 0,99 e'
+        Layout = tlCenter
+      end
+      object lblSlimsup: TLabel
+        AlignWithMargins = True
+        Left = 99
+        Top = 3
+        Width = 80
+        Height = 20
+        Align = alRight
+        AutoSize = False
+        Caption = ' 0,88'
+        Layout = tlCenter
+        ExplicitLeft = 116
+      end
+      object panCorS2: TPanel
+        AlignWithMargins = True
+        Left = 185
+        Top = 3
+        Width = 21
+        Height = 20
+        Margins.Right = 10
+        Align = alRight
+        BevelOuter = bvNone
+        Color = clGray
+        ParentBackground = False
+        TabOrder = 0
+      end
+    end
+    object Panel5: TPanel
+      Left = 2
+      Top = 87
+      Width = 216
+      Height = 27
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 2
+      object lblS3: TLabel
+        AlignWithMargins = True
+        Left = 50
+        Top = 3
+        Width = 43
+        Height = 13
+        Align = alClient
+        Alignment = taRightJustify
+        Caption = 'acima de'
+        Layout = tlCenter
+      end
+      object panCorS3: TPanel
+        AlignWithMargins = True
+        Left = 185
+        Top = 3
+        Width = 21
+        Height = 21
+        Margins.Right = 10
+        Align = alRight
+        BevelOuter = bvNone
+        Color = clGray
+        ParentBackground = False
+        TabOrder = 0
+      end
+      object edtS2: TEdit
+        AlignWithMargins = True
+        Left = 99
+        Top = 3
+        Width = 80
+        Height = 21
+        Align = alRight
+        Constraints.MinHeight = 21
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        OnExit = ActionExibeLblExecute
+      end
+    end
+  end
+  object GroupBox1: TGroupBox
+    AlignWithMargins = True
+    Left = 3
+    Top = 536
+    Width = 220
+    Height = 146
+    Align = alTop
+    Caption = 'Configura'#231#227'o de Cores'
+    TabOrder = 5
+    object Panel6: TPanel
+      Left = 2
+      Top = 15
+      Width = 216
+      Height = 26
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 0
+      object Label11: TLabel
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 87
+        Height = 13
+        Align = alLeft
+        Caption = 'Diagn'#243'stico '#39'Ruim'#39
+        Layout = tlCenter
+      end
+      object PanelCorDiagRuim: TPanel
+        AlignWithMargins = True
+        Left = 187
+        Top = 3
+        Width = 21
+        Height = 20
+        Margins.Right = 8
+        Align = alRight
+        ParentBackground = False
+        TabOrder = 0
+        OnDblClick = PanelCorDblClick
+      end
+    end
+    object Panel7: TPanel
+      Left = 2
+      Top = 67
+      Width = 216
+      Height = 26
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 1
+      object Label8: TLabel
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 100
+        Height = 13
+        Align = alLeft
+        Caption = 'Diagn'#243'stico '#39'Regular'#39
+        Layout = tlCenter
+      end
+      object PanelCorDiagRegular: TPanel
+        AlignWithMargins = True
+        Left = 187
+        Top = 3
+        Width = 21
+        Height = 20
+        Margins.Right = 8
+        Align = alRight
+        ParentBackground = False
+        TabOrder = 0
+        OnDblClick = PanelCorDblClick
+      end
+    end
+    object Panel8: TPanel
+      Left = 2
+      Top = 41
+      Width = 216
+      Height = 26
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 2
+      object Label6: TLabel
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 84
+        Height = 13
+        Align = alLeft
+        Caption = 'Diagn'#243'stico '#39'Bom'#39
+        Layout = tlCenter
+      end
+      object PanelCorDiagBom: TPanel
+        AlignWithMargins = True
+        Left = 187
+        Top = 3
+        Width = 21
+        Height = 20
+        Margins.Right = 8
+        Align = alRight
+        ParentBackground = False
+        TabOrder = 0
+        OnDblClick = PanelCorDblClick
+      end
+    end
+  end
+  object ToolBar2: TToolBar
+    Left = 0
+    Top = 24
+    Width = 226
+    Height = 24
+    AutoSize = True
+    ButtonWidth = 111
+    EdgeBorders = [ebBottom]
+    Images = ImageList
+    List = True
+    ParentShowHint = False
+    ShowCaptions = True
+    ShowHint = True
+    TabOrder = 6
+    object ToolButton5: TToolButton
+      Left = 0
+      Top = 0
+      Action = ActionDefault
+      Caption = 'Valores Padr'#227'o'
+    end
+    object ToolButton2: TToolButton
+      Left = 111
+      Top = 0
+      Action = ActionCfgLimV
+    end
+  end
+  object gboxBaseSelecionada: TGroupBox
+    AlignWithMargins = True
+    Left = 3
+    Top = 51
+    Width = 220
+    Height = 46
+    Align = alTop
+    Caption = 'Base selecionada:'
+    TabOrder = 7
+    object cboxBaseSelecionada: TComboBox
+      AlignWithMargins = True
+      Left = 5
+      Top = 18
+      Width = 210
+      Height = 21
+      Align = alClient
+      Style = csDropDownList
+      TabOrder = 0
+      OnChange = cboxBaseSelecionadaChange
+    end
+  end
+  object ActionList1: TActionList
+    Left = 639
+    Top = 27
+    object ActionExibeLbl: TAction
+      OnExecute = ActionExibeLblExecute
+    end
+  end
+  object ImageList: TImageList
+    Left = 96
+    Top = 464
+    Bitmap = {
+      494C01010500A000A00010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      0000000000003600000028000000400000002000000001002000000000000020
+      00000000000000000000000000000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000008080800080808000808080008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      8000808080008080800080808000808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000080808000FFFFFF0000000000FFFF
+      FF00FFFFFF0000000000FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF000000
+      0000FFFFFF00FFFFFF00FFFFFF00808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000080808000FFFFFF00808080008080
+      8000000000008080800080808000000000008080800080808000000000008080
+      8000808080008080800000000000808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000080808000FFFFFF0000000000FFFF
+      FF00FFFFFF0000000000FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF000000
+      0000FFFFFF00FFFFFF00FFFFFF00808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000080808000FFFFFF00808080008080
+      8000000000008080800080808000000000008080800080808000000000008080
+      8000808080008080800000000000808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000080808000FFFFFF0000000000FFFF
+      FF00FFFFFF0000000000FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF000000
+      0000FFFFFF00FFFFFF00FFFFFF00808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000080808000FFFFFF00808080008080
+      8000000000008080800080808000000000008080800080808000000000008080
+      8000808080008080800000000000808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000080808000FFFFFF0000000000FFFF
+      FF00FFFFFF0000000000FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF000000
+      0000FFFFFF00FFFFFF00FFFFFF00808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000080808000FFFFFF00808080008080
+      8000000000008080800080808000000000008080800080808000000000008080
+      8000808080008080800000000000808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000080808000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000008080800080808000808080008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      8000808080008080800080808000808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000080808000FFFFFF00FFFFFF008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      800080808000FFFFFF00FFFFFF00808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000008080800080808000808080008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      8000808080008080800080808000808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000008400000084000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000840000008400000084000000840000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      8400000084000000000000000000000000000000000000000000000000000000
+      0000000084000000840000000000000000000000000000000000000000000000
+      0000000000000031CE000031CE00000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00000000000000
+      0000FFFFFF000000000000000000FFFFFF000000000000000000FFFFFF000000
+      00000000000000000000FFFFFF00000000000000000000000000000000000000
+      0000000000000084000000840000008400000084000000840000008400000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      8400000084000000840000000000000000000000000000000000000000000000
+      8400000084000000840000000000000000000000000000000000000000000000
+      00000031CE000031CE000031CE00000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00000000000000000000000000000000000000
+      0000008400000084000000840000000000000000000000840000008400000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000084000000840000008400000000000000000000000000000084000000
+      8400000084000000000000000000000000000000000000000000000000000031
+      CE000031CE000031CE0000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00000000000000
+      0000FFFFFF000000000000000000FFFFFF000000000000000000FFFFFF000000
+      00000000000000000000FFFFFF00000000000000000000000000000000000084
+      0000008400000084000000000000000000000000000000840000008400000084
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000840000008400000084000000000000008400000084000000
+      84000000000000000000000000000000000000000000000000000031CE000031
+      CE000031CE0000000000000000000031CE000031CE000031CE000031CE000031
+      CE000031CE0000000000000000000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00000000000000000000000000000000000084
+      0000008400000000000000000000000000000000000000000000008400000084
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000008400000084000000840000008400000084000000
+      00000000000000000000000000000000000000000000000000000031CE000031
+      CE000000000000000000000000000031CE000031CE000031CE000031CE000031
+      CE000031CE0000000000000000000000000000000000FFFFFF00000000000000
+      0000FFFFFF000000000000000000FFFFFF000000000000000000FFFFFF000000
+      00000000000000000000FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000008400000084
+      0000008400000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000084000000840000008400000000000000
+      00000000000000000000000000000000000000000000000000000031CE000031
+      CE0000000000000000000000000000000000000000000031CE000031CE000031
+      CE000031CE0000000000000000000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000084
+      0000008400000000000000000000000000000000000000000000000000000000
+      0000000000000000000000008400000084000000840000008400000084000000
+      00000000000000000000000000000000000000000000000000000031CE000031
+      CE00000000000000000000000000000000000031CE000031CE000031CE000031
+      CE000031CE0000000000000000000000000000000000FFFFFF00000000000000
+      0000FFFFFF000000000000000000FFFFFF000000000000000000FFFFFF000000
+      00000000000000000000FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000084
+      0000008400000084000000000000000000000000000000000000000000000000
+      0000000000000000840000008400000084000000000000008400000084000000
+      84000000000000000000000000000000000000000000000000000031CE000031
+      CE000000000000000000000000000031CE000031CE000031CE00000000000031
+      CE000031CE0000000000000000000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000008400000084000000000000000000000000000000000000000000000000
+      0000000084000000840000008400000000000000000000000000000084000000
+      8400000084000000000000000000000000000000000000000000000000000031
+      CE000031CE000031CE000031CE000031CE000031CE0000000000000000000031
+      CE000031CE0000000000000000000000000000000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000008400000084000000000000000000000000000000000000000000000000
+      8400000084000000840000000000000000000000000000000000000000000000
+      8400000084000000840000000000000000000000000000000000000000000000
+      00000031CE000031CE000031CE000031CE000000000000000000000000000000
+      00000000000000000000000000000000000000000000C0C0C000C0C0C000FF00
+      0000FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000C0C0C000C0C0C000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      8400000084000000000000000000000000000000000000000000000000000000
+      0000000084000000840000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000424D3E000000000000003E000000
+      2800000040000000200000000100010000000000000100000000000000000000
+      000000000000000000000000FFFFFF0080000000000000000000000000000000
+      2490000000000000092200000000000024900000000000000922000000000000
+      2490000000000000092200000000000024900000000000000922000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      FFFF000000000000FFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      FE7FFFFFFFFF0000FC3FE7F3F9FF0000F81FE3E3F1FF0000F19FF1C7E3FF0000
+      E38FF88FC6070000E7CFFC1FCE070000FFC7FE3FCF870000FFE7FC1FCF070000
+      FFE3F88FCE270000FFF3F1C7E0670000FFF3E3E3F0FF0000FFFFE7F3FFFF0000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000000000000000
+      000000000000}
+  end
+  object ActionList: TActionList
+    Images = ImageList
+    Left = 8
+    Top = 464
+    object ActionConfirma: TAction
+      Caption = 'Confirmar'
+      Hint = 'Salvar os valores para diagn'#243'stico do fluxo'
+      ImageIndex = 0
+      OnExecute = ActionConfirmaExecute
+    end
+    object ActionCancela: TAction
+      Caption = 'Cancelar'
+      Hint = 'Fechar a janela sem salvar os valores'
+      ImageIndex = 1
+      OnExecute = ActionCancelaExecute
+    end
+    object ActionDefault: TAction
+      Caption = 'Redefinir'
+      Hint = 'Redefine valores padr'#227'o'
+      ImageIndex = 2
+      OnExecute = ActionDefaultExecute
+    end
+    object ActionCfgLimV: TAction
+      Caption = 'Faixas de Tens'#227'o'
+      ImageIndex = 3
+      OnExecute = ActionCfgLimVExecute
+    end
+  end
+  object ColorDialog: TColorDialog
+    Left = 48
+    Top = 464
+  end
+end

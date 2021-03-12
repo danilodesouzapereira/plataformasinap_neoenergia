@@ -1,0 +1,8 @@
+Tem que verificar se existe alguma rede que faz parte de mais de um domínio, utilizando SPSNP_rdRedeDominioCount.sql.
+Essa procedure não existe no Oracle, mas o trecho de código foi retirado da procedure de remoção do domínio.
+
+A lista de barras a serem eliminadas após a eliminaçao do domínio DEVEM ESTAR EM MEMÓRIA
+
+A procedure SPSNP_dlDominio_p02.sql não existe, porque deve ser a chamada de SPSNP_dlEstudoRede( [p_EstudoId], tabids_rede(conta) );
+
+Antes de executar o SPSNP_dlDominio_p05.sql, deve ser verificada a SPSNP_rdRedeDominioCountRede.sql (tem que ter zero redes)

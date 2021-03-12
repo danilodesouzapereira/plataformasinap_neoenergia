@@ -1,0 +1,1 @@
+  DELETE FROM    SuporteFixacao  WHERE    intSuporteId = [p_SuporteId];

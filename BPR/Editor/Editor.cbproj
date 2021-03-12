@@ -1,0 +1,1369 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B2BBA7E7-4266-450E-A13D-674497AF3848}</ProjectGuid>
+        <ProjectVersion>18.4</ProjectVersion>
+        <FrameworkType>VCL</FrameworkType>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Platform Condition="'$(Platform)'==''">Win64</Platform>
+        <TargetedPlatforms>2</TargetedPlatforms>
+        <AppType>Library</AppType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win64)'!=''">
+        <Cfg_1_Win64>true</Cfg_1_Win64>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win64)'!=''">
+        <Cfg_2_Win64>true</Cfg_2_Win64>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <SanitizedProjectName>Editor</SanitizedProjectName>
+        <BPILibOutputDir>$(SINAP_TMP)\BPR\Editor\$(Platform)\$(Config)</BPILibOutputDir>
+        <AllPackageLibs>rtl.lib;vcl.lib;vclx.lib;Tee.lib;vclimg.lib;vcldb.lib;dbrtl.lib</AllPackageLibs>
+        <ProjectType>CppDynamicLibrary</ProjectType>
+        <ILINK_LibraryPath>..\..\Fontes\Editor\Figura\;..\..\Fontes\Editor\Utils\;..\..\Fontes\Editor\Recondutorar\;..\..\Fontes\Editor\SelecaoMultipla\;..\..\Fontes\Editor\EditaRede\;..\..\Fontes\Explorer\;..\..\Fontes\Legenda\;..\..\Fontes\Editor\Tensao\;..\..\Fontes\Distancia\;..\..\Fontes\Complexo\;..\..\Fontes\Rede\;..\..\Fontes\Forms\;..\..\Fontes\Editor\Marca\;..\..\Fontes\Editor\Grupo\;..\..\Fontes\Editor\Carro\;..\..\Fontes\Apl\;..\..\Fontes\Editor\;$(SINAP_LIB);$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
+        <Multithreaded>true</Multithreaded>
+        <VerInfo_Locale>1046</VerInfo_Locale>
+        <Manifest_File>None</Manifest_File>
+        <IncludePath>..\..\Fontes\Editor\Figura\;..\..\Fontes\Editor\Utils\;..\..\Fontes\Editor\Recondutorar\;..\..\Fontes\Editor\SelecaoMultipla\;..\..\Fontes\Editor\EditaRede\;..\..\Fontes\Explorer\;..\..\Fontes\Legenda\;..\..\Fontes\Editor\Tensao\;..\..\Fontes\Distancia\;..\..\Fontes\Complexo\;..\..\Fontes\Rede\;..\..\Fontes\Forms\;..\..\Fontes\Editor\Marca\;..\..\Fontes\Editor\Grupo\;..\..\Fontes\Editor\Carro\;..\..\Fontes\Apl\;..\..\Fontes\Editor\;$(SINAP);$(IncludePath)</IncludePath>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <_TCHARMapping>wchar_t</_TCHARMapping>
+        <ILINK_GenerateImportLibrary>true</ILINK_GenerateImportLibrary>
+        <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+        <DynamicRTL>true</DynamicRTL>
+        <UsePackages>true</UsePackages>
+        <IntermediateOutputDir>$(SINAP_TMP)\BPR\Editor\$(Platform)\$(Config)</IntermediateOutputDir>
+        <FinalOutputDir>$(SINAP_BIN)\$(Platform)\$(Config)</FinalOutputDir>
+        <BCC_wpar>false</BCC_wpar>
+        <BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+        <BCC_ExtendedErrorInfo>true</BCC_ExtendedErrorInfo>
+        <ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\release\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <ILINK_LibraryPath>Z:\SINAPgrid\PlataformaSinap\DLL_Lib\Win32\Release\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <IncludePath>$(BDSINCLUDE)\windows\vcl;$(IncludePath)</IncludePath>
+        <PackageImports>adortl;bcbie;bcbsmp;bdertl;bindcomp;bindcompdbx;bindcompfmx;bindcompvcl;bindengine;CloudService;CodeSiteExpressPkg;CustomIPTransport;DataSnapClient;DataSnapCommon;DataSnapConnectors;DatasnapConnectorsFreePascal;DataSnapFireDAC;DataSnapIndy10ServerTransport;DataSnapProviderClient;DataSnapServer;dbexpress;dbrtl;dbxcds;DbxClientDriver;DbxCommonDriver;DBXDb2Driver;DBXFirebirdDriver;DBXInformixDriver;DBXInterBaseDriver;DBXMSSQLDriver;DBXMySQLDriver;DBXOdbcDriver;DBXOracleDriver;DBXSqliteDriver;DBXSybaseASADriver;DBXSybaseASEDriver;dsnap;dsnapcon;FireDAC;FireDACADSDriver;FireDACASADriver;FireDACCommon;FireDACCommonDriver;FireDACDataSnapDriver;FireDACDb2Driver;FireDACDBXDriver;FireDACIBDriver;FireDACMSAccDriver;FireDACMSSQLDriver;FireDACMySQLDriver;FireDACODBCDriver;FireDACOracleDriver;FireDACPgDriver;FireDACSqliteDriver;fmx;fmxase;fmxdae;fmxFireDAC;fmxobj;FMXTee;FmxTeeUI;ibxpress;IndyCore;IndyIPClient;IndyIPCommon;IndyIPServer;IndyProtocols;IndySystem;inet;inetdb;inetdbbde;inetdbxpress;Intraweb;MetropolisUILiveTile;RESTComponents;rtl;soaprtl;svn;Tee;TeeDB;TeeUI;vcl;vclactnband;vcldb;vcldbx;vcldsnap;vclFireDAC;vclib;vclie;vclimg;VCLRESTComponents;vclribbon;vcltouch;vclx;xmlrtl;$(PackageImports)</PackageImports>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <ILINK_LibraryPath>Z:\SINAPgrid\PlataformaSinap\DLL_Lib\Win64\Release\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <IncludePath>$(BDSINCLUDE)\windows\vcl;$(IncludePath)</IncludePath>
+        <PackageImports>adortl;bindcomp;bindcompdbx;bindcompfmx;bindcompvcl;bindengine;CloudService;CustomIPTransport;DataSnapClient;DataSnapCommon;DataSnapConnectors;DatasnapConnectorsFreePascal;DataSnapFireDAC;DataSnapIndy10ServerTransport;DataSnapProviderClient;DataSnapServer;dbexpress;dbrtl;dbxcds;DbxClientDriver;DbxCommonDriver;DBXDb2Driver;DBXFirebirdDriver;DBXInformixDriver;DBXInterBaseDriver;DBXMSSQLDriver;DBXMySQLDriver;DBXOdbcDriver;DBXOracleDriver;DBXSqliteDriver;DBXSybaseASADriver;DBXSybaseASEDriver;dsnap;dsnapcon;FireDAC;FireDACADSDriver;FireDACASADriver;FireDACCommon;FireDACCommonDriver;FireDACDataSnapDriver;FireDACDb2Driver;FireDACDBXDriver;FireDACIBDriver;FireDACMSAccDriver;FireDACMSSQLDriver;FireDACMySQLDriver;FireDACODBCDriver;FireDACOracleDriver;FireDACPgDriver;FireDACSqliteDriver;fmx;fmxase;fmxdae;fmxFireDAC;fmxobj;FMXTee;FmxTeeUI;ibxpress;IndyCore;IndyIPClient;IndyIPCommon;IndyIPServer;IndyProtocols;IndySystem;inet;inetdb;inetdbxpress;Intraweb;MetropolisUILiveTile;RESTComponents;rtl;soaprtl;Tee;TeeDB;TeeUI;vcl;vclactnband;vcldb;vcldsnap;vclFireDAC;vclib;vclie;vclimg;VCLRESTComponents;vclribbon;vcltouch;vclx;xmlrtl;$(PackageImports)</PackageImports>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
+        <BCC_DisableOptimizations>true</BCC_DisableOptimizations>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <Defines>_DEBUG;$(Defines)</Defines>
+        <BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+        <BCC_UseRegisterVariables>None</BCC_UseRegisterVariables>
+        <DCC_Define>DEBUG</DCC_Define>
+        <BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+        <TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+        <BCC_StackFrames>true</BCC_StackFrames>
+        <ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+        <TASM_Debugging>Full</TASM_Debugging>
+        <BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+        <BCC_EnableCPPExceptions>true</BCC_EnableCPPExceptions>
+        <BCC_DisableFramePtrElimOpt>true</BCC_DisableFramePtrElimOpt>
+        <BCC_DisableSpellChecking>true</BCC_DisableSpellChecking>
+        <CLANG_UnwindTables>true</CLANG_UnwindTables>
+        <ILINK_LibraryPath>$(BDSLIB)\$(PLATFORM)\debug;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\debug\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <Debugger_DebugSourcePath>Z:\SINAPgrid\PlataformaSinap\BPR\Funcao\;$(Debugger_DebugSourcePath)</Debugger_DebugSourcePath>
+        <BCC_wdef>true</BCC_wdef>
+        <Debugger_HostApplication>$(SINAP_BIN)\Win32\Debug\SINAPgrid.exe</Debugger_HostApplication>
+        <ILINK_LibraryPath>C:\Program Files (x86)\Steema Software\TeeChart Lite 2014 for RAD XE6\Delphi20.win32\Lib\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <LinkPackageImports>rtl.bpi;vcl.bpi;vclx.bpi;Tee.bpi;vclimg.bpi;vcldb.bpi;dbrtl.bpi</LinkPackageImports>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
+        <ILINK_LibraryPath>$(BDS)\lib\win64\release\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <LinkPackageImports>rtl.bpi;vcl.bpi;vclx.bpi;Tee.bpi;vclimg.bpi;vcldb.bpi;dbrtl.bpi</LinkPackageImports>
+        <BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+        <BCC_DisableOptimizations>false</BCC_DisableOptimizations>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+        <Debugger_HostApplication>Z:\SINAPgrid\PlataformaSinap\Tmp\Bin\Win64\Debug\SINAPgrid.exe</Debugger_HostApplication>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <Defines>NDEBUG;$(Defines)</Defines>
+        <TASM_Debugging>None</TASM_Debugging>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <ILINK_LibraryPath>C:\Program Files (x86)\Steema Software\TeeChart Lite 2014 for RAD XE6\Delphi20.win32\Lib\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <LinkPackageImports>rtl.bpi;vcl.bpi;vclx.bpi;Tee.bpi;vclimg.bpi;vcldb.bpi;dbrtl.bpi</LinkPackageImports>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
+        <ILINK_LibraryPath>$(BDS)\lib\win64\release\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <LinkPackageImports>rtl.bpi;vcl.bpi;vclx.bpi;Tee.bpi;vclimg.bpi;vcldb.bpi;dbrtl.bpi</LinkPackageImports>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+    </PropertyGroup>
+    <ItemGroup>
+        <CppCompile Include="Editor.cpp">
+            <BuildOrder>1</BuildOrder>
+        </CppCompile>
+        <PCHCompile Include="EditorPCH.h">
+            <BuildOrder>1</BuildOrder>
+            <PCH>true</PCH>
+        </PCHCompile>
+        <CppCompile Include="..\..\Fontes\Apl\TApl.cpp">
+            <DependentOn>..\..\Fontes\Apl\TApl.h</DependentOn>
+            <BuildOrder>75</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Complexo\Complexo.cpp">
+            <DependentOn>..\..\Fontes\Complexo\Complexo.h</DependentOn>
+            <BuildOrder>87</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Distancia\TCaminho.cpp">
+            <DependentOn>..\..\Fontes\Distancia\TCaminho.h</DependentOn>
+            <BuildOrder>93</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Carro\TFormCarro.cpp">
+            <Form>FormCarro</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\Carro\TFormCarro.h</DependentOn>
+            <BuildOrder>76</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\EditaRede\TEditaSED.cpp">
+            <DependentOn>..\..\Fontes\Editor\EditaRede\TEditaSED.h</DependentOn>
+            <BuildOrder>122</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\EditaRede\TFusivel.cpp">
+            <DependentOn>..\..\Fontes\Editor\EditaRede\TFusivel.h</DependentOn>
+            <BuildOrder>124</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\EditaRede\TInsereFusivel.cpp">
+            <DependentOn>..\..\Fontes\Editor\EditaRede\TInsereFusivel.h</DependentOn>
+            <BuildOrder>125</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\EditaRede\TRemoveBT.cpp">
+            <DependentOn>..\..\Fontes\Editor\EditaRede\TRemoveBT.h</DependentOn>
+            <BuildOrder>126</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\EditaRede\TRemoveTrecho.cpp">
+            <DependentOn>..\..\Fontes\Editor\EditaRede\TRemoveTrecho.h</DependentOn>
+            <BuildOrder>127</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Figura\TEdtFigComentario.cpp">
+            <DependentOn>..\..\Fontes\Editor\Figura\TEdtFigComentario.h</DependentOn>
+            <BuildOrder>128</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Figura\TEdtFigLink.cpp">
+            <DependentOn>..\..\Fontes\Editor\Figura\TEdtFigLink.h</DependentOn>
+            <BuildOrder>129</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Figura\TEdtFigRetangulo.cpp">
+            <DependentOn>..\..\Fontes\Editor\Figura\TEdtFigRetangulo.h</DependentOn>
+            <BuildOrder>130</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Figura\TFormEdtComentario.cpp">
+            <Form>FormEdtComentario</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\Figura\TFormEdtComentario.h</DependentOn>
+            <BuildOrder>131</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Figura\TFormEdtRetangulo.cpp">
+            <Form>FormEdtRetangulo</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\Figura\TFormEdtRetangulo.h</DependentOn>
+            <BuildOrder>132</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Grupo\TFormGrupo.cpp">
+            <Form>FormGrupo</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\Grupo\TFormGrupo.h</DependentOn>
+            <BuildOrder>77</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Marca\TMarca.cpp">
+            <DependentOn>..\..\Fontes\Editor\Marca\TMarca.h</DependentOn>
+            <BuildOrder>78</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Recondutorar\TFormRecondutorar.cpp">
+            <Form>FormRecondutorar</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\Recondutorar\TFormRecondutorar.h</DependentOn>
+            <BuildOrder>124</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Recondutorar\TRecondutorar.cpp">
+            <DependentOn>..\..\Fontes\Editor\Recondutorar\TRecondutorar.h</DependentOn>
+            <BuildOrder>125</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\SelecaoMultipla\TFamiliaArranjos.cpp">
+            <DependentOn>..\..\Fontes\Editor\SelecaoMultipla\TFamiliaArranjos.h</DependentOn>
+            <BuildOrder>144</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TAplEditor.cpp">
+            <DependentOn>..\..\Fontes\Editor\TAplEditor.h</DependentOn>
+            <BuildOrder>2</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TConverteCurva.cpp">
+            <DependentOn>..\..\Fontes\Editor\TConverteCurva.h</DependentOn>
+            <BuildOrder>123</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TDragdrop.cpp">
+            <DependentOn>..\..\Fontes\Editor\TDragdrop.h</DependentOn>
+            <BuildOrder>3</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdicao.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdicao.h</DependentOn>
+            <BuildOrder>4</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEditor.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEditor.h</DependentOn>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdt.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdt.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtAlign.cpp">
+            <BuildOrder>107</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtAlt.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtAlt.h</DependentOn>
+            <BuildOrder>7</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtAltCargaNL.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtAltCargaNL.h</DependentOn>
+            <BuildOrder>143</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtArea.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtArea.h</DependentOn>
+            <BuildOrder>8</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtBar.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtBar.h</DependentOn>
+            <BuildOrder>9</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtBateria.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtBateria.h</DependentOn>
+            <BuildOrder>156</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtBusca.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtBusca.h</DependentOn>
+            <BuildOrder>10</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtCap.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtCap.h</DependentOn>
+            <BuildOrder>11</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtCaps.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtCaps.h</DependentOn>
+            <BuildOrder>12</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtCarga.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtCarga.h</DependentOn>
+            <BuildOrder>13</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtCargaIP.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtCargaIP.h</DependentOn>
+            <BuildOrder>14</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtCargaNL.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtCargaNL.h</DependentOn>
+            <BuildOrder>141</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtChv.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtChv.h</DependentOn>
+            <BuildOrder>15</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtCola.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtCola.h</DependentOn>
+            <BuildOrder>16</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtCopia.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtCopia.h</DependentOn>
+            <BuildOrder>17</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtCurto.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtCurto.h</DependentOn>
+            <BuildOrder>18</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtEqbar.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtEqbar.h</DependentOn>
+            <BuildOrder>20</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtFiltro.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtFiltro.h</DependentOn>
+            <BuildOrder>21</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtGer.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtGer.h</DependentOn>
+            <BuildOrder>22</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtGiro.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtGiro.h</DependentOn>
+            <BuildOrder>23</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtLiga.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtLiga.h</DependentOn>
+            <BuildOrder>24</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtManobra.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtManobra.h</DependentOn>
+            <BuildOrder>25</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtMedicao.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtMedicao.h</DependentOn>
+            <BuildOrder>26</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtMedidor.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtMedidor.h</DependentOn>
+            <BuildOrder>27</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtMotor.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtMotor.h</DependentOn>
+            <BuildOrder>132</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtMutua.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtMutua.h</DependentOn>
+            <BuildOrder>28</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtPoint.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtPoint.h</DependentOn>
+            <BuildOrder>121</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtPolyline.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtPolyline.h</DependentOn>
+            <BuildOrder>29</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtReator.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtReator.h</DependentOn>
+            <BuildOrder>30</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtRegulador.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtRegulador.h</DependentOn>
+            <BuildOrder>31</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtSinc.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtSinc.h</DependentOn>
+            <BuildOrder>32</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtSup.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtSup.h</DependentOn>
+            <BuildOrder>33</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtSup3.cpp">
+            <BuildOrder>115</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtSwitch.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtSwitch.h</DependentOn>
+            <BuildOrder>34</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtTre.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtTre.h</DependentOn>
+            <BuildOrder>35</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtTrf.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtTrf.h</DependentOn>
+            <BuildOrder>36</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtTrf3E.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtTrf3E.h</DependentOn>
+            <BuildOrder>37</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtTrfMono.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtTrfMono.h</DependentOn>
+            <BuildOrder>38</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtTrfZZ.cpp">
+            <DependentOn>..\..\Fontes\Editor\TEdtTrfZZ.h</DependentOn>
+            <BuildOrder>39</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TEdtZoom.cpp">
+            <BuildOrder>106</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Tensao\TFormTensao.cpp">
+            <Form>FormTensao</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\Tensao\TFormTensao.h</DependentOn>
+            <BuildOrder>111</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Tensao\TTensao.cpp">
+            <DependentOn>..\..\Fontes\Editor\Tensao\TTensao.h</DependentOn>
+            <BuildOrder>105</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEditaCurva.cpp">
+            <Form>FormEditaCurva</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEditaCurva.h</DependentOn>
+            <BuildOrder>40</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEditaCurva3F.cpp">
+            <Form>FormEditaCurva3F</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEditaCurva3F.h</DependentOn>
+            <BuildOrder>117</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEditaCurvaBateria3F.cpp">
+            <Form>FormEditaCurvaBateria3F</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEditaCurvaBateria3F.h</DependentOn>
+            <BuildOrder>149</BuildOrder>
+        </CppCompile>
+        <None Include="..\..\Fontes\Editor\TFormEditaCurvaBateria3F.dfm"/>
+        <None Include="..\..\Fontes\Editor\TFormEditaCurvaBateria3F.h">
+            <BuildOrder>151</BuildOrder>
+        </None>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEditaCurvaCarga.cpp">
+            <Form>FormEditaCurvaCarga</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEditaCurvaCarga.h</DependentOn>
+            <BuildOrder>41</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEditaCurvaCarga3F.cpp">
+            <Form>FormEditaCurvaCarga3F</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEditaCurvaCarga3F.h</DependentOn>
+            <BuildOrder>147</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEditor.cpp">
+            <Form>FormEditor</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEditor.h</DependentOn>
+            <BuildOrder>42</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtBar.cpp">
+            <Form>FormEdtBar</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtBar.h</DependentOn>
+            <BuildOrder>43</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtBarMS.cpp">
+            <Form>FormEdtBarMS</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtBarMS.h</DependentOn>
+            <BuildOrder>135</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtBateria.cpp">
+            <Form>FormEdtBateria</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtBateria.h</DependentOn>
+            <BuildOrder>153</BuildOrder>
+        </CppCompile>
+        <None Include="..\..\Fontes\Editor\TFormEdtBateria.dfm"/>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtCap.cpp">
+            <Form>FormEdtCap</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtCap.h</DependentOn>
+            <BuildOrder>44</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtCaps.cpp">
+            <Form>FormEdtCaps</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtCaps.h</DependentOn>
+            <BuildOrder>45</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtCar.cpp">
+            <Form>FormEdtCar</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtCar.h</DependentOn>
+            <BuildOrder>46</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtCarIP.cpp">
+            <Form>FormEdtCarIP</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtCarIP.h</DependentOn>
+            <BuildOrder>47</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtCarMS.cpp">
+            <Form>FormEdtCarMS</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtCarMS.h</DependentOn>
+            <BuildOrder>139</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtCarNL.cpp">
+            <Form>FormEdtCarNL</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtCarNL.h</DependentOn>
+            <BuildOrder>143</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtChv.cpp">
+            <Form>FormEdtChv</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtChv.h</DependentOn>
+            <BuildOrder>48</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtChvMS.cpp">
+            <Form>FormEdtChvMS</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtChvMS.h</DependentOn>
+            <BuildOrder>139</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtCurvaMed.cpp">
+            <Form>FormEdtCurvaMed</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtCurvaMed.h</DependentOn>
+            <BuildOrder>50</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtEqptos.cpp">
+            <Form>FormEdtEqptos</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtEqptos.h</DependentOn>
+            <BuildOrder>51</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtFaseTrecho.cpp">
+            <Form>FormEdtFaseTrecho</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtFaseTrecho.h</DependentOn>
+            <BuildOrder>134</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtFiltro.cpp">
+            <Form>FormEdtFiltro</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtFiltro.h</DependentOn>
+            <BuildOrder>52</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtFoto.cpp">
+            <Form>FormEdtFoto</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtFoto.h</DependentOn>
+            <BuildOrder>53</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtGer.cpp">
+            <Form>FormEdtGer</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtGer.h</DependentOn>
+            <BuildOrder>54</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtManobra.cpp">
+            <Form>FormEdtManobra</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtManobra.h</DependentOn>
+            <BuildOrder>132</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtMedidor.cpp">
+            <Form>FormEdtMedidor</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtMedidor.h</DependentOn>
+            <BuildOrder>56</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtMotor.cpp">
+            <Form>FormEdtMotor</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtMotor.h</DependentOn>
+            <BuildOrder>133</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtMotorMS.cpp">
+            <Form>FormEdtMotorMS</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtMotorMS.h</DependentOn>
+            <BuildOrder>124</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtMutua.cpp">
+            <Form>FormEdtMutua</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtMutua.h</DependentOn>
+            <BuildOrder>57</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtPolyline.cpp">
+            <Form>FormEdtPolyline</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtPolyline.h</DependentOn>
+            <BuildOrder>59</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtReator.cpp">
+            <Form>FormEdtReator</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtReator.h</DependentOn>
+            <BuildOrder>60</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtRede.cpp">
+            <Form>FormEdtRede</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtRede.h</DependentOn>
+            <BuildOrder>61</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtRegulador.cpp">
+            <Form>FormEdtRegulador</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtRegulador.h</DependentOn>
+            <BuildOrder>146</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtReguladorBT.cpp">
+            <Form>FormEdtReguladorBT</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtReguladorBT.h</DependentOn>
+            <BuildOrder>145</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtReguladorMT.cpp">
+            <Form>FormEdtReguladorMT</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtReguladorMT.h</DependentOn>
+            <BuildOrder>145</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtSinc.cpp">
+            <Form>FormEdtSinc</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtSinc.h</DependentOn>
+            <BuildOrder>133</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtSup.cpp">
+            <Form>FormEdtSup</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtSup.h</DependentOn>
+            <BuildOrder>64</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtSup3.cpp">
+            <Form>FormEdtSup3</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtSup3.h</DependentOn>
+            <BuildOrder>116</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtSupMS.cpp">
+            <Form>FormEdtSupMS</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtSupMS.h</DependentOn>
+            <BuildOrder>138</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtTre.cpp">
+            <Form>FormEdtTre</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtTre.h</DependentOn>
+            <BuildOrder>65</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtTreMS.cpp">
+            <Form>FormEdtTreMS</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtTreMS.h</DependentOn>
+            <BuildOrder>139</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtTrf.cpp">
+            <Form>FormEdtTrf</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtTrf.h</DependentOn>
+            <BuildOrder>66</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtTrf3E.cpp">
+            <Form>FormEdtTrf3E</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtTrf3E.h</DependentOn>
+            <BuildOrder>67</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtTrfMono.cpp">
+            <Form>FormEdtTrfMono</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtTrfMono.h</DependentOn>
+            <BuildOrder>68</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtTrfZZ.cpp">
+            <Form>FormEdtTrfZZ</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtTrfZZ.h</DependentOn>
+            <BuildOrder>69</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormEdtZref.cpp">
+            <Form>FormEdtZref</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormEdtZref.h</DependentOn>
+            <BuildOrder>70</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormExibeCurva.cpp">
+            <Form>FormExibeCurva</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormExibeCurva.h</DependentOn>
+            <BuildOrder>71</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormExibeCurvaBateria.cpp">
+            <Form>FormExibeCurvaBateria</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormExibeCurvaBateria.h</DependentOn>
+            <BuildOrder>154</BuildOrder>
+        </CppCompile>
+        <None Include="..\..\Fontes\Editor\TFormExibeCurvaBateria.dfm"/>
+        <None Include="..\..\Fontes\Editor\TFormExibeCurvaBateria.h">
+            <BuildOrder>156</BuildOrder>
+        </None>
+        <CppCompile Include="..\..\Fontes\Editor\TFormImportaBarras.cpp">
+            <Form>FormImportaBarras</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormImportaBarras.h</DependentOn>
+            <BuildOrder>140</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormSelEqpto.cpp">
+            <Form>FormSelEqpto</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormSelEqpto.h</DependentOn>
+            <BuildOrder>72</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormSelEqptoRede.cpp">
+            <Form>FormSelEqptoRede</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormSelEqptoRede.h</DependentOn>
+            <BuildOrder>73</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TFormSelPadrao.cpp">
+            <Form>FormSelPadrao</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Editor\TFormSelPadrao.h</DependentOn>
+            <BuildOrder>74</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\TImportaCurva.cpp">
+            <DependentOn>..\..\Fontes\Editor\TImportaCurva.h</DependentOn>
+            <BuildOrder>107</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Editor\Utils\TVerificaMalhaEdicao.cpp">
+            <DependentOn>..\..\Fontes\Editor\Utils\TVerificaMalhaEdicao.h</DependentOn>
+            <BuildOrder>124</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Explorer\TAtributo.cpp">
+            <DependentOn>..\..\Fontes\Explorer\TAtributo.h</DependentOn>
+            <BuildOrder>109</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Forms\TFormEdt.cpp">
+            <Form>FormEdt</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Forms\TFormEdt.h</DependentOn>
+            <BuildOrder>110</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Forms\TFormEdtTxt.cpp">
+            <Form>FormEdtTxt</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\Forms\TFormEdtTxt.h</DependentOn>
+            <BuildOrder>77</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Rede\TEqbar.cpp">
+            <DependentOn>..\..\Fontes\Rede\TEqbar.h</DependentOn>
+            <BuildOrder>81</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Rede\TLigacao.cpp">
+            <DependentOn>..\..\Fontes\Rede\TLigacao.h</DependentOn>
+            <BuildOrder>103</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\Rede\VTEqpto.cpp">
+            <DependentOn>..\..\Fontes\Rede\VTEqpto.h</DependentOn>
+            <BuildOrder>78</BuildOrder>
+        </CppCompile>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtChvMS.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtCurvaMed.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtEqptos.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtFaseTrecho.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtCarIP.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtCarMS.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtCarNL.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtChv.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtMedidor.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtMotor.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtMotorMS.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtMutua.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtFiltro.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtFoto.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtGer.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtManobra.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtCar.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEditaCurvaBateria3F.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEditaCurvaCarga.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\Tensao\TFormTensao.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEditaCurva.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEditaCurva3F.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtBateria.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtCap.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtCaps.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEditaCurvaCarga3F.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEditor.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtBar.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtBarMS.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormImportaBarras.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormSelEqpto.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormSelEqptoRede.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormSelPadrao.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormExibeCurva.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormExibeCurvaBateria.dfm"/>
+        <FormResources Include="..\..\Fontes\Forms\TFormEdtTxt.dfm"/>
+        <FormResources Include="..\..\Fontes\Forms\TFormEdt.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtZref.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtReguladorBT.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtReguladorMT.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtSinc.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtSup.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtPolyline.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtReator.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtRede.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtRegulador.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtTrf.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtTrf3E.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtTrfMono.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtTrfZZ.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtSup3.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtSupMS.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtTre.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\TFormEdtTreMS.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\Recondutorar\TFormRecondutorar.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\Grupo\TFormGrupo.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\Carro\TFormCarro.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\Figura\TFormEdtComentario.dfm"/>
+        <FormResources Include="..\..\Fontes\Editor\Figura\TFormEdtRetangulo.dfm"/>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+        <Borland.ProjectType>CppDynamicLibrary</Borland.ProjectType>
+        <BorlandProject>
+            <CPlusPlusBuilder.Personality>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1046</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                    <VersionInfoKeys Name="CFBundleName"/>
+                    <VersionInfoKeys Name="CFBundleDisplayName"/>
+                    <VersionInfoKeys Name="UIDeviceFamily"/>
+                    <VersionInfoKeys Name="CFBundleIdentifier"/>
+                    <VersionInfoKeys Name="CFBundleVersion"/>
+                    <VersionInfoKeys Name="CFBundlePackageType"/>
+                    <VersionInfoKeys Name="CFBundleSignature"/>
+                    <VersionInfoKeys Name="CFBundleAllowMixedLocalizations"/>
+                    <VersionInfoKeys Name="UISupportedInterfaceOrientations"/>
+                    <VersionInfoKeys Name="CFBundleExecutable"/>
+                    <VersionInfoKeys Name="CFBundleResourceSpecification"/>
+                    <VersionInfoKeys Name="LSRequiresIPhoneOS"/>
+                    <VersionInfoKeys Name="CFBundleInfoDictionaryVersion"/>
+                    <VersionInfoKeys Name="CFBundleDevelopmentRegion"/>
+                    <VersionInfoKeys Name="package"/>
+                    <VersionInfoKeys Name="label"/>
+                    <VersionInfoKeys Name="versionCode"/>
+                    <VersionInfoKeys Name="versionName"/>
+                    <VersionInfoKeys Name="persistent"/>
+                    <VersionInfoKeys Name="restoreAnyVersion"/>
+                    <VersionInfoKeys Name="installLocation"/>
+                    <VersionInfoKeys Name="largeHeap"/>
+                    <VersionInfoKeys Name="theme"/>
+                </VersionInfoKeys>
+                <ProjectProperties>
+                    <ProjectProperties Name="AutoShowDeps">False</ProjectProperties>
+                    <ProjectProperties Name="ManagePaths">True</ProjectProperties>
+                    <ProjectProperties Name="VerifyPackages">True</ProjectProperties>
+                    <ProjectProperties Name="IndexFiles">False</ProjectProperties>
+                </ProjectProperties>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k250.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp250.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                </Excluded_Packages>
+            </CPlusPlusBuilder.Personality>
+            <Deployment Version="3">
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32c250mt.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32c250.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(UsingDelphiRTL)'=='true'" LocalName="$(BDS)\bin64\borlndmm.dll" Class="DependencyModule">
+                    <Platform Name="Win64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx32\libcgcrtl.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(UsingDelphiRTL)'=='true'" LocalName="$(BDS)\bin\borlndmm.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32160mt.dll" Class="DependencyModule"/>
+                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx32\libcgstl.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Tmp\Bin\Win32\Debug\Editor.dll" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="..\..\Tmp\Bin\Win64\Debug\Editor.dll" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win64">
+                        <RemoteName>Editor.dll</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32160.dll" Class="DependencyModule"/>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32250mt.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin64\cc64250mt.dll" Class="DependencyModule">
+                    <Platform Name="Win64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Z:\SINAPgrid\PlataformaSinap\Tmp\Bin\Win32\Release\Editor.dll" Configuration="Release" Class="ProjectOutput"/>
+                <DeployFile LocalName="Z:\SINAPgrid\PlataformaSinap\Tmp\Bin\Win32\Debug\Editor.dll" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="..\..\Tmp\Bin\Win32\Debug\Editor.dll" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>Editor.dll</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32250.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Tmp\Bin\Win32\Release\Editor.dll" Configuration="Release" Class="ProjectOutput"/>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin64\cc64160.dll" Class="DependencyModule"/>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin64\cc64160mt.dll" Class="DependencyModule"/>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin64\cc64250.dll" Class="DependencyModule">
+                    <Platform Name="Win64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployClass Name="AdditionalDebugSymbols">
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidServiceOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashImageDef">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_DefaultAppIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage426">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage470">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage640">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage960">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DebugSymbols">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyFramework">
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="DependencyPackage">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.bpl</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="File">
+                    <Platform Name="Android">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1024">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1536">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch2048">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch768">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch320">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceResourceRules"/>
+                <DeployClass Name="ProjectiOSEntitlements"/>
+                <DeployClass Name="ProjectiOSInfoPList"/>
+                <DeployClass Name="ProjectiOSResource">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXEntitlements"/>
+                <DeployClass Name="ProjectOSXInfoPList"/>
+                <DeployClass Name="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="ProjectOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Linux64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectUWPManifest">
+                    <Platform Name="Win32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_CppLogo150">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_CppLogo44">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+            </Deployment>
+            <Platforms>
+                <Platform value="Win32">False</Platform>
+                <Platform value="Win64">True</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+</Project>

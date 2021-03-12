@@ -1,0 +1,1 @@
+DELETE FROM RRSuprimento WHERE intEstudoId = [p_EstudoId] AND intRRSuprimentoId = [p_EquipId];

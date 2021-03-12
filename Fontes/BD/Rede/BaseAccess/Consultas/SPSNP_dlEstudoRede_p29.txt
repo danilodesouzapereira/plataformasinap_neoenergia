@@ -1,0 +1,4 @@
+A função 29 depende do tipo de arranjo passado.
+Os testes devem ser feitos no código C.
+
+MOdifiquei para 50, 51 e 52

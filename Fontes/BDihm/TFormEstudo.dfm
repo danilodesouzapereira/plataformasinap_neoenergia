@@ -1,0 +1,31 @@
+object FormEstudo: TFormEstudo
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  ClientHeight = 281
+  ClientWidth = 266
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TView: TTreeView
+    Left = 0
+    Top = 0
+    Width = 266
+    Height = 281
+    Align = alClient
+    BorderStyle = bsNone
+    Color = clSkyBlue
+    HideSelection = False
+    Indent = 19
+    ReadOnly = True
+    SortType = stText
+    TabOrder = 0
+    OnChange = TViewChange
+  end
+end

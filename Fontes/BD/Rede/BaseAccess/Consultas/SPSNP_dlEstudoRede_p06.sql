@@ -1,0 +1,1 @@
+DELETE FROM RRTrafo WHERE intEstudoId = [p_EstudoId] AND intRRTrafoId = [p_EquipId];

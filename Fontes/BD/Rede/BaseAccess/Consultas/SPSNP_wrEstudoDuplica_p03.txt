@@ -1,0 +1,2 @@
+O conjunto curva tem de ser duplicado também. Curvas típicas não são duplicadas (o id retornado é o mesmo).
+O id da curva nova é passado em p_ConjCurvaIdNovo

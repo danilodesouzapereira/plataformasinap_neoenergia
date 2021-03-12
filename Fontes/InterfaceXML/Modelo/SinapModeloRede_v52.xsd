@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML Studio - FREE Community Edition 7.0.2.746 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Concessionaria" type="TConcessionaria" />
+  <xs:complexType name="TCaboId">
+    <xs:annotation>
+      <xs:documentation>Identificador do tipo de cabo.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TCaboRGMR">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="id" type="TId">
+        <xs:annotation>
+          <xs:documentation>Identificador do cabo. Verificar tipo de dado identificador (TId).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblCorMax" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Corrente máxima admissível [ A ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblR" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Resistência [ ohm / km ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblGMR" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Raio médio geométrico [ mm ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TCaboZ0Z1">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="id" type="TId">
+        <xs:annotation>
+          <xs:documentation>Identificador do cabo. Verificar tipo de dado identificador (TId).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblCorMax" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Corrente máxima admissível [ A ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="zSeq" type="TZseq">
+        <xs:annotation>
+          <xs:documentation>Impedância de seqüência 0 [ ohm / km ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblCSeq" type="TCSeq">
+        <xs:annotation>
+          <xs:documentation>Capacitância de seqüência 0 [ nF / km ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TCnjEqBar">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Capacitor" nillable="true" type="TEqBarCapacitor" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Carga" nillable="true" type="TEqBarCarga">
+        <xs:annotation>
+          <xs:documentation>Carga com curva de demanda própria.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CargaIP" type="TEqBarCargaIP" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Filtro" nillable="true" type="TEqBarFiltro" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Gerador" nillable="true" type="TEqBarGerador" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Reator" nillable="true" type="TEqBarReator" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Suprimento" nillable="true" type="TEqBarSuprimento" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrafoZZ" nillable="true" type="TEqBarTrafoZZ" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Medidor" nillable="true" type="TEqBarMedidor">
+        <xs:annotation>
+          <xs:documentation>Carga com curva de demanda própria.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TCnjEqLig">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="CapacitorSerie" nillable="true" type="TEqLigCapacitorSerie" />
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Chave" nillable="true" type="TEqLigChave" />
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Regulador" nillable="true" type="TEqLigRegulador" />
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Trafo" nillable="true" type="TEqLigTrafo" />
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Trafo3E" nillable="true" type="TEqLigTrafo3E" />
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Trecho" nillable="true" type="TEqLigTrecho" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TConcessionaria">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" default="5.0" name="strVer" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Versão do documento.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="id" type="TId">
+        <xs:annotation>
+          <xs:documentation>Identificador da concessionária. Verificar tipo de dado identificador (TId).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Rede" nillable="true" type="TRede">
+        <xs:annotation>
+          <xs:documentation>Conjunto de redes existente na concessionária. Corresponde a um conjunto de entidades do tipo TRede e sua presença no arquivo XML não é obrigatória.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="CaboRGMR" nillable="true" type="TCaboRGMR" />
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="CaboZ0Z1" type="TCaboZ0Z1" />
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Suporte" type="TSuporte" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ArranjoZ0Z1" type="TArranjoZ0Z1" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ArranjoCaboZ0Z1" type="TArranjoCaboZ0Z1" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ArranjoCaboRGMR" type="TArranjoCaboRGMR" />
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="CurvaTipicaCarga" nillable="true" type="TCurvaTipica">
+        <xs:annotation>
+          <xs:documentation>Conjunto de curvas de carga. Corresponde a um conjunto de entidades do tipo TCurvaCarga e sua presença no arquivo XML não é obrigatória.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="CurvaTipicaCargaIP" nillable="true" type="TCurvaTipica">
+        <xs:annotation>
+          <xs:documentation>Conjunto de Curvas Típicas de Ilumnação Pública. Corresponde a um conjunto de entidades do tipo TCurvaTipica e sua presença no arquivo XML não é obrigatória.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="CurvaTipicaCapacitor" nillable="true" type="TCurvaTipica">
+        <xs:annotation>
+          <xs:documentation>Conjunto de Curvas Típicas de Carga. Corresponde a um conjunto de entidades do tipo TCurvaTipicaCarga e sua presença no arquivo XML não é obrigatória.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="CurvaTipicaReator" nillable="true" type="TCurvaTipica">
+        <xs:annotation>
+          <xs:documentation>Conjunto de Curvas Típicas de Reator. Corresponde a um conjunto de entidades do tipo TCurvaTipica e sua presença no arquivo XML não é obrigatória.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="CurvaTipicaGeradorFoto" nillable="true" type="TCurvaTipica">
+        <xs:annotation>
+          <xs:documentation>Conjunto de Curvas Típicas de Gerador. Corresponde a um conjunto de entidades do tipo TCurvaTipica e sua presença no arquivo XML não é obrigatória.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TCoord">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblX" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Posição da coordenada Y [ cm ].</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblY" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Posição da coordenada Y [ cm ].</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TCoordIco">
+    <xs:annotation>
+      <xs:documentation>Atributo para os Eqbar (capacitor, carga, filtro, gerador, reator, suprimento, trafo zig-zag).
+Posbar indica o ponto de ligação na barra no esquemático.
+Os valores dxbar e dybar indicam o deslocamento para desenho do ícone do eqpto (em relação ao ponto de ligação na barra).</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblDxBar" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Os valores dxbar e dybar indicam o deslocamento para desenho do ícone do eqpto (em relação ao ponto de ligação na barra).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="dblDyBar" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Os valores dxbar e dybar indicam o deslocamento para desenho do ícone do eqpto (em relação ao ponto de ligação na barra).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TCoordId">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="id" type="TId" />
+      <xs:element minOccurs="1" maxOccurs="1" name="strCod" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Código da coordenada (opcional)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="coordUTM" type="TCoord">
+        <xs:annotation>
+          <xs:documentation>Posição da coordenada X [ cm ].</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="coordESQ1" nillable="true" type="TCoord">
+        <xs:annotation>
+          <xs:documentation>Posição da coordenada Y [ cm ].</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="coordESQ2" nillable="true" type="TCoord">
+        <xs:annotation>
+          <xs:documentation>Posição da coordenada Y [ cm ].</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPosBar" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Posbar indica o ponto de ligação na barra no esquemático [ % ].
+</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="coordIco" nillable="true" type="TCoordIco" />
+      <xs:element minOccurs="1" maxOccurs="1" default="1" name="intCoordNdx" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Número sequencial de barras na mesma coordenada.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TCSeq">
+    <xs:sequence>
+      <xs:element name="dblC0" type="xs:double" />
+      <xs:element name="dblC1" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TPatamTip">
+    <xs:sequence>
+      <xs:element name="horIni" type="THorMin">
+        <xs:annotation>
+          <xs:documentation>Hora de início do patamar.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="horFim" type="THorMin">
+        <xs:annotation>
+          <xs:documentation>Hora final do patamar.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="intNumVal">
+        <xs:annotation>
+          <xs:documentation>Número de valores do patamar: 1 a 4.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+            <xs:maxInclusive value="4" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="4" name="dblVal" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência ativa [ kW ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TCurvaTipica">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="id" type="TId" />
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoCurva" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>curvaPQVT=1,  curvaPQ=2, curvaPQ_MDP=3, curvaPFP=4,  curvaPFP_MDP=5, curvaLD=6, curvaPQVIT=7, curvaHRM=8</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intUnidade" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>unidKV=1, unidKVA=2, unidMVA=3, unidPU=4, unidPU_MED=5, unidPU_MAX=6, unidA=7,  unidON_OFF;
+</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intEscala" type="xs:integer" />
+      <xs:element minOccurs="0" maxOccurs="1" name="intTpoCons" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de consumidor: Residencial=0, Comercial=1, Industrial=2, Rural=3 e Outros=4</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="dblEneMin" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Energia consumida (mínima) [ kWh / mês ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="dblEneMax" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Energia consumida (máxima) [ kWh / mês ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intAno" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Ano a que se rfere a curva</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intMes" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Mês a que se refere a curva</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="intNumPat">
+        <xs:annotation>
+          <xs:documentation>Número de patamares: 24, 96, 144, 288</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="24" />
+            <xs:enumeration value="96" />
+            <xs:enumeration value="144" />
+            <xs:enumeration value="288" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Patamar" type="TPatamTip">
+        <xs:annotation>
+          <xs:documentation>Conjunto de patamares</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEnrol">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="intId" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Identificador do enrolamento: Primário = 1, Secundário = 2</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoLig" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de ligação: 0=delta, 1= Y isolado, 2=Y aterrado</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão Nominal [ kV ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblTnsNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão Nominal [ kV ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblTnsTap" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão Tap [ kV ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblAngDef" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Ângulo de defasagem [ graus ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="zTerra" type="TZ">
+        <xs:annotation>
+          <xs:documentation>pu se SNom [ ohm ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="strFases" type="TFases">
+        <xs:annotation>
+          <xs:documentation>Modelo de carga (pu): I constante=1, S constante=2 ou Z constante=3</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqBarCapacitor">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqbar" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoLig" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de ligação: 0=delta, 1= Y isolado, 2=Y aterrado</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblTnsNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão Nominal [ kV ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotRtv" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência Reativa [ MVAr ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqBarCarga">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqbar" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoCons" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de consumidor: Residencial=0, Comercial=1, Industrial=2, Rural=3 e Outros=4</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoModCrg" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Modelo de carga (pu): I constante=1, S constante=2 ou Z constante=3</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblEne" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Energia [ MWh ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="intNumCons" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Modelo de carga (pu): I constante=1, S constante=2 ou Z constante=3</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="strFases" type="TFases">
+        <xs:annotation>
+          <xs:documentation>Fases em que o equipamento está conectado. Verificar o tipo TFases.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Patamar" nillable="true" type="TPatamProp" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqBarCargaIP">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqbar" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="strFases" type="TFases">
+        <xs:annotation>
+          <xs:documentation>Modelo de carga (pu): I constante=1, S constante=2 ou Z constante=3</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="dblPotAtv" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência ativa [ kW ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblFtrPot" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Fator de potência limite [ adimensional ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intNumLamp" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Modelo de carga (pu): I constante=1, S constante=2 ou Z constante=3</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqBarFiltro">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqbar" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="dblTnsNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão Nominal [ kV ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência Nominal [ kVA ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="z0" type="TZ">
+        <xs:annotation>
+          <xs:documentation>pu se SNom [ ohm ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqBarGerador">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqbar" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoLig" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de ligação: 0=delta, 1= Y isolado, 2=Y aterrado</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoSup" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de suprimento: supPV = 1, supPQ = 2, supVF = 3</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblTnsNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão Nominal [ kV ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência Nominal [ MVA ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotMax" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência máxima [ MVA ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblFtrPotLim" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Fator de potência limite [ adimensional ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="zSeq" type="TZseq">
+        <xs:annotation>
+          <xs:documentation>pu se SNom [ ohm ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Patamar" type="TPatamProp" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqBarMedidor">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqbar" type="TEqpto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqBarReator">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqbar" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoLig" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de ligação: 0=delta, 1= Y isolado, 2=Y aterrado</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblTnsNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão Nominal [ kV ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotRtv" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência Reativa [ MVAr ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqBarSuprimento">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqbar" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoSup" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de suprimento: supPV = 1, supPQ = 2, supVF = 3</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotMax" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência máxima [ MVA ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="cpxPotCC3f" type="TPotCpx">
+        <xs:annotation>
+          <xs:documentation>Potência de curto circuito - Trifásico [ kW ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="cpxPotCCFt" type="TPotCpx">
+        <xs:annotation>
+          <xs:documentation>Potência de curto circuito - Fase-Terra [ kW ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblTnsNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão Nominal [ kV ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="zEqv" type="TZseq">
+        <xs:annotation>
+          <xs:documentation>impedância equivalente em pu, Sb=100MVA [ ohm ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Patamar" type="TPatamProp" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqBarTrafoZZ">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqbar" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="dblTnsNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão Nominal [ kV ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência Nominal [ MVA ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="z0" type="TZ">
+        <xs:annotation>
+          <xs:documentation>pu se SNom [ ohm ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqLigCapacitorSerie">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqlig" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="dblTnsNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão Nominal [ kV ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência Nominal [ kVA ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="z" type="TZ">
+        <xs:annotation>
+          <xs:documentation>pu se SNom [ ohm ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqLigChave">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqlig" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="strTpoChv" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Tipo da chave.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intEst" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Estado da chave (0 = aberto, 1 = fechado)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="bolBlq" type="xs:boolean">
+        <xs:annotation>
+          <xs:documentation>Chave bloqueada = 1, não bloqueada = 0.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblCorNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Corrente Nominal [ A ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqLigRegulador">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqlig" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoLig" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de ligação: 0=delta, 1= Y isolado, 2=Y aterrado</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência Nominal [ kVA ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="bolBypass" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="dblFxaVar" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Faixa de variação de tensão [ % ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intPasNum" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Número de passos disponíveis para seleção.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="bolSntRev" type="xs:boolean">
+        <xs:annotation>
+          <xs:documentation>Indica se o sentido é reversível (1=Reversível, 0=Não reversível)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="coordBarRefSnt" type="TCoordId">
+        <xs:annotation>
+          <xs:documentation>Coordenadas da barra de referência (sentido)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="zSeq" type="TZseq">
+        <xs:annotation>
+          <xs:documentation>pu se SNom [ ohm ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:choice>
+        <xs:element name="regTapFix" type="TRegTapFix" />
+        <xs:element name="regTapAjs" type="TRegTapAjs" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqLigTrafo">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqlig" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoLig" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de ligação: 0=delta, 1= Y isolado, 2=Y aterrado</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="bolAuto" type="xs:boolean">
+        <xs:annotation>
+          <xs:documentation>Indica se é um auto-trafo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotNom" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência Nominal [ kVA ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPerFer" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Perdas no ferro (% da potência nominal) [ % ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="2" maxOccurs="2" name="Enrol" type="TEnrol">
+        <xs:annotation>
+          <xs:documentation>Propriedades de cada enrolamento do transformador.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="ltc" type="TLtc">
+        <xs:annotation>
+          <xs:documentation>LTC - Load Tap Changer</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="zSeq" type="TZseq">
+        <xs:annotation>
+          <xs:documentation>pu se SNom [ ohm ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqLigTrafo3E">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqlig" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoLig" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de ligação: 0=delta, 1= Y isolado, 2=Y aterrado</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotBas" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência Base [ kVA ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPerFer" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Perdas no ferro (% da potência nominal) [ % ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="3" maxOccurs="3" name="Enrol" type="TEnrol">
+        <xs:annotation>
+          <xs:documentation>Propriedades de cada enrolamento do transformador.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="zSeqPS" type="TZseq">
+        <xs:annotation>
+          <xs:documentation>pu se SNom [ ohm ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="zSeqPT" type="TZseq">
+        <xs:annotation>
+          <xs:documentation>pu se SNom [ ohm ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="zSeqST" type="TZseq">
+        <xs:annotation>
+          <xs:documentation>pu se SNom [ ohm ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqLigTrecho">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="eqlig" type="TEqpto" />
+      <xs:element minOccurs="1" maxOccurs="1" name="bolTip" type="xs:boolean">
+        <xs:annotation>
+          <xs:documentation>Arranjo típico. Típico=1, Atípico=0</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="bolEql" type="xs:boolean">
+        <xs:annotation>
+          <xs:documentation>Arranjo equilibrado: Equilibrado=1, Desequilibrado=0</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblCmp" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Comprimento [ km ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="trcTpo" type="TTrcTpo">
+        <xs:annotation>
+          <xs:documentation>Comprimento [ km ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TEqpto">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="id" type="TId" />
+      <xs:element minOccurs="1" maxOccurs="3" name="coordId" type="TCoordId">
+        <xs:annotation>
+          <xs:documentation>Coordenadas do equipamento.
+Para EqBar, deve existir somente uma coordenada. No caso de ligações, podem ser 2 ou 3 coordenadas (trafo de 3 enrolamentos).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Medicao" nillable="true" type="TMedicao" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="THorMin">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="intHor">
+        <xs:annotation>
+          <xs:documentation>Hora</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="23" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intMin">
+        <xs:annotation>
+          <xs:documentation>Minuto</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="59" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TId">
+    <xs:annotation>
+      <xs:documentation>Tipo de dado referente à identificação de uma entidade.
+</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="intId" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Identificador numérico propriamente dito (inteiro).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="strCod" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Código alfanumérico da identificação (string)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="strDsc" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Descrição da identificação (string)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="strExtId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Identificador externo da entidade (string).
+Pode, por exemplo, ser utilizado para associar o identificador intId a algum identificador físico existente na concessionária (como identificação de bem patrimonial, número de série de um equipamento, etc.).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TLtc">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoUtl" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de utilização: 0=Não utilizado, 1=Primário, 2=secundário</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblTns" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão [ pu ]
+Lista de valores </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="coordBarCtl" type="TCoordId">
+        <xs:annotation>
+          <xs:documentation>Coordenadas da barra controlada</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TMedicao">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="medidorId" type="TId">
+        <xs:annotation>
+          <xs:documentation>Identificador do medidor associado ao canal.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="canalId" type="TId">
+        <xs:annotation>
+          <xs:documentation>Identificador do canal.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intTpoCnl" nillable="true" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Tipo de canal de medição.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblSigmaCnl" nillable="true" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Preisão do canal de medição.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Patamar" type="TPatamProp" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TMutua">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="id" type="TId" />
+      <xs:element name="intRedeId" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Identificador da Rede.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="2" maxOccurs="2" name="MutuaTre" type="TMutuaTre">
+        <xs:annotation>
+          <xs:documentation>Sentido do Trecho 2 (12 ou 21).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="zSeq" type="TZseq">
+        <xs:annotation>
+          <xs:documentation>Impedância de seqüência.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TMutuaTre">
+    <xs:sequence>
+      <xs:element name="intId">
+        <xs:annotation>
+          <xs:documentation>Identificador do Trecho.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer" />
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="intSentido">
+        <xs:annotation>
+          <xs:documentation>Sentido da Mútua no trecho (12 ou 21).</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="12" />
+            <xs:enumeration value="21" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="dblPos" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Posição do trecho.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TPotCpx">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotAtv" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência Ativa [ kVA ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblPotRtv" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência Reativa [ MVAr ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TRede">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="id" type="TId" />
+      <xs:element name="strTpo" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Tipo da rede: Secundário, Primário, ETD, Mini-reticulado, Subtransmissão e ETT.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="cnjEqBar" nillable="true" type="TCnjEqBar">
+        <xs:annotation>
+          <xs:documentation>Equipamento de Barra</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="cnjEqLig" nillable="true" type="TCnjEqLig">
+        <xs:annotation>
+          <xs:documentation>Equipamento de ligação</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Mutua" nillable="true" type="TMutua" />
+      <xs:element name="strDominio" type="xs:string" />
+      <xs:element name="strCluster" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TRegTapAjs">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" default="-666" name="dblTnsAlvo" type="xs:double">
+        <xs:annotation>
+          <xs:documentation />
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="coordBarRefCfg" type="TCoordId">
+        <xs:annotation>
+          <xs:documentation>Coordenadas da barra de referência (configuração automática)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TRegTapFix">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" default="-1" name="intPasSel" type="xs:integer">
+        <xs:annotation>
+          <xs:documentation>Passo selecionado</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TSuporte">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="id" type="TId" />
+      <xs:element minOccurs="1" maxOccurs="1" name="strTpo" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Tipo de suporte: Aéreo ou Subterrâneo.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblTnsMin" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão mínima [ kV ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblTnsMax" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Tensão máxima [ kV ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="PtoFix" type="TSuportePtoFix" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TSuportePtoFix">
+    <xs:sequence>
+      <xs:element name="intId" type="xs:integer" />
+      <xs:element name="coordPnt" type="TCoord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TSuportePtoFixCabo">
+    <xs:sequence>
+      <xs:element name="intId" type="xs:integer" />
+      <xs:element name="strFase" type="TFases" />
+      <xs:element name="intCaboId" type="xs:integer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TArranjoZ0Z1">
+    <xs:sequence>
+      <xs:element name="id" type="TId" />
+      <xs:element name="strFases" type="TFases" />
+      <xs:element name="dblCorMax" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="zSeq" type="TZseq">
+        <xs:annotation>
+          <xs:documentation>Impedância de seqüência 0 [ ohm / km ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblCSeq" type="TCSeq">
+        <xs:annotation>
+          <xs:documentation>Capacitância de seqüência 0 [ nF / km ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TArranjoCaboZ0Z1">
+    <xs:sequence>
+      <xs:element name="id" type="TId" />
+      <xs:element name="strFases" type="TFases" />
+      <xs:element name="intCaboId" type="xs:integer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TArranjoCaboRGMR">
+    <xs:sequence>
+      <xs:element name="id" type="TId" />
+      <xs:element name="strFases" type="TFases" />
+      <xs:element name="intSuporteId" type="xs:integer" />
+      <xs:element maxOccurs="unbounded" name="PtoFix" type="TSuportePtoFixCabo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TTrcTpo">
+    <xs:annotation>
+      <xs:documentation>Tipo do Trecho.</xs:documentation>
+    </xs:annotation>
+    <xs:choice>
+      <xs:element name="trcTpo01" type="TTrcTpo01" />
+      <xs:element name="trcTpo02" type="TTrcTpo02" />
+      <xs:element name="trcTpo03" type="TTrcTpo03" />
+      <xs:element minOccurs="0" maxOccurs="1" name="strCodArr" type="xs:string" />
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="TTrcTpo01">
+    <xs:annotation>
+      <xs:documentation>Trecho tipo 01.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="caboId" type="TCaboId" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TTrcTpo02">
+    <xs:annotation>
+      <xs:documentation>Trecho tipo 02.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="strEstGeoId" type="xs:string" />
+      <xs:element name="caboIdA" type="TCaboId" />
+      <xs:element name="caboIdB" type="TCaboId" />
+      <xs:element name="caboIdC" type="TCaboId" />
+      <xs:element name="caboIdN" type="TCaboId" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TTrcTpo03">
+    <xs:annotation>
+      <xs:documentation>Trecho tipo 03.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="zSeq" type="TZseq" />
+      <xs:element name="cSeq" type="TCSeq" />
+      <xs:element minOccurs="1" maxOccurs="1" name="dblCorMax" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Capacidade [ A ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TZ">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblR" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Resistência de seqüência [ ohm / km ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="dblX" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Reatância de seqüência [ ohm / km ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TZseq">
+    <xs:annotation>
+      <xs:documentation>Impedância de seqüência.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="z0" type="TZ">
+        <xs:annotation>
+          <xs:documentation>Impedância de seqüência zero [ ohm / km ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="z1" type="TZ">
+        <xs:annotation>
+          <xs:documentation>Impedância de seqüência um [ ohm / km ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TZId">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="id" type="TId">
+        <xs:annotation>
+          <xs:documentation>Identificador do tipo de rede.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="1" maxOccurs="1" name="z" type="TZ">
+        <xs:annotation>
+          <xs:documentation>Impedância [ ohm / km ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="TFases">
+    <xs:annotation>
+      <xs:documentation>Indica as fases em que o dispositivo está conectado. Ex.: AB, BC, etc.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:complexType name="TPatamProp">
+    <xs:sequence>
+      <xs:element name="horIni" type="THorMin" />
+      <xs:element name="horFim" type="THorMin" />
+      <xs:element name="dblPotAtv" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência ativa [ kW ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="dblPotRtv" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Potência Reativa [ kVAr ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="dblMdlTns" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>Módulo tensão [ pu ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="dblAng" type="xs:double">
+        <xs:annotation>
+          <xs:documentation>ângulo da tensão [ graus ]</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

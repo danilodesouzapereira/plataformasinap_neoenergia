@@ -1,0 +1,1 @@
+DELETE FROM ObraAtribExt WHERE intEstudoId = [p_EstudoId];

@@ -1,0 +1,1 @@
+  SELECT    TipoConsumidor.intTipoConsId AS TipoConsId,    TipoConsumidor.intTag        AS Tag,    TipoConsumidor.strDescricao  AS Descricao,    TipoConsumidor.bolTipico     AS Tipico,    TipoConsumidor.intCorId      AS Cor  FROM    TipoConsumidor;    

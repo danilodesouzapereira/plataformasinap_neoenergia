@@ -1,0 +1,10 @@
+Verificar se o ArranjoId > 0
+  SELECT
+    IIF(ISNULL(Trecho.intArranjoId, -1)
+  INTO
+    ArranjoId
+  FROM
+    Trecho
+  WHERE
+    Trecho.intEstudoId = [p_EstudoId] AND
+    Trecho.intTrechoId = [p_EquipId];

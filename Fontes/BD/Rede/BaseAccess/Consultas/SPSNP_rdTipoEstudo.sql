@@ -1,0 +1,4 @@
+  SELECT
+    TipoEstudo.*
+  FROM
+    TipoEstudo;

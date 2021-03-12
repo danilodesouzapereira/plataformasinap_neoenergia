@@ -1,0 +1,3 @@
+O passo Zero é a montagem da lista de equipamentos (EqBar e Eqlig) e curvas a serem deletados.
+No Access, essa lista está em memória.
+A remoção dos equipamentos será efetuada por meio das listas existentes em memória.

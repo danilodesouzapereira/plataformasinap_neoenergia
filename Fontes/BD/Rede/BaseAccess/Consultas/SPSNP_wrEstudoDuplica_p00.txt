@@ -1,0 +1,1 @@
+Tem que chamar SPSNP_wrEstudo para gerar o código do estudo cópia.

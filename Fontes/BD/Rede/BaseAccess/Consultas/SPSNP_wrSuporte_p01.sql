@@ -1,0 +1,1 @@
+    INSERT INTO      Suporte ( strDescricao, strExtId, fltVmin, fltVmax, intNumPontosFix, intStatus, intSuporteId, intTipoSuporteId )    VALUES      ( [p_Descricao], [p_ExtId], [p_Vmin], [p_Vmax], [p_NumPontosFix], [p_Status], [p_SuporteId], [p_TipoSuporteId] );

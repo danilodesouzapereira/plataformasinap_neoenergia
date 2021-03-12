@@ -1,0 +1,3148 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{14DC1FAB-7D62-4C48-BA0E-7093F7A77578}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\BPR_Stub\AjusteDemanda\AjusteDemanda.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Alerta\Alerta.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\AlocaCapacitor\AlocaCapacitor.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\AlocaRegulador\AlocaRegulador.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Arranjo\Arranjo.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\AutoTag\AutoTag.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Balanceamento\Balanceamento.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\BatchProcess\BatchProcess.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\BD\BD.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\BDihm\BDihm.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\BDlicenca\BDlicenca.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\BDadoParam\BDadoParam.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Bloco\Bloco.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Busca\Busca.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\CalcIndCont\CalcIndCont.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Cartografia\Cartografia.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Cfg\Cfg.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Classes\Classes.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Confiabilidade\Confiabilidade.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Compensacoes\Compensacoes.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Consulta\Consulta.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Cronometro\Cronometro.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Copia\Copia.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Curto\Curto.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\CurtoCircuito\CurtoCircuito.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Curvas\Curvas.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\CustoNodal\CustoNodal.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Debug\Debug.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\DensidadeCarga\DensidadeCarga.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Diagnostico\Diagnostico.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Diretorio\Diretorio.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Distancia\Distancia.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Edita\Edita.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Editor\Editor.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Equivalente\Equivalente.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Eqv1\Eqv1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Eqv3\Eqv3.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Especial\Especial.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Esquematico\Esquematico.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\EstimaDemanda\EstimaDemanda.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Estimador1\Estimador1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Estimador3\Estimador3.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\EstimaEstado\EstimaEstado.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Estudo\Estudo.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Explorer\Explorer.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Fasometro\Fasometro.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Figura\Figura.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Flow\Flow.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\FluxoCC\FluxoCC.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\FluxoG1\FluxoG1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\FluxoG3\FluxoG3.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\FluxoH3\FluxoH3.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\FluxoNR1\FluxoNR1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\FluxoNR3\FluxoNR3.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\FluxoRadial1\FluxoRadial1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Funcao\Funcao.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Gateway\Gateway.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Gauss1\Gauss1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Gauss3\Gauss3.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Geral\Geral.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\GestaoLicenca\GestaoLicenca.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Grafico\Grafico.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Help\Help.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Historico\Historico.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Importa\Importa.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\IhmCustoNodal\IhmCustoNodal.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\ImportaAnafas\ImportaAnafas.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\ImportaAnarede\ImportaAnarede.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\ImportaCurva\ImportaCurva.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\ImportaMedicao\ImportaMedicao.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\InterfaceANEEL\InterfaceANEEL.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\ImportaBDGD\ImportaBDGD.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\InterfaceNIX\InterfaceNIX.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\ImportaRedeGIS\ImportaRedeGIS.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\InfoZcc\InfoZcc.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\InterfaceTXT\InterfaceTXT.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\InterfaceWS\InterfaceWS.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\InterfaceXML\InterfaceXML.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\InterfaceODSS\InterfaceODSS.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Legenda\Legenda.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Licenca\Licenca.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\LocalDB\LocalDB.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Localiza\Localiza.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Log\Log.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Login\Login.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Manobra\Manobra.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Mapa\Mapa.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\MapaTematico\MapaTematico.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Medidor\Medidor.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Mercado\Mercado.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Micro\Micro.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Monopolar\Monopolar.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\MontaZ\MontaZ.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\MultiObra\MultiObra.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\NR1\NR1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\NR3\NR3.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Ordena\Ordena.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Patamar\Patamar.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Perdatec\Perdatec.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Planejamento\Planejamento.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Potencia\Potencia.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Produto\Produto.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Progresso\Progresso.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Protecao\Protecao.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Protesw\Protesw.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Radial\Radial.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\RBAC\RBAC.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Reclamacao\Reclamacao.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Rede\Rede.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\RedeCC\RedeCC.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\RedeFH\RedeFH.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Redegraf\Redegraf.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Redutor\Redutor.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Registro\Registro.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Relatorio\Relatorio.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\RelatorioJusante\RelatorioJusante.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\RelatorioTensao\RelatorioTensao.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Report\Report.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\ResCC\ResCC.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Servidor\Servidor.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Simulador\Simulador.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\SinapApl\SinapApl.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\SinapToolKit\SinapToolKit.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\SisLin\SisLin.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Spy\Spy.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Stk\Stk.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Topologia\Topologia.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\WebService\WebService.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Wizard\Wizard.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR_Stub\Zona\Zona.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AjusteDemanda">
+        <MSBuild Projects="..\BPR_Stub\AjusteDemanda\AjusteDemanda.cbproj"/>
+    </Target>
+    <Target Name="AjusteDemanda:Clean">
+        <MSBuild Projects="..\BPR_Stub\AjusteDemanda\AjusteDemanda.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AjusteDemanda:Make">
+        <MSBuild Projects="..\BPR_Stub\AjusteDemanda\AjusteDemanda.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Alerta">
+        <MSBuild Projects="..\BPR_Stub\Alerta\Alerta.cbproj"/>
+    </Target>
+    <Target Name="Alerta:Clean">
+        <MSBuild Projects="..\BPR_Stub\Alerta\Alerta.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Alerta:Make">
+        <MSBuild Projects="..\BPR_Stub\Alerta\Alerta.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="AlocaCapacitor">
+        <MSBuild Projects="..\BPR_Stub\AlocaCapacitor\AlocaCapacitor.cbproj"/>
+    </Target>
+    <Target Name="AlocaCapacitor:Clean">
+        <MSBuild Projects="..\BPR_Stub\AlocaCapacitor\AlocaCapacitor.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AlocaCapacitor:Make">
+        <MSBuild Projects="..\BPR_Stub\AlocaCapacitor\AlocaCapacitor.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="AlocaRegulador">
+        <MSBuild Projects="..\BPR_Stub\AlocaRegulador\AlocaRegulador.cbproj"/>
+    </Target>
+    <Target Name="AlocaRegulador:Clean">
+        <MSBuild Projects="..\BPR_Stub\AlocaRegulador\AlocaRegulador.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AlocaRegulador:Make">
+        <MSBuild Projects="..\BPR_Stub\AlocaRegulador\AlocaRegulador.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Arranjo">
+        <MSBuild Projects="..\BPR_Stub\Arranjo\Arranjo.cbproj"/>
+    </Target>
+    <Target Name="Arranjo:Clean">
+        <MSBuild Projects="..\BPR_Stub\Arranjo\Arranjo.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Arranjo:Make">
+        <MSBuild Projects="..\BPR_Stub\Arranjo\Arranjo.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="AutoTag">
+        <MSBuild Projects="..\BPR_Stub\AutoTag\AutoTag.cbproj"/>
+    </Target>
+    <Target Name="AutoTag:Clean">
+        <MSBuild Projects="..\BPR_Stub\AutoTag\AutoTag.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AutoTag:Make">
+        <MSBuild Projects="..\BPR_Stub\AutoTag\AutoTag.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Balanceamento">
+        <MSBuild Projects="..\BPR_Stub\Balanceamento\Balanceamento.cbproj"/>
+    </Target>
+    <Target Name="Balanceamento:Clean">
+        <MSBuild Projects="..\BPR_Stub\Balanceamento\Balanceamento.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Balanceamento:Make">
+        <MSBuild Projects="..\BPR_Stub\Balanceamento\Balanceamento.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="BatchProcess">
+        <MSBuild Projects="..\BPR_Stub\BatchProcess\BatchProcess.cbproj"/>
+    </Target>
+    <Target Name="BatchProcess:Clean">
+        <MSBuild Projects="..\BPR_Stub\BatchProcess\BatchProcess.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BatchProcess:Make">
+        <MSBuild Projects="..\BPR_Stub\BatchProcess\BatchProcess.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="BD">
+        <MSBuild Projects="..\BPR_Stub\BD\BD.cbproj"/>
+    </Target>
+    <Target Name="BD:Clean">
+        <MSBuild Projects="..\BPR_Stub\BD\BD.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BD:Make">
+        <MSBuild Projects="..\BPR_Stub\BD\BD.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="BDihm">
+        <MSBuild Projects="..\BPR_Stub\BDihm\BDihm.cbproj"/>
+    </Target>
+    <Target Name="BDihm:Clean">
+        <MSBuild Projects="..\BPR_Stub\BDihm\BDihm.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BDihm:Make">
+        <MSBuild Projects="..\BPR_Stub\BDihm\BDihm.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="BDlicenca">
+        <MSBuild Projects="..\BPR_Stub\BDlicenca\BDlicenca.cbproj"/>
+    </Target>
+    <Target Name="BDlicenca:Clean">
+        <MSBuild Projects="..\BPR_Stub\BDlicenca\BDlicenca.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BDlicenca:Make">
+        <MSBuild Projects="..\BPR_Stub\BDlicenca\BDlicenca.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="BDadoParam">
+        <MSBuild Projects="..\BPR_Stub\BDadoParam\BDadoParam.cbproj"/>
+    </Target>
+    <Target Name="BDadoParam:Clean">
+        <MSBuild Projects="..\BPR_Stub\BDadoParam\BDadoParam.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BDadoParam:Make">
+        <MSBuild Projects="..\BPR_Stub\BDadoParam\BDadoParam.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Bloco">
+        <MSBuild Projects="..\BPR_Stub\Bloco\Bloco.cbproj"/>
+    </Target>
+    <Target Name="Bloco:Clean">
+        <MSBuild Projects="..\BPR_Stub\Bloco\Bloco.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Bloco:Make">
+        <MSBuild Projects="..\BPR_Stub\Bloco\Bloco.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Busca">
+        <MSBuild Projects="..\BPR_Stub\Busca\Busca.cbproj"/>
+    </Target>
+    <Target Name="Busca:Clean">
+        <MSBuild Projects="..\BPR_Stub\Busca\Busca.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Busca:Make">
+        <MSBuild Projects="..\BPR_Stub\Busca\Busca.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="CalcIndCont">
+        <MSBuild Projects="..\BPR_Stub\CalcIndCont\CalcIndCont.cbproj"/>
+    </Target>
+    <Target Name="CalcIndCont:Clean">
+        <MSBuild Projects="..\BPR_Stub\CalcIndCont\CalcIndCont.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CalcIndCont:Make">
+        <MSBuild Projects="..\BPR_Stub\CalcIndCont\CalcIndCont.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Cartografia">
+        <MSBuild Projects="..\BPR_Stub\Cartografia\Cartografia.cbproj"/>
+    </Target>
+    <Target Name="Cartografia:Clean">
+        <MSBuild Projects="..\BPR_Stub\Cartografia\Cartografia.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Cartografia:Make">
+        <MSBuild Projects="..\BPR_Stub\Cartografia\Cartografia.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Cfg">
+        <MSBuild Projects="..\BPR_Stub\Cfg\Cfg.cbproj"/>
+    </Target>
+    <Target Name="Cfg:Clean">
+        <MSBuild Projects="..\BPR_Stub\Cfg\Cfg.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Cfg:Make">
+        <MSBuild Projects="..\BPR_Stub\Cfg\Cfg.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Classes">
+        <MSBuild Projects="..\BPR_Stub\Classes\Classes.cbproj"/>
+    </Target>
+    <Target Name="Classes:Clean">
+        <MSBuild Projects="..\BPR_Stub\Classes\Classes.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Classes:Make">
+        <MSBuild Projects="..\BPR_Stub\Classes\Classes.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Confiabilidade">
+        <MSBuild Projects="..\BPR_Stub\Confiabilidade\Confiabilidade.cbproj"/>
+    </Target>
+    <Target Name="Confiabilidade:Clean">
+        <MSBuild Projects="..\BPR_Stub\Confiabilidade\Confiabilidade.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Confiabilidade:Make">
+        <MSBuild Projects="..\BPR_Stub\Confiabilidade\Confiabilidade.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Compensacoes">
+        <MSBuild Projects="..\BPR_Stub\Compensacoes\Compensacoes.cbproj"/>
+    </Target>
+    <Target Name="Compensacoes:Clean">
+        <MSBuild Projects="..\BPR_Stub\Compensacoes\Compensacoes.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Compensacoes:Make">
+        <MSBuild Projects="..\BPR_Stub\Compensacoes\Compensacoes.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Consulta">
+        <MSBuild Projects="..\BPR_Stub\Consulta\Consulta.cbproj"/>
+    </Target>
+    <Target Name="Consulta:Clean">
+        <MSBuild Projects="..\BPR_Stub\Consulta\Consulta.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Consulta:Make">
+        <MSBuild Projects="..\BPR_Stub\Consulta\Consulta.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Cronometro">
+        <MSBuild Projects="..\BPR_Stub\Cronometro\Cronometro.cbproj"/>
+    </Target>
+    <Target Name="Cronometro:Clean">
+        <MSBuild Projects="..\BPR_Stub\Cronometro\Cronometro.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Cronometro:Make">
+        <MSBuild Projects="..\BPR_Stub\Cronometro\Cronometro.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Copia">
+        <MSBuild Projects="..\BPR_Stub\Copia\Copia.cbproj"/>
+    </Target>
+    <Target Name="Copia:Clean">
+        <MSBuild Projects="..\BPR_Stub\Copia\Copia.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Copia:Make">
+        <MSBuild Projects="..\BPR_Stub\Copia\Copia.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Curto">
+        <MSBuild Projects="..\BPR_Stub\Curto\Curto.cbproj"/>
+    </Target>
+    <Target Name="Curto:Clean">
+        <MSBuild Projects="..\BPR_Stub\Curto\Curto.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Curto:Make">
+        <MSBuild Projects="..\BPR_Stub\Curto\Curto.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="CurtoCircuito">
+        <MSBuild Projects="..\BPR_Stub\CurtoCircuito\CurtoCircuito.cbproj"/>
+    </Target>
+    <Target Name="CurtoCircuito:Clean">
+        <MSBuild Projects="..\BPR_Stub\CurtoCircuito\CurtoCircuito.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CurtoCircuito:Make">
+        <MSBuild Projects="..\BPR_Stub\CurtoCircuito\CurtoCircuito.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Curvas">
+        <MSBuild Projects="..\BPR_Stub\Curvas\Curvas.cbproj"/>
+    </Target>
+    <Target Name="Curvas:Clean">
+        <MSBuild Projects="..\BPR_Stub\Curvas\Curvas.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Curvas:Make">
+        <MSBuild Projects="..\BPR_Stub\Curvas\Curvas.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="CustoNodal">
+        <MSBuild Projects="..\BPR_Stub\CustoNodal\CustoNodal.cbproj"/>
+    </Target>
+    <Target Name="CustoNodal:Clean">
+        <MSBuild Projects="..\BPR_Stub\CustoNodal\CustoNodal.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustoNodal:Make">
+        <MSBuild Projects="..\BPR_Stub\CustoNodal\CustoNodal.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Debug">
+        <MSBuild Projects="..\BPR_Stub\Debug\Debug.cbproj"/>
+    </Target>
+    <Target Name="Debug:Clean">
+        <MSBuild Projects="..\BPR_Stub\Debug\Debug.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Debug:Make">
+        <MSBuild Projects="..\BPR_Stub\Debug\Debug.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="DensidadeCarga">
+        <MSBuild Projects="..\BPR_Stub\DensidadeCarga\DensidadeCarga.cbproj"/>
+    </Target>
+    <Target Name="DensidadeCarga:Clean">
+        <MSBuild Projects="..\BPR_Stub\DensidadeCarga\DensidadeCarga.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DensidadeCarga:Make">
+        <MSBuild Projects="..\BPR_Stub\DensidadeCarga\DensidadeCarga.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Diagnostico">
+        <MSBuild Projects="..\BPR_Stub\Diagnostico\Diagnostico.cbproj"/>
+    </Target>
+    <Target Name="Diagnostico:Clean">
+        <MSBuild Projects="..\BPR_Stub\Diagnostico\Diagnostico.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Diagnostico:Make">
+        <MSBuild Projects="..\BPR_Stub\Diagnostico\Diagnostico.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Diretorio">
+        <MSBuild Projects="..\BPR_Stub\Diretorio\Diretorio.cbproj"/>
+    </Target>
+    <Target Name="Diretorio:Clean">
+        <MSBuild Projects="..\BPR_Stub\Diretorio\Diretorio.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Diretorio:Make">
+        <MSBuild Projects="..\BPR_Stub\Diretorio\Diretorio.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Distancia">
+        <MSBuild Projects="..\BPR_Stub\Distancia\Distancia.cbproj"/>
+    </Target>
+    <Target Name="Distancia:Clean">
+        <MSBuild Projects="..\BPR_Stub\Distancia\Distancia.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Distancia:Make">
+        <MSBuild Projects="..\BPR_Stub\Distancia\Distancia.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Edita">
+        <MSBuild Projects="..\BPR_Stub\Edita\Edita.cbproj"/>
+    </Target>
+    <Target Name="Edita:Clean">
+        <MSBuild Projects="..\BPR_Stub\Edita\Edita.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Edita:Make">
+        <MSBuild Projects="..\BPR_Stub\Edita\Edita.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Editor">
+        <MSBuild Projects="..\BPR_Stub\Editor\Editor.cbproj"/>
+    </Target>
+    <Target Name="Editor:Clean">
+        <MSBuild Projects="..\BPR_Stub\Editor\Editor.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Editor:Make">
+        <MSBuild Projects="..\BPR_Stub\Editor\Editor.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Equivalente">
+        <MSBuild Projects="..\BPR_Stub\Equivalente\Equivalente.cbproj"/>
+    </Target>
+    <Target Name="Equivalente:Clean">
+        <MSBuild Projects="..\BPR_Stub\Equivalente\Equivalente.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Equivalente:Make">
+        <MSBuild Projects="..\BPR_Stub\Equivalente\Equivalente.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Eqv1">
+        <MSBuild Projects="..\BPR_Stub\Eqv1\Eqv1.cbproj"/>
+    </Target>
+    <Target Name="Eqv1:Clean">
+        <MSBuild Projects="..\BPR_Stub\Eqv1\Eqv1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Eqv1:Make">
+        <MSBuild Projects="..\BPR_Stub\Eqv1\Eqv1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Eqv3">
+        <MSBuild Projects="..\BPR_Stub\Eqv3\Eqv3.cbproj"/>
+    </Target>
+    <Target Name="Eqv3:Clean">
+        <MSBuild Projects="..\BPR_Stub\Eqv3\Eqv3.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Eqv3:Make">
+        <MSBuild Projects="..\BPR_Stub\Eqv3\Eqv3.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Especial">
+        <MSBuild Projects="..\BPR_Stub\Especial\Especial.cbproj"/>
+    </Target>
+    <Target Name="Especial:Clean">
+        <MSBuild Projects="..\BPR_Stub\Especial\Especial.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Especial:Make">
+        <MSBuild Projects="..\BPR_Stub\Especial\Especial.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Esquematico">
+        <MSBuild Projects="..\BPR_Stub\Esquematico\Esquematico.cbproj"/>
+    </Target>
+    <Target Name="Esquematico:Clean">
+        <MSBuild Projects="..\BPR_Stub\Esquematico\Esquematico.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Esquematico:Make">
+        <MSBuild Projects="..\BPR_Stub\Esquematico\Esquematico.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="EstimaDemanda">
+        <MSBuild Projects="..\BPR_Stub\EstimaDemanda\EstimaDemanda.cbproj"/>
+    </Target>
+    <Target Name="EstimaDemanda:Clean">
+        <MSBuild Projects="..\BPR_Stub\EstimaDemanda\EstimaDemanda.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EstimaDemanda:Make">
+        <MSBuild Projects="..\BPR_Stub\EstimaDemanda\EstimaDemanda.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Estimador1">
+        <MSBuild Projects="..\BPR_Stub\Estimador1\Estimador1.cbproj"/>
+    </Target>
+    <Target Name="Estimador1:Clean">
+        <MSBuild Projects="..\BPR_Stub\Estimador1\Estimador1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Estimador1:Make">
+        <MSBuild Projects="..\BPR_Stub\Estimador1\Estimador1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Estimador3">
+        <MSBuild Projects="..\BPR_Stub\Estimador3\Estimador3.cbproj"/>
+    </Target>
+    <Target Name="Estimador3:Clean">
+        <MSBuild Projects="..\BPR_Stub\Estimador3\Estimador3.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Estimador3:Make">
+        <MSBuild Projects="..\BPR_Stub\Estimador3\Estimador3.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="EstimaEstado">
+        <MSBuild Projects="..\BPR_Stub\EstimaEstado\EstimaEstado.cbproj"/>
+    </Target>
+    <Target Name="EstimaEstado:Clean">
+        <MSBuild Projects="..\BPR_Stub\EstimaEstado\EstimaEstado.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EstimaEstado:Make">
+        <MSBuild Projects="..\BPR_Stub\EstimaEstado\EstimaEstado.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Estudo">
+        <MSBuild Projects="..\BPR_Stub\Estudo\Estudo.cbproj"/>
+    </Target>
+    <Target Name="Estudo:Clean">
+        <MSBuild Projects="..\BPR_Stub\Estudo\Estudo.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Estudo:Make">
+        <MSBuild Projects="..\BPR_Stub\Estudo\Estudo.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Explorer">
+        <MSBuild Projects="..\BPR_Stub\Explorer\Explorer.cbproj"/>
+    </Target>
+    <Target Name="Explorer:Clean">
+        <MSBuild Projects="..\BPR_Stub\Explorer\Explorer.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Explorer:Make">
+        <MSBuild Projects="..\BPR_Stub\Explorer\Explorer.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Fasometro">
+        <MSBuild Projects="..\BPR_Stub\Fasometro\Fasometro.cbproj"/>
+    </Target>
+    <Target Name="Fasometro:Clean">
+        <MSBuild Projects="..\BPR_Stub\Fasometro\Fasometro.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Fasometro:Make">
+        <MSBuild Projects="..\BPR_Stub\Fasometro\Fasometro.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Figura">
+        <MSBuild Projects="..\BPR_Stub\Figura\Figura.cbproj"/>
+    </Target>
+    <Target Name="Figura:Clean">
+        <MSBuild Projects="..\BPR_Stub\Figura\Figura.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Figura:Make">
+        <MSBuild Projects="..\BPR_Stub\Figura\Figura.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Flow">
+        <MSBuild Projects="..\BPR_Stub\Flow\Flow.cbproj"/>
+    </Target>
+    <Target Name="Flow:Clean">
+        <MSBuild Projects="..\BPR_Stub\Flow\Flow.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Flow:Make">
+        <MSBuild Projects="..\BPR_Stub\Flow\Flow.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="FluxoCC">
+        <MSBuild Projects="..\BPR_Stub\FluxoCC\FluxoCC.cbproj"/>
+    </Target>
+    <Target Name="FluxoCC:Clean">
+        <MSBuild Projects="..\BPR_Stub\FluxoCC\FluxoCC.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FluxoCC:Make">
+        <MSBuild Projects="..\BPR_Stub\FluxoCC\FluxoCC.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="FluxoG1">
+        <MSBuild Projects="..\BPR_Stub\FluxoG1\FluxoG1.cbproj"/>
+    </Target>
+    <Target Name="FluxoG1:Clean">
+        <MSBuild Projects="..\BPR_Stub\FluxoG1\FluxoG1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FluxoG1:Make">
+        <MSBuild Projects="..\BPR_Stub\FluxoG1\FluxoG1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="FluxoG3">
+        <MSBuild Projects="..\BPR_Stub\FluxoG3\FluxoG3.cbproj"/>
+    </Target>
+    <Target Name="FluxoG3:Clean">
+        <MSBuild Projects="..\BPR_Stub\FluxoG3\FluxoG3.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FluxoG3:Make">
+        <MSBuild Projects="..\BPR_Stub\FluxoG3\FluxoG3.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="FluxoH3">
+        <MSBuild Projects="..\BPR_Stub\FluxoH3\FluxoH3.cbproj"/>
+    </Target>
+    <Target Name="FluxoH3:Clean">
+        <MSBuild Projects="..\BPR_Stub\FluxoH3\FluxoH3.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FluxoH3:Make">
+        <MSBuild Projects="..\BPR_Stub\FluxoH3\FluxoH3.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="FluxoNR1">
+        <MSBuild Projects="..\BPR_Stub\FluxoNR1\FluxoNR1.cbproj"/>
+    </Target>
+    <Target Name="FluxoNR1:Clean">
+        <MSBuild Projects="..\BPR_Stub\FluxoNR1\FluxoNR1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FluxoNR1:Make">
+        <MSBuild Projects="..\BPR_Stub\FluxoNR1\FluxoNR1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="FluxoNR3">
+        <MSBuild Projects="..\BPR_Stub\FluxoNR3\FluxoNR3.cbproj"/>
+    </Target>
+    <Target Name="FluxoNR3:Clean">
+        <MSBuild Projects="..\BPR_Stub\FluxoNR3\FluxoNR3.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FluxoNR3:Make">
+        <MSBuild Projects="..\BPR_Stub\FluxoNR3\FluxoNR3.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="FluxoRadial1">
+        <MSBuild Projects="..\BPR_Stub\FluxoRadial1\FluxoRadial1.cbproj"/>
+    </Target>
+    <Target Name="FluxoRadial1:Clean">
+        <MSBuild Projects="..\BPR_Stub\FluxoRadial1\FluxoRadial1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FluxoRadial1:Make">
+        <MSBuild Projects="..\BPR_Stub\FluxoRadial1\FluxoRadial1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Funcao">
+        <MSBuild Projects="..\BPR_Stub\Funcao\Funcao.cbproj"/>
+    </Target>
+    <Target Name="Funcao:Clean">
+        <MSBuild Projects="..\BPR_Stub\Funcao\Funcao.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Funcao:Make">
+        <MSBuild Projects="..\BPR_Stub\Funcao\Funcao.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Gateway">
+        <MSBuild Projects="..\BPR_Stub\Gateway\Gateway.cbproj"/>
+    </Target>
+    <Target Name="Gateway:Clean">
+        <MSBuild Projects="..\BPR_Stub\Gateway\Gateway.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Gateway:Make">
+        <MSBuild Projects="..\BPR_Stub\Gateway\Gateway.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Gauss1">
+        <MSBuild Projects="..\BPR_Stub\Gauss1\Gauss1.cbproj"/>
+    </Target>
+    <Target Name="Gauss1:Clean">
+        <MSBuild Projects="..\BPR_Stub\Gauss1\Gauss1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Gauss1:Make">
+        <MSBuild Projects="..\BPR_Stub\Gauss1\Gauss1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Gauss3">
+        <MSBuild Projects="..\BPR_Stub\Gauss3\Gauss3.cbproj"/>
+    </Target>
+    <Target Name="Gauss3:Clean">
+        <MSBuild Projects="..\BPR_Stub\Gauss3\Gauss3.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Gauss3:Make">
+        <MSBuild Projects="..\BPR_Stub\Gauss3\Gauss3.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Geral">
+        <MSBuild Projects="..\BPR_Stub\Geral\Geral.cbproj"/>
+    </Target>
+    <Target Name="Geral:Clean">
+        <MSBuild Projects="..\BPR_Stub\Geral\Geral.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Geral:Make">
+        <MSBuild Projects="..\BPR_Stub\Geral\Geral.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="GestaoLicenca">
+        <MSBuild Projects="..\BPR_Stub\GestaoLicenca\GestaoLicenca.cbproj"/>
+    </Target>
+    <Target Name="GestaoLicenca:Clean">
+        <MSBuild Projects="..\BPR_Stub\GestaoLicenca\GestaoLicenca.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GestaoLicenca:Make">
+        <MSBuild Projects="..\BPR_Stub\GestaoLicenca\GestaoLicenca.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Grafico">
+        <MSBuild Projects="..\BPR_Stub\Grafico\Grafico.cbproj"/>
+    </Target>
+    <Target Name="Grafico:Clean">
+        <MSBuild Projects="..\BPR_Stub\Grafico\Grafico.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Grafico:Make">
+        <MSBuild Projects="..\BPR_Stub\Grafico\Grafico.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Help">
+        <MSBuild Projects="..\BPR_Stub\Help\Help.cbproj"/>
+    </Target>
+    <Target Name="Help:Clean">
+        <MSBuild Projects="..\BPR_Stub\Help\Help.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Help:Make">
+        <MSBuild Projects="..\BPR_Stub\Help\Help.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Historico">
+        <MSBuild Projects="..\BPR_Stub\Historico\Historico.cbproj"/>
+    </Target>
+    <Target Name="Historico:Clean">
+        <MSBuild Projects="..\BPR_Stub\Historico\Historico.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Historico:Make">
+        <MSBuild Projects="..\BPR_Stub\Historico\Historico.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Importa">
+        <MSBuild Projects="..\BPR_Stub\Importa\Importa.cbproj"/>
+    </Target>
+    <Target Name="Importa:Clean">
+        <MSBuild Projects="..\BPR_Stub\Importa\Importa.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Importa:Make">
+        <MSBuild Projects="..\BPR_Stub\Importa\Importa.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="IhmCustoNodal">
+        <MSBuild Projects="..\BPR_Stub\IhmCustoNodal\IhmCustoNodal.cbproj"/>
+    </Target>
+    <Target Name="IhmCustoNodal:Clean">
+        <MSBuild Projects="..\BPR_Stub\IhmCustoNodal\IhmCustoNodal.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IhmCustoNodal:Make">
+        <MSBuild Projects="..\BPR_Stub\IhmCustoNodal\IhmCustoNodal.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImportaAnafas">
+        <MSBuild Projects="..\BPR_Stub\ImportaAnafas\ImportaAnafas.cbproj"/>
+    </Target>
+    <Target Name="ImportaAnafas:Clean">
+        <MSBuild Projects="..\BPR_Stub\ImportaAnafas\ImportaAnafas.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImportaAnafas:Make">
+        <MSBuild Projects="..\BPR_Stub\ImportaAnafas\ImportaAnafas.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImportaAnarede">
+        <MSBuild Projects="..\BPR_Stub\ImportaAnarede\ImportaAnarede.cbproj"/>
+    </Target>
+    <Target Name="ImportaAnarede:Clean">
+        <MSBuild Projects="..\BPR_Stub\ImportaAnarede\ImportaAnarede.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImportaAnarede:Make">
+        <MSBuild Projects="..\BPR_Stub\ImportaAnarede\ImportaAnarede.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImportaCurva">
+        <MSBuild Projects="..\BPR_Stub\ImportaCurva\ImportaCurva.cbproj"/>
+    </Target>
+    <Target Name="ImportaCurva:Clean">
+        <MSBuild Projects="..\BPR_Stub\ImportaCurva\ImportaCurva.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImportaCurva:Make">
+        <MSBuild Projects="..\BPR_Stub\ImportaCurva\ImportaCurva.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImportaMedicao">
+        <MSBuild Projects="..\BPR_Stub\ImportaMedicao\ImportaMedicao.cbproj"/>
+    </Target>
+    <Target Name="ImportaMedicao:Clean">
+        <MSBuild Projects="..\BPR_Stub\ImportaMedicao\ImportaMedicao.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImportaMedicao:Make">
+        <MSBuild Projects="..\BPR_Stub\ImportaMedicao\ImportaMedicao.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="InterfaceANEEL">
+        <MSBuild Projects="..\BPR_Stub\InterfaceANEEL\InterfaceANEEL.cbproj"/>
+    </Target>
+    <Target Name="InterfaceANEEL:Clean">
+        <MSBuild Projects="..\BPR_Stub\InterfaceANEEL\InterfaceANEEL.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="InterfaceANEEL:Make">
+        <MSBuild Projects="..\BPR_Stub\InterfaceANEEL\InterfaceANEEL.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImportaBDGD">
+        <MSBuild Projects="..\BPR_Stub\ImportaBDGD\ImportaBDGD.cbproj"/>
+    </Target>
+    <Target Name="ImportaBDGD:Clean">
+        <MSBuild Projects="..\BPR_Stub\ImportaBDGD\ImportaBDGD.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImportaBDGD:Make">
+        <MSBuild Projects="..\BPR_Stub\ImportaBDGD\ImportaBDGD.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="InterfaceNIX">
+        <MSBuild Projects="..\BPR_Stub\InterfaceNIX\InterfaceNIX.cbproj"/>
+    </Target>
+    <Target Name="InterfaceNIX:Clean">
+        <MSBuild Projects="..\BPR_Stub\InterfaceNIX\InterfaceNIX.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="InterfaceNIX:Make">
+        <MSBuild Projects="..\BPR_Stub\InterfaceNIX\InterfaceNIX.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImportaRedeGIS">
+        <MSBuild Projects="..\BPR_Stub\ImportaRedeGIS\ImportaRedeGIS.cbproj"/>
+    </Target>
+    <Target Name="ImportaRedeGIS:Clean">
+        <MSBuild Projects="..\BPR_Stub\ImportaRedeGIS\ImportaRedeGIS.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImportaRedeGIS:Make">
+        <MSBuild Projects="..\BPR_Stub\ImportaRedeGIS\ImportaRedeGIS.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="InfoZcc">
+        <MSBuild Projects="..\BPR_Stub\InfoZcc\InfoZcc.cbproj"/>
+    </Target>
+    <Target Name="InfoZcc:Clean">
+        <MSBuild Projects="..\BPR_Stub\InfoZcc\InfoZcc.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="InfoZcc:Make">
+        <MSBuild Projects="..\BPR_Stub\InfoZcc\InfoZcc.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="InterfaceTXT">
+        <MSBuild Projects="..\BPR_Stub\InterfaceTXT\InterfaceTXT.cbproj"/>
+    </Target>
+    <Target Name="InterfaceTXT:Clean">
+        <MSBuild Projects="..\BPR_Stub\InterfaceTXT\InterfaceTXT.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="InterfaceTXT:Make">
+        <MSBuild Projects="..\BPR_Stub\InterfaceTXT\InterfaceTXT.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="InterfaceWS">
+        <MSBuild Projects="..\BPR_Stub\InterfaceWS\InterfaceWS.cbproj"/>
+    </Target>
+    <Target Name="InterfaceWS:Clean">
+        <MSBuild Projects="..\BPR_Stub\InterfaceWS\InterfaceWS.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="InterfaceWS:Make">
+        <MSBuild Projects="..\BPR_Stub\InterfaceWS\InterfaceWS.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="InterfaceXML">
+        <MSBuild Projects="..\BPR_Stub\InterfaceXML\InterfaceXML.cbproj"/>
+    </Target>
+    <Target Name="InterfaceXML:Clean">
+        <MSBuild Projects="..\BPR_Stub\InterfaceXML\InterfaceXML.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="InterfaceXML:Make">
+        <MSBuild Projects="..\BPR_Stub\InterfaceXML\InterfaceXML.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="InterfaceODSS">
+        <MSBuild Projects="..\BPR_Stub\InterfaceODSS\InterfaceODSS.cbproj"/>
+    </Target>
+    <Target Name="InterfaceODSS:Clean">
+        <MSBuild Projects="..\BPR_Stub\InterfaceODSS\InterfaceODSS.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="InterfaceODSS:Make">
+        <MSBuild Projects="..\BPR_Stub\InterfaceODSS\InterfaceODSS.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Legenda">
+        <MSBuild Projects="..\BPR_Stub\Legenda\Legenda.cbproj"/>
+    </Target>
+    <Target Name="Legenda:Clean">
+        <MSBuild Projects="..\BPR_Stub\Legenda\Legenda.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Legenda:Make">
+        <MSBuild Projects="..\BPR_Stub\Legenda\Legenda.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Licenca">
+        <MSBuild Projects="..\BPR_Stub\Licenca\Licenca.cbproj"/>
+    </Target>
+    <Target Name="Licenca:Clean">
+        <MSBuild Projects="..\BPR_Stub\Licenca\Licenca.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Licenca:Make">
+        <MSBuild Projects="..\BPR_Stub\Licenca\Licenca.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="LocalDB">
+        <MSBuild Projects="..\BPR_Stub\LocalDB\LocalDB.cbproj"/>
+    </Target>
+    <Target Name="LocalDB:Clean">
+        <MSBuild Projects="..\BPR_Stub\LocalDB\LocalDB.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LocalDB:Make">
+        <MSBuild Projects="..\BPR_Stub\LocalDB\LocalDB.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Localiza">
+        <MSBuild Projects="..\BPR_Stub\Localiza\Localiza.cbproj"/>
+    </Target>
+    <Target Name="Localiza:Clean">
+        <MSBuild Projects="..\BPR_Stub\Localiza\Localiza.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Localiza:Make">
+        <MSBuild Projects="..\BPR_Stub\Localiza\Localiza.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Log">
+        <MSBuild Projects="..\BPR_Stub\Log\Log.cbproj"/>
+    </Target>
+    <Target Name="Log:Clean">
+        <MSBuild Projects="..\BPR_Stub\Log\Log.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Log:Make">
+        <MSBuild Projects="..\BPR_Stub\Log\Log.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Login">
+        <MSBuild Projects="..\BPR_Stub\Login\Login.cbproj"/>
+    </Target>
+    <Target Name="Login:Clean">
+        <MSBuild Projects="..\BPR_Stub\Login\Login.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Login:Make">
+        <MSBuild Projects="..\BPR_Stub\Login\Login.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Manobra">
+        <MSBuild Projects="..\BPR_Stub\Manobra\Manobra.cbproj"/>
+    </Target>
+    <Target Name="Manobra:Clean">
+        <MSBuild Projects="..\BPR_Stub\Manobra\Manobra.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Manobra:Make">
+        <MSBuild Projects="..\BPR_Stub\Manobra\Manobra.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Mapa">
+        <MSBuild Projects="..\BPR_Stub\Mapa\Mapa.cbproj"/>
+    </Target>
+    <Target Name="Mapa:Clean">
+        <MSBuild Projects="..\BPR_Stub\Mapa\Mapa.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Mapa:Make">
+        <MSBuild Projects="..\BPR_Stub\Mapa\Mapa.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="MapaTematico">
+        <MSBuild Projects="..\BPR_Stub\MapaTematico\MapaTematico.cbproj"/>
+    </Target>
+    <Target Name="MapaTematico:Clean">
+        <MSBuild Projects="..\BPR_Stub\MapaTematico\MapaTematico.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MapaTematico:Make">
+        <MSBuild Projects="..\BPR_Stub\MapaTematico\MapaTematico.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Medidor">
+        <MSBuild Projects="..\BPR_Stub\Medidor\Medidor.cbproj"/>
+    </Target>
+    <Target Name="Medidor:Clean">
+        <MSBuild Projects="..\BPR_Stub\Medidor\Medidor.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Medidor:Make">
+        <MSBuild Projects="..\BPR_Stub\Medidor\Medidor.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Mercado">
+        <MSBuild Projects="..\BPR_Stub\Mercado\Mercado.cbproj"/>
+    </Target>
+    <Target Name="Mercado:Clean">
+        <MSBuild Projects="..\BPR_Stub\Mercado\Mercado.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Mercado:Make">
+        <MSBuild Projects="..\BPR_Stub\Mercado\Mercado.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Micro">
+        <MSBuild Projects="..\BPR_Stub\Micro\Micro.cbproj"/>
+    </Target>
+    <Target Name="Micro:Clean">
+        <MSBuild Projects="..\BPR_Stub\Micro\Micro.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Micro:Make">
+        <MSBuild Projects="..\BPR_Stub\Micro\Micro.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Monopolar">
+        <MSBuild Projects="..\BPR_Stub\Monopolar\Monopolar.cbproj"/>
+    </Target>
+    <Target Name="Monopolar:Clean">
+        <MSBuild Projects="..\BPR_Stub\Monopolar\Monopolar.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Monopolar:Make">
+        <MSBuild Projects="..\BPR_Stub\Monopolar\Monopolar.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="MontaZ">
+        <MSBuild Projects="..\BPR_Stub\MontaZ\MontaZ.cbproj"/>
+    </Target>
+    <Target Name="MontaZ:Clean">
+        <MSBuild Projects="..\BPR_Stub\MontaZ\MontaZ.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MontaZ:Make">
+        <MSBuild Projects="..\BPR_Stub\MontaZ\MontaZ.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="MultiObra">
+        <MSBuild Projects="..\BPR_Stub\MultiObra\MultiObra.cbproj"/>
+    </Target>
+    <Target Name="MultiObra:Clean">
+        <MSBuild Projects="..\BPR_Stub\MultiObra\MultiObra.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MultiObra:Make">
+        <MSBuild Projects="..\BPR_Stub\MultiObra\MultiObra.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="NR1">
+        <MSBuild Projects="..\BPR_Stub\NR1\NR1.cbproj"/>
+    </Target>
+    <Target Name="NR1:Clean">
+        <MSBuild Projects="..\BPR_Stub\NR1\NR1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NR1:Make">
+        <MSBuild Projects="..\BPR_Stub\NR1\NR1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="NR3">
+        <MSBuild Projects="..\BPR_Stub\NR3\NR3.cbproj"/>
+    </Target>
+    <Target Name="NR3:Clean">
+        <MSBuild Projects="..\BPR_Stub\NR3\NR3.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NR3:Make">
+        <MSBuild Projects="..\BPR_Stub\NR3\NR3.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Ordena">
+        <MSBuild Projects="..\BPR_Stub\Ordena\Ordena.cbproj"/>
+    </Target>
+    <Target Name="Ordena:Clean">
+        <MSBuild Projects="..\BPR_Stub\Ordena\Ordena.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Ordena:Make">
+        <MSBuild Projects="..\BPR_Stub\Ordena\Ordena.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Patamar">
+        <MSBuild Projects="..\BPR_Stub\Patamar\Patamar.cbproj"/>
+    </Target>
+    <Target Name="Patamar:Clean">
+        <MSBuild Projects="..\BPR_Stub\Patamar\Patamar.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Patamar:Make">
+        <MSBuild Projects="..\BPR_Stub\Patamar\Patamar.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Perdatec">
+        <MSBuild Projects="..\BPR_Stub\Perdatec\Perdatec.cbproj"/>
+    </Target>
+    <Target Name="Perdatec:Clean">
+        <MSBuild Projects="..\BPR_Stub\Perdatec\Perdatec.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Perdatec:Make">
+        <MSBuild Projects="..\BPR_Stub\Perdatec\Perdatec.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Planejamento">
+        <MSBuild Projects="..\BPR_Stub\Planejamento\Planejamento.cbproj"/>
+    </Target>
+    <Target Name="Planejamento:Clean">
+        <MSBuild Projects="..\BPR_Stub\Planejamento\Planejamento.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Planejamento:Make">
+        <MSBuild Projects="..\BPR_Stub\Planejamento\Planejamento.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Potencia">
+        <MSBuild Projects="..\BPR_Stub\Potencia\Potencia.cbproj"/>
+    </Target>
+    <Target Name="Potencia:Clean">
+        <MSBuild Projects="..\BPR_Stub\Potencia\Potencia.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Potencia:Make">
+        <MSBuild Projects="..\BPR_Stub\Potencia\Potencia.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Produto">
+        <MSBuild Projects="..\BPR_Stub\Produto\Produto.cbproj"/>
+    </Target>
+    <Target Name="Produto:Clean">
+        <MSBuild Projects="..\BPR_Stub\Produto\Produto.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Produto:Make">
+        <MSBuild Projects="..\BPR_Stub\Produto\Produto.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Progresso">
+        <MSBuild Projects="..\BPR_Stub\Progresso\Progresso.cbproj"/>
+    </Target>
+    <Target Name="Progresso:Clean">
+        <MSBuild Projects="..\BPR_Stub\Progresso\Progresso.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Progresso:Make">
+        <MSBuild Projects="..\BPR_Stub\Progresso\Progresso.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Protecao">
+        <MSBuild Projects="..\BPR_Stub\Protecao\Protecao.cbproj"/>
+    </Target>
+    <Target Name="Protecao:Clean">
+        <MSBuild Projects="..\BPR_Stub\Protecao\Protecao.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Protecao:Make">
+        <MSBuild Projects="..\BPR_Stub\Protecao\Protecao.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Protesw">
+        <MSBuild Projects="..\BPR_Stub\Protesw\Protesw.cbproj"/>
+    </Target>
+    <Target Name="Protesw:Clean">
+        <MSBuild Projects="..\BPR_Stub\Protesw\Protesw.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Protesw:Make">
+        <MSBuild Projects="..\BPR_Stub\Protesw\Protesw.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Radial">
+        <MSBuild Projects="..\BPR_Stub\Radial\Radial.cbproj"/>
+    </Target>
+    <Target Name="Radial:Clean">
+        <MSBuild Projects="..\BPR_Stub\Radial\Radial.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Radial:Make">
+        <MSBuild Projects="..\BPR_Stub\Radial\Radial.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="RBAC">
+        <MSBuild Projects="..\BPR_Stub\RBAC\RBAC.cbproj"/>
+    </Target>
+    <Target Name="RBAC:Clean">
+        <MSBuild Projects="..\BPR_Stub\RBAC\RBAC.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RBAC:Make">
+        <MSBuild Projects="..\BPR_Stub\RBAC\RBAC.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Reclamacao">
+        <MSBuild Projects="..\BPR_Stub\Reclamacao\Reclamacao.cbproj"/>
+    </Target>
+    <Target Name="Reclamacao:Clean">
+        <MSBuild Projects="..\BPR_Stub\Reclamacao\Reclamacao.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Reclamacao:Make">
+        <MSBuild Projects="..\BPR_Stub\Reclamacao\Reclamacao.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Rede">
+        <MSBuild Projects="..\BPR_Stub\Rede\Rede.cbproj"/>
+    </Target>
+    <Target Name="Rede:Clean">
+        <MSBuild Projects="..\BPR_Stub\Rede\Rede.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Rede:Make">
+        <MSBuild Projects="..\BPR_Stub\Rede\Rede.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="RedeCC">
+        <MSBuild Projects="..\BPR_Stub\RedeCC\RedeCC.cbproj"/>
+    </Target>
+    <Target Name="RedeCC:Clean">
+        <MSBuild Projects="..\BPR_Stub\RedeCC\RedeCC.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RedeCC:Make">
+        <MSBuild Projects="..\BPR_Stub\RedeCC\RedeCC.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="RedeFH">
+        <MSBuild Projects="..\BPR_Stub\RedeFH\RedeFH.cbproj"/>
+    </Target>
+    <Target Name="RedeFH:Clean">
+        <MSBuild Projects="..\BPR_Stub\RedeFH\RedeFH.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RedeFH:Make">
+        <MSBuild Projects="..\BPR_Stub\RedeFH\RedeFH.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Redegraf">
+        <MSBuild Projects="..\BPR_Stub\Redegraf\Redegraf.cbproj"/>
+    </Target>
+    <Target Name="Redegraf:Clean">
+        <MSBuild Projects="..\BPR_Stub\Redegraf\Redegraf.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Redegraf:Make">
+        <MSBuild Projects="..\BPR_Stub\Redegraf\Redegraf.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Redutor">
+        <MSBuild Projects="..\BPR_Stub\Redutor\Redutor.cbproj"/>
+    </Target>
+    <Target Name="Redutor:Clean">
+        <MSBuild Projects="..\BPR_Stub\Redutor\Redutor.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Redutor:Make">
+        <MSBuild Projects="..\BPR_Stub\Redutor\Redutor.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Registro">
+        <MSBuild Projects="..\BPR_Stub\Registro\Registro.cbproj"/>
+    </Target>
+    <Target Name="Registro:Clean">
+        <MSBuild Projects="..\BPR_Stub\Registro\Registro.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Registro:Make">
+        <MSBuild Projects="..\BPR_Stub\Registro\Registro.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Relatorio">
+        <MSBuild Projects="..\BPR_Stub\Relatorio\Relatorio.cbproj"/>
+    </Target>
+    <Target Name="Relatorio:Clean">
+        <MSBuild Projects="..\BPR_Stub\Relatorio\Relatorio.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Relatorio:Make">
+        <MSBuild Projects="..\BPR_Stub\Relatorio\Relatorio.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="RelatorioJusante">
+        <MSBuild Projects="..\BPR_Stub\RelatorioJusante\RelatorioJusante.cbproj"/>
+    </Target>
+    <Target Name="RelatorioJusante:Clean">
+        <MSBuild Projects="..\BPR_Stub\RelatorioJusante\RelatorioJusante.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RelatorioJusante:Make">
+        <MSBuild Projects="..\BPR_Stub\RelatorioJusante\RelatorioJusante.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="RelatorioTensao">
+        <MSBuild Projects="..\BPR_Stub\RelatorioTensao\RelatorioTensao.cbproj"/>
+    </Target>
+    <Target Name="RelatorioTensao:Clean">
+        <MSBuild Projects="..\BPR_Stub\RelatorioTensao\RelatorioTensao.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RelatorioTensao:Make">
+        <MSBuild Projects="..\BPR_Stub\RelatorioTensao\RelatorioTensao.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Report">
+        <MSBuild Projects="..\BPR_Stub\Report\Report.cbproj"/>
+    </Target>
+    <Target Name="Report:Clean">
+        <MSBuild Projects="..\BPR_Stub\Report\Report.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Report:Make">
+        <MSBuild Projects="..\BPR_Stub\Report\Report.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ResCC">
+        <MSBuild Projects="..\BPR_Stub\ResCC\ResCC.cbproj"/>
+    </Target>
+    <Target Name="ResCC:Clean">
+        <MSBuild Projects="..\BPR_Stub\ResCC\ResCC.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ResCC:Make">
+        <MSBuild Projects="..\BPR_Stub\ResCC\ResCC.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Servidor">
+        <MSBuild Projects="..\BPR_Stub\Servidor\Servidor.cbproj"/>
+    </Target>
+    <Target Name="Servidor:Clean">
+        <MSBuild Projects="..\BPR_Stub\Servidor\Servidor.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Servidor:Make">
+        <MSBuild Projects="..\BPR_Stub\Servidor\Servidor.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Simulador">
+        <MSBuild Projects="..\BPR_Stub\Simulador\Simulador.cbproj"/>
+    </Target>
+    <Target Name="Simulador:Clean">
+        <MSBuild Projects="..\BPR_Stub\Simulador\Simulador.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Simulador:Make">
+        <MSBuild Projects="..\BPR_Stub\Simulador\Simulador.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="SinapApl">
+        <MSBuild Projects="..\BPR_Stub\SinapApl\SinapApl.cbproj"/>
+    </Target>
+    <Target Name="SinapApl:Clean">
+        <MSBuild Projects="..\BPR_Stub\SinapApl\SinapApl.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SinapApl:Make">
+        <MSBuild Projects="..\BPR_Stub\SinapApl\SinapApl.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="SinapToolKit">
+        <MSBuild Projects="..\BPR_Stub\SinapToolKit\SinapToolKit.cbproj"/>
+    </Target>
+    <Target Name="SinapToolKit:Clean">
+        <MSBuild Projects="..\BPR_Stub\SinapToolKit\SinapToolKit.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SinapToolKit:Make">
+        <MSBuild Projects="..\BPR_Stub\SinapToolKit\SinapToolKit.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="SisLin">
+        <MSBuild Projects="..\BPR_Stub\SisLin\SisLin.cbproj"/>
+    </Target>
+    <Target Name="SisLin:Clean">
+        <MSBuild Projects="..\BPR_Stub\SisLin\SisLin.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SisLin:Make">
+        <MSBuild Projects="..\BPR_Stub\SisLin\SisLin.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Spy">
+        <MSBuild Projects="..\BPR_Stub\Spy\Spy.cbproj"/>
+    </Target>
+    <Target Name="Spy:Clean">
+        <MSBuild Projects="..\BPR_Stub\Spy\Spy.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Spy:Make">
+        <MSBuild Projects="..\BPR_Stub\Spy\Spy.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Stk">
+        <MSBuild Projects="..\BPR_Stub\Stk\Stk.cbproj"/>
+    </Target>
+    <Target Name="Stk:Clean">
+        <MSBuild Projects="..\BPR_Stub\Stk\Stk.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Stk:Make">
+        <MSBuild Projects="..\BPR_Stub\Stk\Stk.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Topologia">
+        <MSBuild Projects="..\BPR_Stub\Topologia\Topologia.cbproj"/>
+    </Target>
+    <Target Name="Topologia:Clean">
+        <MSBuild Projects="..\BPR_Stub\Topologia\Topologia.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Topologia:Make">
+        <MSBuild Projects="..\BPR_Stub\Topologia\Topologia.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="WebService">
+        <MSBuild Projects="..\BPR_Stub\WebService\WebService.cbproj"/>
+    </Target>
+    <Target Name="WebService:Clean">
+        <MSBuild Projects="..\BPR_Stub\WebService\WebService.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WebService:Make">
+        <MSBuild Projects="..\BPR_Stub\WebService\WebService.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Wizard">
+        <MSBuild Projects="..\BPR_Stub\Wizard\Wizard.cbproj"/>
+    </Target>
+    <Target Name="Wizard:Clean">
+        <MSBuild Projects="..\BPR_Stub\Wizard\Wizard.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Wizard:Make">
+        <MSBuild Projects="..\BPR_Stub\Wizard\Wizard.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Zona">
+        <MSBuild Projects="..\BPR_Stub\Zona\Zona.cbproj"/>
+    </Target>
+    <Target Name="Zona:Clean">
+        <MSBuild Projects="..\BPR_Stub\Zona\Zona.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Zona:Make">
+        <MSBuild Projects="..\BPR_Stub\Zona\Zona.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AjusteDemanda;Alerta;AlocaCapacitor;AlocaRegulador;Arranjo;AutoTag;Balanceamento;BatchProcess;BD;BDihm;BDlicenca;BDadoParam;Bloco;Busca;CalcIndCont;Cartografia;Cfg;Classes;Confiabilidade;Compensacoes;Consulta;Cronometro;Copia;Curto;CurtoCircuito;Curvas;CustoNodal;Debug;DensidadeCarga;Diagnostico;Diretorio;Distancia;Edita;Editor;Equivalente;Eqv1;Eqv3;Especial;Esquematico;EstimaDemanda;Estimador1;Estimador3;EstimaEstado;Estudo;Explorer;Fasometro;Figura;Flow;FluxoCC;FluxoG1;FluxoG3;FluxoH3;FluxoNR1;FluxoNR3;FluxoRadial1;Funcao;Gateway;Gauss1;Gauss3;Geral;GestaoLicenca;Grafico;Help;Historico;Importa;IhmCustoNodal;ImportaAnafas;ImportaAnarede;ImportaCurva;ImportaMedicao;InterfaceANEEL;ImportaBDGD;InterfaceNIX;ImportaRedeGIS;InfoZcc;InterfaceTXT;InterfaceWS;InterfaceXML;InterfaceODSS;Legenda;Licenca;LocalDB;Localiza;Log;Login;Manobra;Mapa;MapaTematico;Medidor;Mercado;Micro;Monopolar;MontaZ;MultiObra;NR1;NR3;Ordena;Patamar;Perdatec;Planejamento;Potencia;Produto;Progresso;Protecao;Protesw;Radial;RBAC;Reclamacao;Rede;RedeCC;RedeFH;Redegraf;Redutor;Registro;Relatorio;RelatorioJusante;RelatorioTensao;Report;ResCC;Servidor;Simulador;SinapApl;SinapToolKit;SisLin;Spy;Stk;Topologia;WebService;Wizard;Zona"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AjusteDemanda:Clean;Alerta:Clean;AlocaCapacitor:Clean;AlocaRegulador:Clean;Arranjo:Clean;AutoTag:Clean;Balanceamento:Clean;BatchProcess:Clean;BD:Clean;BDihm:Clean;BDlicenca:Clean;BDadoParam:Clean;Bloco:Clean;Busca:Clean;CalcIndCont:Clean;Cartografia:Clean;Cfg:Clean;Classes:Clean;Confiabilidade:Clean;Compensacoes:Clean;Consulta:Clean;Cronometro:Clean;Copia:Clean;Curto:Clean;CurtoCircuito:Clean;Curvas:Clean;CustoNodal:Clean;Debug:Clean;DensidadeCarga:Clean;Diagnostico:Clean;Diretorio:Clean;Distancia:Clean;Edita:Clean;Editor:Clean;Equivalente:Clean;Eqv1:Clean;Eqv3:Clean;Especial:Clean;Esquematico:Clean;EstimaDemanda:Clean;Estimador1:Clean;Estimador3:Clean;EstimaEstado:Clean;Estudo:Clean;Explorer:Clean;Fasometro:Clean;Figura:Clean;Flow:Clean;FluxoCC:Clean;FluxoG1:Clean;FluxoG3:Clean;FluxoH3:Clean;FluxoNR1:Clean;FluxoNR3:Clean;FluxoRadial1:Clean;Funcao:Clean;Gateway:Clean;Gauss1:Clean;Gauss3:Clean;Geral:Clean;GestaoLicenca:Clean;Grafico:Clean;Help:Clean;Historico:Clean;Importa:Clean;IhmCustoNodal:Clean;ImportaAnafas:Clean;ImportaAnarede:Clean;ImportaCurva:Clean;ImportaMedicao:Clean;InterfaceANEEL:Clean;ImportaBDGD:Clean;InterfaceNIX:Clean;ImportaRedeGIS:Clean;InfoZcc:Clean;InterfaceTXT:Clean;InterfaceWS:Clean;InterfaceXML:Clean;InterfaceODSS:Clean;Legenda:Clean;Licenca:Clean;LocalDB:Clean;Localiza:Clean;Log:Clean;Login:Clean;Manobra:Clean;Mapa:Clean;MapaTematico:Clean;Medidor:Clean;Mercado:Clean;Micro:Clean;Monopolar:Clean;MontaZ:Clean;MultiObra:Clean;NR1:Clean;NR3:Clean;Ordena:Clean;Patamar:Clean;Perdatec:Clean;Planejamento:Clean;Potencia:Clean;Produto:Clean;Progresso:Clean;Protecao:Clean;Protesw:Clean;Radial:Clean;RBAC:Clean;Reclamacao:Clean;Rede:Clean;RedeCC:Clean;RedeFH:Clean;Redegraf:Clean;Redutor:Clean;Registro:Clean;Relatorio:Clean;RelatorioJusante:Clean;RelatorioTensao:Clean;Report:Clean;ResCC:Clean;Servidor:Clean;Simulador:Clean;SinapApl:Clean;SinapToolKit:Clean;SisLin:Clean;Spy:Clean;Stk:Clean;Topologia:Clean;WebService:Clean;Wizard:Clean;Zona:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AjusteDemanda:Make;Alerta:Make;AlocaCapacitor:Make;AlocaRegulador:Make;Arranjo:Make;AutoTag:Make;Balanceamento:Make;BatchProcess:Make;BD:Make;BDihm:Make;BDlicenca:Make;BDadoParam:Make;Bloco:Make;Busca:Make;CalcIndCont:Make;Cartografia:Make;Cfg:Make;Classes:Make;Confiabilidade:Make;Compensacoes:Make;Consulta:Make;Cronometro:Make;Copia:Make;Curto:Make;CurtoCircuito:Make;Curvas:Make;CustoNodal:Make;Debug:Make;DensidadeCarga:Make;Diagnostico:Make;Diretorio:Make;Distancia:Make;Edita:Make;Editor:Make;Equivalente:Make;Eqv1:Make;Eqv3:Make;Especial:Make;Esquematico:Make;EstimaDemanda:Make;Estimador1:Make;Estimador3:Make;EstimaEstado:Make;Estudo:Make;Explorer:Make;Fasometro:Make;Figura:Make;Flow:Make;FluxoCC:Make;FluxoG1:Make;FluxoG3:Make;FluxoH3:Make;FluxoNR1:Make;FluxoNR3:Make;FluxoRadial1:Make;Funcao:Make;Gateway:Make;Gauss1:Make;Gauss3:Make;Geral:Make;GestaoLicenca:Make;Grafico:Make;Help:Make;Historico:Make;Importa:Make;IhmCustoNodal:Make;ImportaAnafas:Make;ImportaAnarede:Make;ImportaCurva:Make;ImportaMedicao:Make;InterfaceANEEL:Make;ImportaBDGD:Make;InterfaceNIX:Make;ImportaRedeGIS:Make;InfoZcc:Make;InterfaceTXT:Make;InterfaceWS:Make;InterfaceXML:Make;InterfaceODSS:Make;Legenda:Make;Licenca:Make;LocalDB:Make;Localiza:Make;Log:Make;Login:Make;Manobra:Make;Mapa:Make;MapaTematico:Make;Medidor:Make;Mercado:Make;Micro:Make;Monopolar:Make;MontaZ:Make;MultiObra:Make;NR1:Make;NR3:Make;Ordena:Make;Patamar:Make;Perdatec:Make;Planejamento:Make;Potencia:Make;Produto:Make;Progresso:Make;Protecao:Make;Protesw:Make;Radial:Make;RBAC:Make;Reclamacao:Make;Rede:Make;RedeCC:Make;RedeFH:Make;Redegraf:Make;Redutor:Make;Registro:Make;Relatorio:Make;RelatorioJusante:Make;RelatorioTensao:Make;Report:Make;ResCC:Make;Servidor:Make;Simulador:Make;SinapApl:Make;SinapToolKit:Make;SisLin:Make;Spy:Make;Stk:Make;Topologia:Make;WebService:Make;Wizard:Make;Zona:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+    <ItemGroup Condition="'$(BuildGroup)'=='Sinap_Stub_Win64_Release'">
+        <BuildGroupProject Include="..\BPR_Stub\Gauss3\Gauss3.cbproj">
+            <ProjectGuid>{6CFFC6A8-DB9C-465C-B3AA-614970AD40C5}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Especial\Especial.cbproj">
+            <ProjectGuid>{310653FE-8740-4A53-B47B-139F2882447D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ImportaRedeGIS\ImportaRedeGIS.cbproj">
+            <ProjectGuid>{EA8132AA-7A65-4003-9385-7D1AEF83B9BE}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Cartografia\Cartografia.cbproj">
+            <ProjectGuid>{5FA88900-2431-491C-9798-1B19ED45DB60}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Figura\Figura.cbproj">
+            <ProjectGuid>{F5EE51C9-1303-4A02-B873-3AE77B2F0518}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InterfaceNIX\InterfaceNIX.cbproj">
+            <ProjectGuid>{2EA61707-E28A-48FA-ABD0-E94F59B0A1E3}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Topologia\Topologia.cbproj">
+            <ProjectGuid>{30BEDBB1-5A84-41A3-9976-2971B553A10A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Edita\Edita.cbproj">
+            <ProjectGuid>{BB0C62CD-FA0F-4181-AFA8-61ACA0263271}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Funcao\Funcao.cbproj">
+            <ProjectGuid>{55C9B522-EE63-4800-B7C2-2011BD403A17}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\AjusteDemanda\AjusteDemanda.cbproj">
+            <ProjectGuid>{542C4DDE-0ECD-4DB6-86E2-1675889B381E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Diagnostico\Diagnostico.cbproj">
+            <ProjectGuid>{7BDA10CC-1EBC-4762-8A4A-7395C34A3AA2}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\BDadoParam\BDadoParam.cbproj">
+            <ProjectGuid>{CCE04541-F79A-4F47-AF70-E323E53415D4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Rede\Rede.cbproj">
+            <ProjectGuid>{BAE1F3A4-1351-4DB6-A874-FC08FACC8CFA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\RelatorioTensao\RelatorioTensao.cbproj">
+            <ProjectGuid>{6C88D8B2-7BFB-4DEF-BCFB-42918AAC4654}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoH3\FluxoH3.cbproj">
+            <ProjectGuid>{69B32898-DCD2-4BA8-A23C-D5ED09EF381B}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoG3\FluxoG3.cbproj">
+            <ProjectGuid>{D1CEDBFC-87C2-4B21-9CC2-DCABDD8B8CBA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Curvas\Curvas.cbproj">
+            <ProjectGuid>{51FC64E9-B758-4E5B-9947-746B94A554C8}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Estudo\Estudo.cbproj">
+            <ProjectGuid>{A90D58E6-0046-438F-8590-554FA57F11D5}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ResCC\ResCC.cbproj">
+            <ProjectGuid>{6EB08F19-5EAA-49AB-8A92-BD956107C62A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoCC\FluxoCC.cbproj">
+            <ProjectGuid>{5869E042-3127-4D91-90EF-F7314216FE1B}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\EstimaEstado\EstimaEstado.cbproj">
+            <ProjectGuid>{E7579CD9-D7AB-47C9-8AFA-1BE173F2B70F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Gauss1\Gauss1.cbproj">
+            <ProjectGuid>{BF3CCD63-ECC1-494E-B36B-0B1259B4FB1D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Protecao\Protecao.cbproj">
+            <ProjectGuid>{FB20D855-7CFC-4C00-BFE1-A780F0768E53}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InterfaceODSS\InterfaceODSS.cbproj">
+            <ProjectGuid>{C1AE5C0D-0E4A-48C2-BF9A-CBE6849E568A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Explorer\Explorer.cbproj">
+            <ProjectGuid>{0CD27E2A-E62C-4876-9012-B65A0B7B36FD}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Potencia\Potencia.cbproj">
+            <ProjectGuid>{722CEA46-3275-48D2-9191-4BA46FA976E2}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Classes\Classes.cbproj">
+            <ProjectGuid>{0B98D195-4783-439F-AA67-2BE09844C35C}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InterfaceXML\InterfaceXML.cbproj">
+            <ProjectGuid>{5C7A9B1F-1977-4912-89C2-5A399F6FEF18}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Redegraf\Redegraf.cbproj">
+            <ProjectGuid>{D12E6773-1B95-4356-A6C3-487C81234DAA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Flow\Flow.cbproj">
+            <ProjectGuid>{39B28046-0B23-4DA8-8530-9D023CE8BD6C}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Geral\Geral.cbproj">
+            <ProjectGuid>{84E03C03-910D-4A74-A19A-F42245F751FA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Confiabilidade\Confiabilidade.cbproj">
+            <ProjectGuid>{DFDF9C47-8C38-4BCE-B0B5-6F9BB490E5AA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Redutor\Redutor.cbproj">
+            <ProjectGuid>{4B6B6F03-18EF-4F78-A0E9-E77649631B15}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Progresso\Progresso.cbproj">
+            <ProjectGuid>{869464B4-4A70-4BDC-A5B6-BAF8D1B7BE7F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InterfaceANEEL\InterfaceANEEL.cbproj">
+            <ProjectGuid>{5CFBAB28-61E9-4D03-8A6A-24A854D2AEC8}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Cfg\Cfg.cbproj">
+            <ProjectGuid>{E755B33F-C8C6-4570-A03D-48A6A4B2BB27}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Importa\Importa.cbproj">
+            <ProjectGuid>{D5843682-4D72-4EA8-A54F-C720ECA9C197}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Eqv1\Eqv1.cbproj">
+            <ProjectGuid>{0998C466-BC5A-4C76-A992-6913CB74487D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\BD\BD.cbproj">
+            <ProjectGuid>{14A8EAA9-CDE3-480F-9A89-A986AF595909}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\CurtoCircuito\CurtoCircuito.cbproj">
+            <ProjectGuid>{15221E18-46C5-4BEE-AAA7-5EAA521F4F3A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\DensidadeCarga\DensidadeCarga.cbproj">
+            <ProjectGuid>{D3D6A1A0-4F28-4A26-988E-64834114497E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\RedeFH\RedeFH.cbproj">
+            <ProjectGuid>{F65B0103-CEF7-48AC-8F01-C57B2258101C}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Perdatec\Perdatec.cbproj">
+            <ProjectGuid>{7EDA696C-B3F8-4D94-A936-825F40A99ECD}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Esquematico\Esquematico.cbproj">
+            <ProjectGuid>{4F8A3F1D-D111-479C-9623-5220A49CC8CD}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Servidor\Servidor.cbproj">
+            <ProjectGuid>{43E52413-893B-4D53-8B95-7229CCF72E42}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Manobra\Manobra.cbproj">
+            <ProjectGuid>{5106C75D-BBA2-40A4-A2C5-E1DF66977BBD}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Diretorio\Diretorio.cbproj">
+            <ProjectGuid>{06FFA78F-C752-4E31-9CE1-694665C85501}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\IhmCustoNodal\IhmCustoNodal.cbproj">
+            <ProjectGuid>{7F46EB27-2F68-428F-BCE8-FFAED8485309}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\RedeCC\RedeCC.cbproj">
+            <ProjectGuid>{DBE67928-95A3-4178-AEE3-20AF9233EC6A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Zona\Zona.cbproj">
+            <ProjectGuid>{3DC4DFDA-71D5-4225-A631-3F2B45FA2192}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Consulta\Consulta.cbproj">
+            <ProjectGuid>{C6C3EC55-DD91-4A03-93F5-B9E64D9C5485}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InterfaceTXT\InterfaceTXT.cbproj">
+            <ProjectGuid>{B6C34985-B60A-4B2E-909A-00A150EE34FF}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\LocalDB\LocalDB.cbproj">
+            <ProjectGuid>{45C2B587-8512-4E99-B2A5-4FA4709C205D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Radial\Radial.cbproj">
+            <ProjectGuid>{4FE6DE31-271F-4325-978B-7B309E94BA75}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Patamar\Patamar.cbproj">
+            <ProjectGuid>{D4CFF9DE-44A8-4379-8E23-32547F80341E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Registro\Registro.cbproj">
+            <ProjectGuid>{DBFE9F79-80C9-4DA6-A6BE-913A2A1E7608}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\BDlicenca\BDlicenca.cbproj">
+            <ProjectGuid>{0D4E61A0-730A-458A-A34E-0DCF0F8730A1}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Ordena\Ordena.cbproj">
+            <ProjectGuid>{32EEAB23-E6D4-4384-80C6-EA4D1CBC4861}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Compensacoes\Compensacoes.cbproj">
+            <ProjectGuid>{7D948E2E-16DB-419A-A966-477274A2C87D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Fasometro\Fasometro.cbproj">
+            <ProjectGuid>{16B2D0A9-D8AA-4194-B1F3-19A08C776F38}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Report\Report.cbproj">
+            <ProjectGuid>{60805638-D858-4AD2-96B1-75A1EE06F5F7}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\BatchProcess\BatchProcess.cbproj">
+            <ProjectGuid>{AE87E6EE-CBF3-481C-974B-133546464FDA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Copia\Copia.cbproj">
+            <ProjectGuid>{B8B68F69-0462-4C94-9E86-95D03297C390}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Monopolar\Monopolar.cbproj">
+            <ProjectGuid>{A2BD5D58-4A84-429D-B502-98DAC2BECB3E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Arranjo\Arranjo.cbproj">
+            <ProjectGuid>{C1299C35-5CC9-4B85-A6FD-466A23955DB7}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Historico\Historico.cbproj">
+            <ProjectGuid>{9DD3C3F1-E1A8-4321-9201-CEBB35928D2C}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InfoZcc\InfoZcc.cbproj">
+            <ProjectGuid>{3C3A9C4E-3FE4-4787-825E-FB1ED6C7D41F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoG1\FluxoG1.cbproj">
+            <ProjectGuid>{67DE7062-CB55-4DE9-B6BE-736C6350EAD9}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\EstimaDemanda\EstimaDemanda.cbproj">
+            <ProjectGuid>{2F036F01-ABBE-432C-B499-E68601CB997A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\MultiObra\MultiObra.cbproj">
+            <ProjectGuid>{52CD4D32-1EA0-48F3-8255-C205164024BA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Alerta\Alerta.cbproj">
+            <ProjectGuid>{7FC7E6B5-D6A7-4769-90A7-212F6F714363}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\MontaZ\MontaZ.cbproj">
+            <ProjectGuid>{8762A72D-5A88-417A-8F02-EFAF8B02B8C3}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Distancia\Distancia.cbproj">
+            <ProjectGuid>{E7C292E2-2068-400C-BF04-D8ACB69889F4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Curto\Curto.cbproj">
+            <ProjectGuid>{8C50B295-48AC-420A-AE5C-61FD881D3EED}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Help\Help.cbproj">
+            <ProjectGuid>{4D0F0D99-FAD8-4E58-9085-599FC1786FFA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Produto\Produto.cbproj">
+            <ProjectGuid>{79A91253-1A16-4050-833F-66008D1B4331}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\GestaoLicenca\GestaoLicenca.cbproj">
+            <ProjectGuid>{B676262F-B407-46F5-9FA4-1E6732D05B8E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\AutoTag\AutoTag.cbproj">
+            <ProjectGuid>{A90EE9E5-77BA-4825-B6D8-C9DE0C95185D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\AlocaCapacitor\AlocaCapacitor.cbproj">
+            <ProjectGuid>{8F4F358E-D39B-4A66-AC29-C2B269DC7059}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoRadial1\FluxoRadial1.cbproj">
+            <ProjectGuid>{34CD1FB5-FE9F-4332-A484-6EEA8F5CA39E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\NR1\NR1.cbproj">
+            <ProjectGuid>{9E454306-D06D-4DF2-99A3-241084F8AA0F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\RelatorioJusante\RelatorioJusante.cbproj">
+            <ProjectGuid>{BFDCF79A-656F-4A10-B598-5FCD0D9E57C4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Gateway\Gateway.cbproj">
+            <ProjectGuid>{E2275F51-480D-478B-9E33-5603A5CBF585}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\SinapApl\SinapApl.cbproj">
+            <ProjectGuid>{982D22C0-AA49-4689-931A-9BD29698D790}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Eqv3\Eqv3.cbproj">
+            <ProjectGuid>{A066150F-6194-470D-B951-EAB2065D9A3D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Cronometro\Cronometro.cbproj">
+            <ProjectGuid>{315AB9A4-1BF3-4C0A-9E9B-15720E2FA508}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Balanceamento\Balanceamento.cbproj">
+            <ProjectGuid>{CE8A5BA8-2DE8-4895-8304-40240C810FB6}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Estimador1\Estimador1.cbproj">
+            <ProjectGuid>{E0057C7D-DC8B-4B2D-AD8A-A659A7C2F560}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ImportaAnarede\ImportaAnarede.cbproj">
+            <ProjectGuid>{71DD1875-A806-4B7C-901F-6F9ADDE4E039}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Wizard\Wizard.cbproj">
+            <ProjectGuid>{B3BD14A1-C53F-4901-9FF9-FE7599A0CA10}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ImportaCurva\ImportaCurva.cbproj">
+            <ProjectGuid>{47AC3BF5-F5C5-4A09-8C64-54244C5CFCAA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\SisLin\SisLin.cbproj">
+            <ProjectGuid>{791D4BA5-87E5-462C-99B9-BD65286BC91E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Login\Login.cbproj">
+            <ProjectGuid>{87269188-307F-4D12-9404-8785854DA92A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Medidor\Medidor.cbproj">
+            <ProjectGuid>{AD1E71DD-58CC-41FB-993D-1E47635D9E0F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\NR3\NR3.cbproj">
+            <ProjectGuid>{DD120017-5A3A-489D-836B-47454CF252F1}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Equivalente\Equivalente.cbproj">
+            <ProjectGuid>{99AA3B57-D480-4D48-877D-6BB276E5DAB2}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Reclamacao\Reclamacao.cbproj">
+            <ProjectGuid>{218E70CE-BF2D-4559-B10B-A19BCF80FB77}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Licenca\Licenca.cbproj">
+            <ProjectGuid>{04B5376F-A76A-4B4C-A2E6-4DB4A7762604}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\SinapToolKit\SinapToolKit.cbproj">
+            <ProjectGuid>{E08F5287-E9CD-4BC6-AE3F-1290AC18C25E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\CalcIndCont\CalcIndCont.cbproj">
+            <ProjectGuid>{AC144B54-0DF9-4D3E-828D-7B95DCC1A048}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ImportaBDGD\ImportaBDGD.cbproj">
+            <ProjectGuid>{AADAAC61-4B3B-4937-BC5C-52AB4DB3F433}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InterfaceWS\InterfaceWS.cbproj">
+            <ProjectGuid>{7FA41220-0B43-4095-AACC-FF2CA0F0B3EE}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Micro\Micro.cbproj">
+            <ProjectGuid>{F5FFE099-356B-44B8-9921-CA826971F8DE}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Debug\Debug.cbproj">
+            <ProjectGuid>{BCC468AF-529F-4906-AD0C-AB8EB94B83AC}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Planejamento\Planejamento.cbproj">
+            <ProjectGuid>{B8B16B8E-13F0-4675-B218-0507AC4E5EC9}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Spy\Spy.cbproj">
+            <ProjectGuid>{A8B8061C-032C-4497-A0E8-2D8F0510D378}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoNR1\FluxoNR1.cbproj">
+            <ProjectGuid>{FBA71C9A-7BB6-4005-9610-6CA54FC16124}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Localiza\Localiza.cbproj">
+            <ProjectGuid>{C15A53CA-3126-4614-85C3-599E810681FE}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Stk\Stk.cbproj">
+            <ProjectGuid>{F2645FD4-D12E-4564-AAB2-25201217BCA1}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\AlocaRegulador\AlocaRegulador.cbproj">
+            <ProjectGuid>{64A36480-1E27-47D8-9401-8EC2A392DF98}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoNR3\FluxoNR3.cbproj">
+            <ProjectGuid>{9350A203-6AD7-4017-901A-568B95D715F4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Mapa\Mapa.cbproj">
+            <ProjectGuid>{1CC3620D-4DF6-4CB6-AA39-17F9DF471472}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Busca\Busca.cbproj">
+            <ProjectGuid>{740BC6CB-BC6A-4277-AA32-B206B73E58F1}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\BDihm\BDihm.cbproj">
+            <ProjectGuid>{4318C938-E82E-4D1B-90F1-AED3B4A84F1A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Mercado\Mercado.cbproj">
+            <ProjectGuid>{94564093-3888-4006-BBBE-BA2D73104041}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Log\Log.cbproj">
+            <ProjectGuid>{3674BB9F-F593-432F-8BFB-B950D2CF443F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ImportaMedicao\ImportaMedicao.cbproj">
+            <ProjectGuid>{C9AE7EDB-465B-4102-B3DE-508725EC6B52}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\MapaTematico\MapaTematico.cbproj">
+            <ProjectGuid>{8540E941-7738-4EC4-B401-6B1441D64344}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Grafico\Grafico.cbproj">
+            <ProjectGuid>{BE19549D-8456-4B6F-BE32-1358412B36B0}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Legenda\Legenda.cbproj">
+            <ProjectGuid>{02D9972F-9D49-4EBA-BAA7-FAE7976E8C23}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Simulador\Simulador.cbproj">
+            <ProjectGuid>{74D09845-38C3-4515-BBD9-3DAABF03C2F4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\CustoNodal\CustoNodal.cbproj">
+            <ProjectGuid>{B6CE62D9-E3CF-49B7-A69D-45C9E3CB5470}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Relatorio\Relatorio.cbproj">
+            <ProjectGuid>{B41A5666-9F33-45D6-BF12-7A9E19529F21}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Editor\Editor.cbproj">
+            <ProjectGuid>{C076CBC3-3E90-4CE5-8E49-214BD69BC9BC}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\WebService\WebService.cbproj">
+            <ProjectGuid>{771AFD92-7236-4276-883F-800D97CE8A90}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\RBAC\RBAC.cbproj">
+            <ProjectGuid>{B2E2A6AB-A5B5-4D72-AA2E-A941788EFEFD}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ImportaAnafas\ImportaAnafas.cbproj">
+            <ProjectGuid>{566DB121-0962-465E-8A58-058CB49BCB9B}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Bloco\Bloco.cbproj">
+            <ProjectGuid>{1F03C9D7-062E-4506-9064-D6C6144828C1}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Protesw\Protesw.cbproj">
+            <ProjectGuid>{B8C983D2-3B07-45E7-97F5-93B8E6FDE3D4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Estimador3\Estimador3.cbproj">
+            <ProjectGuid>{A8B1D6D5-012C-4892-86DB-CE1A22E7BB01}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+    </ItemGroup>
+    <ItemGroup Condition="'$(BuildGroup)'=='Sinap_Stub_Win32_Release'">
+        <BuildGroupProject Include="..\BPR_Stub\Gauss3\Gauss3.cbproj">
+            <ProjectGuid>{6CFFC6A8-DB9C-465C-B3AA-614970AD40C5}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Especial\Especial.cbproj">
+            <ProjectGuid>{310653FE-8740-4A53-B47B-139F2882447D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ImportaRedeGIS\ImportaRedeGIS.cbproj">
+            <ProjectGuid>{EA8132AA-7A65-4003-9385-7D1AEF83B9BE}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Cartografia\Cartografia.cbproj">
+            <ProjectGuid>{5FA88900-2431-491C-9798-1B19ED45DB60}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Figura\Figura.cbproj">
+            <ProjectGuid>{F5EE51C9-1303-4A02-B873-3AE77B2F0518}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InterfaceNIX\InterfaceNIX.cbproj">
+            <ProjectGuid>{2EA61707-E28A-48FA-ABD0-E94F59B0A1E3}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Topologia\Topologia.cbproj">
+            <ProjectGuid>{30BEDBB1-5A84-41A3-9976-2971B553A10A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Edita\Edita.cbproj">
+            <ProjectGuid>{BB0C62CD-FA0F-4181-AFA8-61ACA0263271}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Funcao\Funcao.cbproj">
+            <ProjectGuid>{55C9B522-EE63-4800-B7C2-2011BD403A17}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\AjusteDemanda\AjusteDemanda.cbproj">
+            <ProjectGuid>{542C4DDE-0ECD-4DB6-86E2-1675889B381E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Diagnostico\Diagnostico.cbproj">
+            <ProjectGuid>{7BDA10CC-1EBC-4762-8A4A-7395C34A3AA2}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\BDadoParam\BDadoParam.cbproj">
+            <ProjectGuid>{CCE04541-F79A-4F47-AF70-E323E53415D4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Rede\Rede.cbproj">
+            <ProjectGuid>{BAE1F3A4-1351-4DB6-A874-FC08FACC8CFA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\RelatorioTensao\RelatorioTensao.cbproj">
+            <ProjectGuid>{6C88D8B2-7BFB-4DEF-BCFB-42918AAC4654}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoH3\FluxoH3.cbproj">
+            <ProjectGuid>{69B32898-DCD2-4BA8-A23C-D5ED09EF381B}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoG3\FluxoG3.cbproj">
+            <ProjectGuid>{D1CEDBFC-87C2-4B21-9CC2-DCABDD8B8CBA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Curvas\Curvas.cbproj">
+            <ProjectGuid>{51FC64E9-B758-4E5B-9947-746B94A554C8}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Estudo\Estudo.cbproj">
+            <ProjectGuid>{A90D58E6-0046-438F-8590-554FA57F11D5}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ResCC\ResCC.cbproj">
+            <ProjectGuid>{6EB08F19-5EAA-49AB-8A92-BD956107C62A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoCC\FluxoCC.cbproj">
+            <ProjectGuid>{5869E042-3127-4D91-90EF-F7314216FE1B}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\EstimaEstado\EstimaEstado.cbproj">
+            <ProjectGuid>{E7579CD9-D7AB-47C9-8AFA-1BE173F2B70F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Gauss1\Gauss1.cbproj">
+            <ProjectGuid>{BF3CCD63-ECC1-494E-B36B-0B1259B4FB1D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Protecao\Protecao.cbproj">
+            <ProjectGuid>{FB20D855-7CFC-4C00-BFE1-A780F0768E53}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InterfaceODSS\InterfaceODSS.cbproj">
+            <ProjectGuid>{C1AE5C0D-0E4A-48C2-BF9A-CBE6849E568A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Explorer\Explorer.cbproj">
+            <ProjectGuid>{0CD27E2A-E62C-4876-9012-B65A0B7B36FD}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Potencia\Potencia.cbproj">
+            <ProjectGuid>{722CEA46-3275-48D2-9191-4BA46FA976E2}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Classes\Classes.cbproj">
+            <ProjectGuid>{0B98D195-4783-439F-AA67-2BE09844C35C}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InterfaceXML\InterfaceXML.cbproj">
+            <ProjectGuid>{5C7A9B1F-1977-4912-89C2-5A399F6FEF18}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Redegraf\Redegraf.cbproj">
+            <ProjectGuid>{D12E6773-1B95-4356-A6C3-487C81234DAA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Flow\Flow.cbproj">
+            <ProjectGuid>{39B28046-0B23-4DA8-8530-9D023CE8BD6C}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Geral\Geral.cbproj">
+            <ProjectGuid>{84E03C03-910D-4A74-A19A-F42245F751FA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Confiabilidade\Confiabilidade.cbproj">
+            <ProjectGuid>{DFDF9C47-8C38-4BCE-B0B5-6F9BB490E5AA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Redutor\Redutor.cbproj">
+            <ProjectGuid>{4B6B6F03-18EF-4F78-A0E9-E77649631B15}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Progresso\Progresso.cbproj">
+            <ProjectGuid>{869464B4-4A70-4BDC-A5B6-BAF8D1B7BE7F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InterfaceANEEL\InterfaceANEEL.cbproj">
+            <ProjectGuid>{5CFBAB28-61E9-4D03-8A6A-24A854D2AEC8}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Cfg\Cfg.cbproj">
+            <ProjectGuid>{E755B33F-C8C6-4570-A03D-48A6A4B2BB27}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Importa\Importa.cbproj">
+            <ProjectGuid>{D5843682-4D72-4EA8-A54F-C720ECA9C197}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Eqv1\Eqv1.cbproj">
+            <ProjectGuid>{0998C466-BC5A-4C76-A992-6913CB74487D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\BD\BD.cbproj">
+            <ProjectGuid>{14A8EAA9-CDE3-480F-9A89-A986AF595909}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\CurtoCircuito\CurtoCircuito.cbproj">
+            <ProjectGuid>{15221E18-46C5-4BEE-AAA7-5EAA521F4F3A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\DensidadeCarga\DensidadeCarga.cbproj">
+            <ProjectGuid>{D3D6A1A0-4F28-4A26-988E-64834114497E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\RedeFH\RedeFH.cbproj">
+            <ProjectGuid>{F65B0103-CEF7-48AC-8F01-C57B2258101C}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Perdatec\Perdatec.cbproj">
+            <ProjectGuid>{7EDA696C-B3F8-4D94-A936-825F40A99ECD}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Esquematico\Esquematico.cbproj">
+            <ProjectGuid>{4F8A3F1D-D111-479C-9623-5220A49CC8CD}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Servidor\Servidor.cbproj">
+            <ProjectGuid>{43E52413-893B-4D53-8B95-7229CCF72E42}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Manobra\Manobra.cbproj">
+            <ProjectGuid>{5106C75D-BBA2-40A4-A2C5-E1DF66977BBD}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Diretorio\Diretorio.cbproj">
+            <ProjectGuid>{06FFA78F-C752-4E31-9CE1-694665C85501}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\IhmCustoNodal\IhmCustoNodal.cbproj">
+            <ProjectGuid>{7F46EB27-2F68-428F-BCE8-FFAED8485309}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\RedeCC\RedeCC.cbproj">
+            <ProjectGuid>{DBE67928-95A3-4178-AEE3-20AF9233EC6A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Zona\Zona.cbproj">
+            <ProjectGuid>{3DC4DFDA-71D5-4225-A631-3F2B45FA2192}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Consulta\Consulta.cbproj">
+            <ProjectGuid>{C6C3EC55-DD91-4A03-93F5-B9E64D9C5485}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InterfaceTXT\InterfaceTXT.cbproj">
+            <ProjectGuid>{B6C34985-B60A-4B2E-909A-00A150EE34FF}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\LocalDB\LocalDB.cbproj">
+            <ProjectGuid>{45C2B587-8512-4E99-B2A5-4FA4709C205D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Radial\Radial.cbproj">
+            <ProjectGuid>{4FE6DE31-271F-4325-978B-7B309E94BA75}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Patamar\Patamar.cbproj">
+            <ProjectGuid>{D4CFF9DE-44A8-4379-8E23-32547F80341E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Registro\Registro.cbproj">
+            <ProjectGuid>{DBFE9F79-80C9-4DA6-A6BE-913A2A1E7608}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\BDlicenca\BDlicenca.cbproj">
+            <ProjectGuid>{0D4E61A0-730A-458A-A34E-0DCF0F8730A1}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Ordena\Ordena.cbproj">
+            <ProjectGuid>{32EEAB23-E6D4-4384-80C6-EA4D1CBC4861}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Compensacoes\Compensacoes.cbproj">
+            <ProjectGuid>{7D948E2E-16DB-419A-A966-477274A2C87D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Fasometro\Fasometro.cbproj">
+            <ProjectGuid>{16B2D0A9-D8AA-4194-B1F3-19A08C776F38}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Report\Report.cbproj">
+            <ProjectGuid>{60805638-D858-4AD2-96B1-75A1EE06F5F7}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\BatchProcess\BatchProcess.cbproj">
+            <ProjectGuid>{AE87E6EE-CBF3-481C-974B-133546464FDA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Copia\Copia.cbproj">
+            <ProjectGuid>{B8B68F69-0462-4C94-9E86-95D03297C390}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Monopolar\Monopolar.cbproj">
+            <ProjectGuid>{A2BD5D58-4A84-429D-B502-98DAC2BECB3E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Arranjo\Arranjo.cbproj">
+            <ProjectGuid>{C1299C35-5CC9-4B85-A6FD-466A23955DB7}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Historico\Historico.cbproj">
+            <ProjectGuid>{9DD3C3F1-E1A8-4321-9201-CEBB35928D2C}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InfoZcc\InfoZcc.cbproj">
+            <ProjectGuid>{3C3A9C4E-3FE4-4787-825E-FB1ED6C7D41F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoG1\FluxoG1.cbproj">
+            <ProjectGuid>{67DE7062-CB55-4DE9-B6BE-736C6350EAD9}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\EstimaDemanda\EstimaDemanda.cbproj">
+            <ProjectGuid>{2F036F01-ABBE-432C-B499-E68601CB997A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\MultiObra\MultiObra.cbproj">
+            <ProjectGuid>{52CD4D32-1EA0-48F3-8255-C205164024BA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Alerta\Alerta.cbproj">
+            <ProjectGuid>{7FC7E6B5-D6A7-4769-90A7-212F6F714363}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\MontaZ\MontaZ.cbproj">
+            <ProjectGuid>{8762A72D-5A88-417A-8F02-EFAF8B02B8C3}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Distancia\Distancia.cbproj">
+            <ProjectGuid>{E7C292E2-2068-400C-BF04-D8ACB69889F4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Curto\Curto.cbproj">
+            <ProjectGuid>{8C50B295-48AC-420A-AE5C-61FD881D3EED}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Help\Help.cbproj">
+            <ProjectGuid>{4D0F0D99-FAD8-4E58-9085-599FC1786FFA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Produto\Produto.cbproj">
+            <ProjectGuid>{79A91253-1A16-4050-833F-66008D1B4331}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\GestaoLicenca\GestaoLicenca.cbproj">
+            <ProjectGuid>{B676262F-B407-46F5-9FA4-1E6732D05B8E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\AutoTag\AutoTag.cbproj">
+            <ProjectGuid>{A90EE9E5-77BA-4825-B6D8-C9DE0C95185D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\AlocaCapacitor\AlocaCapacitor.cbproj">
+            <ProjectGuid>{8F4F358E-D39B-4A66-AC29-C2B269DC7059}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoRadial1\FluxoRadial1.cbproj">
+            <ProjectGuid>{34CD1FB5-FE9F-4332-A484-6EEA8F5CA39E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\NR1\NR1.cbproj">
+            <ProjectGuid>{9E454306-D06D-4DF2-99A3-241084F8AA0F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\RelatorioJusante\RelatorioJusante.cbproj">
+            <ProjectGuid>{BFDCF79A-656F-4A10-B598-5FCD0D9E57C4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Gateway\Gateway.cbproj">
+            <ProjectGuid>{E2275F51-480D-478B-9E33-5603A5CBF585}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\SinapApl\SinapApl.cbproj">
+            <ProjectGuid>{982D22C0-AA49-4689-931A-9BD29698D790}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Eqv3\Eqv3.cbproj">
+            <ProjectGuid>{A066150F-6194-470D-B951-EAB2065D9A3D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Cronometro\Cronometro.cbproj">
+            <ProjectGuid>{315AB9A4-1BF3-4C0A-9E9B-15720E2FA508}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Balanceamento\Balanceamento.cbproj">
+            <ProjectGuid>{CE8A5BA8-2DE8-4895-8304-40240C810FB6}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Estimador1\Estimador1.cbproj">
+            <ProjectGuid>{E0057C7D-DC8B-4B2D-AD8A-A659A7C2F560}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ImportaAnarede\ImportaAnarede.cbproj">
+            <ProjectGuid>{71DD1875-A806-4B7C-901F-6F9ADDE4E039}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Wizard\Wizard.cbproj">
+            <ProjectGuid>{B3BD14A1-C53F-4901-9FF9-FE7599A0CA10}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ImportaCurva\ImportaCurva.cbproj">
+            <ProjectGuid>{47AC3BF5-F5C5-4A09-8C64-54244C5CFCAA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\SisLin\SisLin.cbproj">
+            <ProjectGuid>{791D4BA5-87E5-462C-99B9-BD65286BC91E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Login\Login.cbproj">
+            <ProjectGuid>{87269188-307F-4D12-9404-8785854DA92A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Medidor\Medidor.cbproj">
+            <ProjectGuid>{AD1E71DD-58CC-41FB-993D-1E47635D9E0F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\NR3\NR3.cbproj">
+            <ProjectGuid>{DD120017-5A3A-489D-836B-47454CF252F1}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Equivalente\Equivalente.cbproj">
+            <ProjectGuid>{99AA3B57-D480-4D48-877D-6BB276E5DAB2}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Reclamacao\Reclamacao.cbproj">
+            <ProjectGuid>{218E70CE-BF2D-4559-B10B-A19BCF80FB77}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Licenca\Licenca.cbproj">
+            <ProjectGuid>{04B5376F-A76A-4B4C-A2E6-4DB4A7762604}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\SinapToolKit\SinapToolKit.cbproj">
+            <ProjectGuid>{E08F5287-E9CD-4BC6-AE3F-1290AC18C25E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\CalcIndCont\CalcIndCont.cbproj">
+            <ProjectGuid>{AC144B54-0DF9-4D3E-828D-7B95DCC1A048}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ImportaBDGD\ImportaBDGD.cbproj">
+            <ProjectGuid>{AADAAC61-4B3B-4937-BC5C-52AB4DB3F433}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win64</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\InterfaceWS\InterfaceWS.cbproj">
+            <ProjectGuid>{7FA41220-0B43-4095-AACC-FF2CA0F0B3EE}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Micro\Micro.cbproj">
+            <ProjectGuid>{F5FFE099-356B-44B8-9921-CA826971F8DE}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Debug\Debug.cbproj">
+            <ProjectGuid>{BCC468AF-529F-4906-AD0C-AB8EB94B83AC}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Planejamento\Planejamento.cbproj">
+            <ProjectGuid>{B8B16B8E-13F0-4675-B218-0507AC4E5EC9}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Spy\Spy.cbproj">
+            <ProjectGuid>{A8B8061C-032C-4497-A0E8-2D8F0510D378}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoNR1\FluxoNR1.cbproj">
+            <ProjectGuid>{FBA71C9A-7BB6-4005-9610-6CA54FC16124}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Localiza\Localiza.cbproj">
+            <ProjectGuid>{C15A53CA-3126-4614-85C3-599E810681FE}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Stk\Stk.cbproj">
+            <ProjectGuid>{F2645FD4-D12E-4564-AAB2-25201217BCA1}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\AlocaRegulador\AlocaRegulador.cbproj">
+            <ProjectGuid>{64A36480-1E27-47D8-9401-8EC2A392DF98}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\FluxoNR3\FluxoNR3.cbproj">
+            <ProjectGuid>{9350A203-6AD7-4017-901A-568B95D715F4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Mapa\Mapa.cbproj">
+            <ProjectGuid>{1CC3620D-4DF6-4CB6-AA39-17F9DF471472}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Busca\Busca.cbproj">
+            <ProjectGuid>{740BC6CB-BC6A-4277-AA32-B206B73E58F1}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\BDihm\BDihm.cbproj">
+            <ProjectGuid>{4318C938-E82E-4D1B-90F1-AED3B4A84F1A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Mercado\Mercado.cbproj">
+            <ProjectGuid>{94564093-3888-4006-BBBE-BA2D73104041}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Log\Log.cbproj">
+            <ProjectGuid>{3674BB9F-F593-432F-8BFB-B950D2CF443F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ImportaMedicao\ImportaMedicao.cbproj">
+            <ProjectGuid>{C9AE7EDB-465B-4102-B3DE-508725EC6B52}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\MapaTematico\MapaTematico.cbproj">
+            <ProjectGuid>{8540E941-7738-4EC4-B401-6B1441D64344}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Grafico\Grafico.cbproj">
+            <ProjectGuid>{BE19549D-8456-4B6F-BE32-1358412B36B0}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Legenda\Legenda.cbproj">
+            <ProjectGuid>{02D9972F-9D49-4EBA-BAA7-FAE7976E8C23}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Simulador\Simulador.cbproj">
+            <ProjectGuid>{74D09845-38C3-4515-BBD9-3DAABF03C2F4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\CustoNodal\CustoNodal.cbproj">
+            <ProjectGuid>{B6CE62D9-E3CF-49B7-A69D-45C9E3CB5470}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Relatorio\Relatorio.cbproj">
+            <ProjectGuid>{B41A5666-9F33-45D6-BF12-7A9E19529F21}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Editor\Editor.cbproj">
+            <ProjectGuid>{C076CBC3-3E90-4CE5-8E49-214BD69BC9BC}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\WebService\WebService.cbproj">
+            <ProjectGuid>{771AFD92-7236-4276-883F-800D97CE8A90}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\RBAC\RBAC.cbproj">
+            <ProjectGuid>{B2E2A6AB-A5B5-4D72-AA2E-A941788EFEFD}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\ImportaAnafas\ImportaAnafas.cbproj">
+            <ProjectGuid>{566DB121-0962-465E-8A58-058CB49BCB9B}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Bloco\Bloco.cbproj">
+            <ProjectGuid>{1F03C9D7-062E-4506-9064-D6C6144828C1}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Protesw\Protesw.cbproj">
+            <ProjectGuid>{B8C983D2-3B07-45E7-97F5-93B8E6FDE3D4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="..\BPR_Stub\Estimador3\Estimador3.cbproj">
+            <ProjectGuid>{A8B1D6D5-012C-4892-86DB-CE1A22E7BB01}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+    </ItemGroup>
+</Project>

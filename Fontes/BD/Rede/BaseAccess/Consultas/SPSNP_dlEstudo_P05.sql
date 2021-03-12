@@ -1,0 +1,1 @@
+DELETE FROM Agrupamento WHERE intEstudoId = [p_EstudoId];

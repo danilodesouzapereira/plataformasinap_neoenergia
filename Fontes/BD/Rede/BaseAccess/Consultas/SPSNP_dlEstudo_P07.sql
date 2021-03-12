@@ -1,0 +1,1 @@
+DELETE FROM Estudo WHERE intEstudoId = [p_EstudoId];

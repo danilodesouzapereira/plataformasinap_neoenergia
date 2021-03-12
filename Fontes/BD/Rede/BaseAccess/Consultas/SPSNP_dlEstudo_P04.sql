@@ -1,0 +1,1 @@
+DELETE FROM EstudoAlternativa WHERE intEstudoId = [p_EstudoId];

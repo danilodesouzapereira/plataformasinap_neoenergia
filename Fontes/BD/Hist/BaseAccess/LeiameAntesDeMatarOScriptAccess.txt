@@ -1,0 +1,17 @@
+ANTES DE JOGAR FORA O ARQUIVO DO ACCESS, RENOMEIE PARA COMPARAR SE HOUVER PROBLEMAS
+
+Eu renomeei os tipos de dados na mão
+FLOAT(10)  -> FLOAT
+NUMBER(10) -> INTEGER
+NUMBER(1)  -> TINYINT
+NUMBER(2)  -> SMALLINT
+NUMBER(3)  -> SMALLINT
+NUMBER(4)  -> SMALLINT
+ DATE      -> DATETIME
+VARCHAR2   -> VARCHAR
+blob       -> IMAGE
+
+Coloquei os ALTER TABLE (constraints) no final
+
+retirei os comments e os drops manualmente.
+

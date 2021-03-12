@@ -1,0 +1,1 @@
+DELETE FROM ConjuntoCurva WHERE intConjCurvaId = [p_CurvaId];

@@ -1,0 +1,8 @@
+O Loops tem que ser feito em C++:
+  -- Finalmente elimina as curvas
+  FOR conta IN 1..max_curva
+  LOOP
+    DELETE FROM ConjuntoCurvaSegmento WHERE intConjCurvaId = tabids_curva(conta);
+    DELETE FROM ConjuntoCurva WHERE intConjCurvaId = tabids_curva(conta);
+  END LOOP;
+

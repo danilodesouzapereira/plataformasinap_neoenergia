@@ -1,0 +1,43 @@
+Exportar a base selecionando CREATE DATABASE (não selecionar DROP and CREATE)
+Exportar a base sem a geração de comentários
+
+Converter os caracteres para ANSI
+TROCAR intEstudoId int por intEstudoId TINYINT
+trocar SET IDENTITY por --SET IDENTITY
+trocar BIT por TINYINT
+trocar FLOAT(10) por FLOAT
+trocar bigint por INTEGER
+trocar VARCHAR(512) por VARCHAR(255)
+trocar varbinary(7168) por IMAGE
+trocar 'TO_DATE('22-09-2010 07:35', 'DD-MM-YYYY HH24:MI')' por NOW()
+ATENÇÃO: VARCHAR(1) ESTÁ SENDO TRADUZIDO PARA BIT. Porém, em alguns casos não pode ser BIT, tem que ser inteiro.
+TROQUEI BIT POR TINYINT
+Verificar as tabelas:
+TrafoEnrol: intTrafoEnrolId
+Arranjo: intNumCabos
+Arranjo_00_01: intCaboItem
+
+Comentar as constraints abaixo, abrindo espaço para as demais
+--ALTER TABLE RRCarga ADD CONSTRAINT FKRRCarga FOREIGN KEY (intEstudoId, intRRCargaId) REFERENCES Equipamento (intEstudoId, intEquipId);
+--ALTER TABLE RRYRef ADD CONSTRAINT FKRRYRef FOREIGN KEY (intEstudoId, intRRYRefId) REFERENCES Equipamento (intEstudoId, intEquipId);
+--ALTER TABLE RRSuprimento ADD CONSTRAINT FKRRSuprimento2 FOREIGN KEY (intEstudoId, intRRSuprimentoId) REFERENCES Equipamento (intEstudoId, intEquipId);
+--ALTER TABLE RRTrafo ADD CONSTRAINT FKRRTrafo FOREIGN KEY (intEstudoId, intRRTrafoId) REFERENCES Equipamento (intEstudoId, intEquipId);
+--ALTER TABLE EquipamentoImagem ADD CONSTRAINT FKEquipamentoImagem FOREIGN KEY (intEstudoId, intEquipId) REFERENCES Equipamento (intEstudoId, intEquipId);
+--ALTER TABLE CargaNL ADD CONSTRAINT FKCargaNL358121 FOREIGN KEY (intEstudoId, intCargaNLId) REFERENCES Equipamento (intEstudoId, intEquipId);
+
+Comentar as constraints abaixo, por causa de erro
+--ALTER TABLE Rede ADD CONSTRAINT FKRede3 FOREIGN KEY (intEstudoId, intAgrupamentoId) REFERENCES Agrupamento (intEstudoId, intAgrupamentoId);
+--ALTER TABLE Trafo ADD CONSTRAINT FKTrafo2 FOREIGN KEY (intEstudoId, intLtcBarRefId) REFERENCES Barra (intEstudoId, intBarraId);
+
+Comentar as constraints abaixo, por causa de erro. O equipamento pode ser nulo e a chave estrangeira não funciona no Access.
+--ALTER TABLE ObraAcao ADD CONSTRAINT FKObraAcao3 FOREIGN KEY (intEstudoId, intEquipOriginalId) REFERENCES Equipamento (intEstudoId, intEquipId);
+--ALTER TABLE ObraAcao ADD CONSTRAINT FKObraAcao4 FOREIGN KEY (intEstudoId, intEquipEstadoPreId) REFERENCES Equipamento (intEstudoId, intEquipId);
+--ALTER TABLE ObraAcao ADD CONSTRAINT FKObraAcao662848 FOREIGN KEY (intEstudoId, intEquipEstadoPosId) REFERENCES Equipamento (intEstudoId, intEquipId);
+
+Essas aqui foram retiradas para melhoria de desmpenho na inserção.
+--ALTER TABLE RREquipamentoBarra ADD CONSTRAINT FKRREquipamentoBarra FOREIGN KEY (intEstudoId, intBarraId) REFERENCES Barra (intEstudoId, intBarraId);
+--ALTER TABLE RREquipamentoBarra ADD CONSTRAINT FKRREquipamentoBarra2 FOREIGN KEY (intEstudoId, intEquipId) REFERENCES Equipamento (intEstudoId, intEquipId);
+--ALTER TABLE RREquipamentoBarra ADD CONSTRAINT FKRREquipamentoBarra3 FOREIGN KEY (intEstudoId, intMRedeId, intCorteId) REFERENCES Corte (intEstudoId, intMRedeId, intCorteId);
+
+Essa aqui foi retirada, pois se as ObraAcao foram retiradas, essa também deve cair fora
+--ALTER TABLE ObraAtribExt ADD CONSTRAINT FKObraAtribE56559 FOREIGN KEY (intEstudoId, intAlternativaId, intObraId) REFERENCES AlternativaObra (intEstudoId, intAlternativaId, intObraId);

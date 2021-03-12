@@ -1,0 +1,1 @@
+DELETE FROM RRCarga WHERE intEstudoId = [p_EstudoId] AND intMRedeId = [p_RedeId];

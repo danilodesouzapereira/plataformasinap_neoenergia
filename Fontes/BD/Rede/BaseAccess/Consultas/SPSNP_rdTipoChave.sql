@@ -1,0 +1,1 @@
+  SELECT    TipoChave.*  FROM    TipoChave;

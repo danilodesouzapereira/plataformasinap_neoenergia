@@ -1,0 +1,1 @@
+DELETE FROM Arranjo WHERE intArranjoId = [p_ArranjoId];

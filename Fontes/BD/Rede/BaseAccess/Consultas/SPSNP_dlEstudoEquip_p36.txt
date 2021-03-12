@@ -1,0 +1,2 @@
+O passo 36 não é executado, pois montava em memória a lista de curvas referentes aos equipamentos.
+No Access, esses equipamentos já estão em memória

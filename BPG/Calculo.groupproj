@@ -1,0 +1,240 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5F276300-38B1-4677-8866-588DD9230E82}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\BPR\Curto\Curto.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\Equivalente\Equivalente.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\Eqv1\Eqv1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\Eqv3\Eqv3.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\ModulosOpcionais\BPR\Estabilidade\Estabilidade.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\EstimaDemanda\EstimaDemanda.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\Estimador1\Estimador1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\Estimador3\Estimador3.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\EstimaEstado\EstimaEstado.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\FluxoH3\FluxoH3.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\FluxoRadial1\FluxoRadial1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\Gauss1\Gauss1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\Gauss3\Gauss3.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\NR1\NR1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\NR3\NR3.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\Ordena\Ordena.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\ModulosOpcionais\BPR\PartidaMotor\PartidaMotor.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\SisLin\SisLin.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Curto">
+        <MSBuild Projects="..\BPR\Curto\Curto.cbproj"/>
+    </Target>
+    <Target Name="Curto:Clean">
+        <MSBuild Projects="..\BPR\Curto\Curto.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Curto:Make">
+        <MSBuild Projects="..\BPR\Curto\Curto.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Equivalente">
+        <MSBuild Projects="..\BPR\Equivalente\Equivalente.cbproj"/>
+    </Target>
+    <Target Name="Equivalente:Clean">
+        <MSBuild Projects="..\BPR\Equivalente\Equivalente.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Equivalente:Make">
+        <MSBuild Projects="..\BPR\Equivalente\Equivalente.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Eqv1">
+        <MSBuild Projects="..\BPR\Eqv1\Eqv1.cbproj"/>
+    </Target>
+    <Target Name="Eqv1:Clean">
+        <MSBuild Projects="..\BPR\Eqv1\Eqv1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Eqv1:Make">
+        <MSBuild Projects="..\BPR\Eqv1\Eqv1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Eqv3">
+        <MSBuild Projects="..\BPR\Eqv3\Eqv3.cbproj"/>
+    </Target>
+    <Target Name="Eqv3:Clean">
+        <MSBuild Projects="..\BPR\Eqv3\Eqv3.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Eqv3:Make">
+        <MSBuild Projects="..\BPR\Eqv3\Eqv3.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Estabilidade">
+        <MSBuild Projects="..\..\ModulosOpcionais\BPR\Estabilidade\Estabilidade.cbproj"/>
+    </Target>
+    <Target Name="Estabilidade:Clean">
+        <MSBuild Projects="..\..\ModulosOpcionais\BPR\Estabilidade\Estabilidade.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Estabilidade:Make">
+        <MSBuild Projects="..\..\ModulosOpcionais\BPR\Estabilidade\Estabilidade.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="EstimaDemanda">
+        <MSBuild Projects="..\BPR\EstimaDemanda\EstimaDemanda.cbproj"/>
+    </Target>
+    <Target Name="EstimaDemanda:Clean">
+        <MSBuild Projects="..\BPR\EstimaDemanda\EstimaDemanda.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EstimaDemanda:Make">
+        <MSBuild Projects="..\BPR\EstimaDemanda\EstimaDemanda.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Estimador1">
+        <MSBuild Projects="..\BPR\Estimador1\Estimador1.cbproj"/>
+    </Target>
+    <Target Name="Estimador1:Clean">
+        <MSBuild Projects="..\BPR\Estimador1\Estimador1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Estimador1:Make">
+        <MSBuild Projects="..\BPR\Estimador1\Estimador1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Estimador3">
+        <MSBuild Projects="..\BPR\Estimador3\Estimador3.cbproj"/>
+    </Target>
+    <Target Name="Estimador3:Clean">
+        <MSBuild Projects="..\BPR\Estimador3\Estimador3.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Estimador3:Make">
+        <MSBuild Projects="..\BPR\Estimador3\Estimador3.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="EstimaEstado">
+        <MSBuild Projects="..\BPR\EstimaEstado\EstimaEstado.cbproj"/>
+    </Target>
+    <Target Name="EstimaEstado:Clean">
+        <MSBuild Projects="..\BPR\EstimaEstado\EstimaEstado.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EstimaEstado:Make">
+        <MSBuild Projects="..\BPR\EstimaEstado\EstimaEstado.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="FluxoH3">
+        <MSBuild Projects="..\BPR\FluxoH3\FluxoH3.cbproj"/>
+    </Target>
+    <Target Name="FluxoH3:Clean">
+        <MSBuild Projects="..\BPR\FluxoH3\FluxoH3.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FluxoH3:Make">
+        <MSBuild Projects="..\BPR\FluxoH3\FluxoH3.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="FluxoRadial1">
+        <MSBuild Projects="..\BPR\FluxoRadial1\FluxoRadial1.cbproj"/>
+    </Target>
+    <Target Name="FluxoRadial1:Clean">
+        <MSBuild Projects="..\BPR\FluxoRadial1\FluxoRadial1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FluxoRadial1:Make">
+        <MSBuild Projects="..\BPR\FluxoRadial1\FluxoRadial1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Gauss1">
+        <MSBuild Projects="..\BPR\Gauss1\Gauss1.cbproj"/>
+    </Target>
+    <Target Name="Gauss1:Clean">
+        <MSBuild Projects="..\BPR\Gauss1\Gauss1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Gauss1:Make">
+        <MSBuild Projects="..\BPR\Gauss1\Gauss1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Gauss3">
+        <MSBuild Projects="..\BPR\Gauss3\Gauss3.cbproj"/>
+    </Target>
+    <Target Name="Gauss3:Clean">
+        <MSBuild Projects="..\BPR\Gauss3\Gauss3.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Gauss3:Make">
+        <MSBuild Projects="..\BPR\Gauss3\Gauss3.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="NR1">
+        <MSBuild Projects="..\BPR\NR1\NR1.cbproj"/>
+    </Target>
+    <Target Name="NR1:Clean">
+        <MSBuild Projects="..\BPR\NR1\NR1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NR1:Make">
+        <MSBuild Projects="..\BPR\NR1\NR1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="NR3">
+        <MSBuild Projects="..\BPR\NR3\NR3.cbproj"/>
+    </Target>
+    <Target Name="NR3:Clean">
+        <MSBuild Projects="..\BPR\NR3\NR3.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NR3:Make">
+        <MSBuild Projects="..\BPR\NR3\NR3.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Ordena">
+        <MSBuild Projects="..\BPR\Ordena\Ordena.cbproj"/>
+    </Target>
+    <Target Name="Ordena:Clean">
+        <MSBuild Projects="..\BPR\Ordena\Ordena.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Ordena:Make">
+        <MSBuild Projects="..\BPR\Ordena\Ordena.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="PartidaMotor">
+        <MSBuild Projects="..\..\ModulosOpcionais\BPR\PartidaMotor\PartidaMotor.cbproj"/>
+    </Target>
+    <Target Name="PartidaMotor:Clean">
+        <MSBuild Projects="..\..\ModulosOpcionais\BPR\PartidaMotor\PartidaMotor.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PartidaMotor:Make">
+        <MSBuild Projects="..\..\ModulosOpcionais\BPR\PartidaMotor\PartidaMotor.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="SisLin">
+        <MSBuild Projects="..\BPR\SisLin\SisLin.cbproj"/>
+    </Target>
+    <Target Name="SisLin:Clean">
+        <MSBuild Projects="..\BPR\SisLin\SisLin.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SisLin:Make">
+        <MSBuild Projects="..\BPR\SisLin\SisLin.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Curto;Equivalente;Eqv1;Eqv3;Estabilidade;EstimaDemanda;Estimador1;Estimador3;EstimaEstado;FluxoH3;FluxoRadial1;Gauss1;Gauss3;NR1;NR3;Ordena;PartidaMotor;SisLin"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Curto:Clean;Equivalente:Clean;Eqv1:Clean;Eqv3:Clean;Estabilidade:Clean;EstimaDemanda:Clean;Estimador1:Clean;Estimador3:Clean;EstimaEstado:Clean;FluxoH3:Clean;FluxoRadial1:Clean;Gauss1:Clean;Gauss3:Clean;NR1:Clean;NR3:Clean;Ordena:Clean;PartidaMotor:Clean;SisLin:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Curto:Make;Equivalente:Make;Eqv1:Make;Eqv3:Make;Estabilidade:Make;EstimaDemanda:Make;Estimador1:Make;Estimador3:Make;EstimaEstado:Make;FluxoH3:Make;FluxoRadial1:Make;Gauss1:Make;Gauss3:Make;NR1:Make;NR3:Make;Ordena:Make;PartidaMotor:Make;SisLin:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

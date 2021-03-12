@@ -1,0 +1,1 @@
+    UPDATE      (SELECT * FROM Suporte) sel    SET      sel.strDescricao = [p_Descricao],      sel.strExtId = [p_ExtId],      sel.fltVmin = [p_Vmin],      sel.fltVmax = [p_Vmax],      sel.intNumPontosFix = [p_NumPontosFix],      sel.intStatus = [p_Status]    WHERE      sel.intSuporteId = [p_SuporteId];

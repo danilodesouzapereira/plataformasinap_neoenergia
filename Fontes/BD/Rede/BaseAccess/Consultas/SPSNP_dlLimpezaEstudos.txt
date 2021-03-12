@@ -1,0 +1,1 @@
+Corresponde à chamada de SPSNP_dlDominio, em um loop com os pares (estudo, domínio).

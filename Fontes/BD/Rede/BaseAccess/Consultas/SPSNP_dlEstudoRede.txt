@@ -1,0 +1,2 @@
+Existe uma versão que passa o nome da rede a ser deletado.
+No Access haverá somente a versão com o Id.

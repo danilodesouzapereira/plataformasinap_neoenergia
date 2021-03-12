@@ -1,0 +1,1 @@
+DELETE FROM Corte WHERE intEstudoId = [p_EstudoId] AND intMRedeId = [p_RedeId];

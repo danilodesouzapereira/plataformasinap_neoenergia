@@ -1,0 +1,1 @@
+    UPDATE      (SELECT * FROM CaboRGMR) sel    SET      sel.fltR = [p_R],      sel.fltGMR = [p_GMR]    WHERE      sel.intCaboId = [p_CaboId];

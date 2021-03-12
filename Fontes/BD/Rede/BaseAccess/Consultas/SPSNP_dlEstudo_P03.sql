@@ -1,0 +1,1 @@
+DELETE FROM AlternativaObra WHERE intEstudoId = [p_EstudoId];

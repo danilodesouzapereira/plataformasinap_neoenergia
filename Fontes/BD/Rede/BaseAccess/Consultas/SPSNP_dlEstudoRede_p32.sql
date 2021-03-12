@@ -1,0 +1,1 @@
+DELETE FROM Canal WHERE intEstudoId = [p_EstudoId] AND intCanalId = [p_EquipId];

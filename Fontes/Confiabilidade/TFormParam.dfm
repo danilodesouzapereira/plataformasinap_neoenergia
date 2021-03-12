@@ -1,0 +1,1158 @@
+object FormParam: TFormParam
+  Left = 175
+  Top = 374
+  BorderIcons = [biSystemMenu]
+  Caption = 'Par'#226'metros para o c'#225'lculo dos indicadores de continuidade'
+  ClientHeight = 400
+  ClientWidth = 620
+  Color = clBtnFace
+  Constraints.MinHeight = 400
+  Constraints.MinWidth = 620
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Position = poOwnerFormCenter
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object tbConfirma: TToolBar
+    Left = 0
+    Top = 0
+    Width = 620
+    Height = 28
+    ButtonWidth = 71
+    Caption = 'tbConfirma'
+    EdgeBorders = [ebTop, ebBottom]
+    Images = ImageList1
+    List = True
+    ShowCaptions = True
+    TabOrder = 0
+    Wrapable = False
+    object butConfirma: TToolButton
+      Left = 0
+      Top = 0
+      Action = ActionConfirma
+      AutoSize = True
+    end
+    object butCancela: TToolButton
+      Left = 75
+      Top = 0
+      Action = ActionCancela
+      AutoSize = True
+    end
+  end
+  object PageControl: TPageControl
+    Left = 0
+    Top = 28
+    Width = 620
+    Height = 372
+    ActivePage = TabSheet7
+    Align = alClient
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Par'#226'metros Gerais'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object sgridParamTipo: TStringGrid
+        Left = 0
+        Top = 0
+        Width = 612
+        Height = 115
+        Align = alClient
+        Ctl3D = False
+        DefaultColWidth = 39
+        DefaultRowHeight = 17
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs]
+        ParentCtl3D = False
+        ScrollBars = ssVertical
+        TabOrder = 0
+        ColWidths = (
+          39
+          39
+          39
+          39
+          39)
+      end
+      object GroupBox3: TGroupBox
+        Left = 0
+        Top = 185
+        Width = 612
+        Height = 140
+        Align = alBottom
+        Caption = 'Prote'#231#227'o'
+        TabOrder = 1
+        object ToolBarPatamar: TToolBar
+          Left = 2
+          Top = 15
+          Width = 608
+          Height = 26
+          ButtonHeight = 20
+          ButtonWidth = 24
+          Caption = 'ToolBar1'
+          EdgeBorders = [ebTop, ebBottom]
+          Font.Charset = SYMBOL_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Wingdings'
+          Font.Style = [fsBold]
+          List = True
+          ParentFont = False
+          ShowCaptions = True
+          TabOrder = 0
+          Wrapable = False
+          object ToolButton2: TToolButton
+            Left = 0
+            Top = 0
+            Action = ActionEnableProt
+          end
+          object ToolButton3: TToolButton
+            Left = 24
+            Top = 0
+            Action = ActionDisableProt
+          end
+        end
+        object CLBoxProt: TCheckListBox
+          Left = 2
+          Top = 41
+          Width = 608
+          Height = 97
+          Align = alClient
+          BorderStyle = bsNone
+          Columns = 2
+          ItemHeight = 13
+          TabOrder = 1
+          OnClick = CLBoxProtClick
+        end
+      end
+      object GroupBox2: TGroupBox
+        Left = 0
+        Top = 115
+        Width = 612
+        Height = 70
+        Align = alBottom
+        Caption = 'Gerais'
+        TabOrder = 2
+        object Label3: TLabel
+          Left = 8
+          Top = 19
+          Width = 113
+          Height = 13
+          Caption = 'Ordem da conting'#234'ncia:'
+        end
+        object cbxOrdem: TComboBox
+          Left = 135
+          Top = 15
+          Width = 42
+          Height = 21
+          ItemIndex = 0
+          TabOrder = 0
+          Text = '1'
+          Items.Strings = (
+            '1'
+            '2'
+            '3')
+        end
+        object chkNA: TCheckBox
+          Left = 183
+          Top = 42
+          Width = 129
+          Height = 17
+          Caption = 'Considera chaves NA'
+          TabOrder = 1
+          Visible = False
+        end
+        object chkBloco: TCheckBox
+          Left = 8
+          Top = 41
+          Width = 158
+          Height = 17
+          Caption = 'Agrupamento por blocos'
+          TabOrder = 2
+          Visible = False
+        end
+      end
+      object StatusBar1: TStatusBar
+        Left = 0
+        Top = 325
+        Width = 612
+        Height = 19
+        Panels = <
+          item
+            Text = '*  un: km'
+            Width = 80
+          end
+          item
+            Text = '** un: equipamento'
+            Width = 50
+          end>
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Gerador'
+      ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object Splitter3: TSplitter
+        Left = 97
+        Top = 0
+        Height = 344
+        ExplicitLeft = 248
+        ExplicitTop = 280
+        ExplicitHeight = 100
+      end
+      object sgridParamGerador: TStringGrid
+        Left = 100
+        Top = 0
+        Width = 512
+        Height = 344
+        Align = alClient
+        Ctl3D = False
+        DefaultColWidth = 39
+        DefaultRowHeight = 17
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs]
+        ParentCtl3D = False
+        ScrollBars = ssVertical
+        TabOrder = 0
+        ColWidths = (
+          39
+          39
+          39
+          39
+          39)
+      end
+      object Panel3: TPanel
+        Left = 0
+        Top = 0
+        Width = 97
+        Height = 344
+        Align = alLeft
+        BevelOuter = bvNone
+        TabOrder = 1
+        object lbTipoGerador: TCheckListBox
+          Left = 0
+          Top = 26
+          Width = 97
+          Height = 318
+          OnClickCheck = ActionIncluirTipoGeradorExecute
+          Align = alClient
+          ItemHeight = 13
+          TabOrder = 0
+        end
+        object ToolBar4: TToolBar
+          Left = 0
+          Top = 0
+          Width = 97
+          Height = 26
+          ButtonHeight = 20
+          ButtonWidth = 24
+          Caption = 'ToolBar1'
+          EdgeBorders = [ebTop, ebBottom]
+          Font.Charset = SYMBOL_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Wingdings'
+          Font.Style = [fsBold]
+          List = True
+          ParentFont = False
+          ShowCaptions = True
+          TabOrder = 1
+          Wrapable = False
+          object ToolButton7: TToolButton
+            Left = 0
+            Top = 0
+            Action = ActionEnableTipoGerador
+          end
+          object ToolButton8: TToolButton
+            Left = 24
+            Top = 0
+            Action = ActionDisableTipoGerador
+          end
+        end
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Transformador'
+      ImageIndex = 3
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object Splitter4: TSplitter
+        Left = 97
+        Top = 0
+        Height = 344
+        ExplicitLeft = 248
+        ExplicitTop = 280
+        ExplicitHeight = 100
+      end
+      object sgridParamTrafo: TStringGrid
+        Left = 100
+        Top = 0
+        Width = 512
+        Height = 344
+        Align = alClient
+        Ctl3D = False
+        DefaultColWidth = 39
+        DefaultRowHeight = 17
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs]
+        ParentCtl3D = False
+        ScrollBars = ssVertical
+        TabOrder = 0
+        ColWidths = (
+          39
+          39
+          39
+          39
+          39)
+      end
+      object Panel4: TPanel
+        Left = 0
+        Top = 0
+        Width = 97
+        Height = 344
+        Align = alLeft
+        BevelOuter = bvNone
+        TabOrder = 1
+        object lbTipoTrafo: TCheckListBox
+          Left = 0
+          Top = 26
+          Width = 97
+          Height = 318
+          OnClickCheck = ActionIncluirTipoTrafoExecute
+          Align = alClient
+          ItemHeight = 13
+          TabOrder = 0
+        end
+        object ToolBar5: TToolBar
+          Left = 0
+          Top = 0
+          Width = 97
+          Height = 26
+          ButtonHeight = 20
+          ButtonWidth = 24
+          Caption = 'ToolBar1'
+          EdgeBorders = [ebTop, ebBottom]
+          Font.Charset = SYMBOL_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Wingdings'
+          Font.Style = [fsBold]
+          List = True
+          ParentFont = False
+          ShowCaptions = True
+          TabOrder = 1
+          Wrapable = False
+          object ToolButton9: TToolButton
+            Left = 0
+            Top = 0
+            Action = ActionEnableTipoTrafo
+          end
+          object ToolButton10: TToolButton
+            Left = 24
+            Top = 0
+            Action = ActionDisableTipoTrafo
+          end
+        end
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Chave'
+      ImageIndex = 4
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object Splitter5: TSplitter
+        Left = 97
+        Top = 0
+        Height = 344
+        ExplicitLeft = 248
+        ExplicitTop = 280
+        ExplicitHeight = 100
+      end
+      object sgridParamChave: TStringGrid
+        Left = 100
+        Top = 0
+        Width = 512
+        Height = 344
+        Align = alClient
+        Ctl3D = False
+        DefaultColWidth = 39
+        DefaultRowHeight = 17
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs]
+        ParentCtl3D = False
+        ScrollBars = ssVertical
+        TabOrder = 0
+        ColWidths = (
+          39
+          39
+          39
+          39
+          39)
+      end
+      object Panel5: TPanel
+        Left = 0
+        Top = 0
+        Width = 97
+        Height = 344
+        Align = alLeft
+        BevelOuter = bvNone
+        TabOrder = 1
+        object lbTipoChave: TCheckListBox
+          Left = 0
+          Top = 26
+          Width = 97
+          Height = 318
+          OnClickCheck = ActionIncluirTipoChaveExecute
+          Align = alClient
+          ItemHeight = 13
+          TabOrder = 0
+        end
+        object ToolBar6: TToolBar
+          Left = 0
+          Top = 0
+          Width = 97
+          Height = 26
+          ButtonHeight = 20
+          ButtonWidth = 24
+          Caption = 'ToolBar1'
+          EdgeBorders = [ebTop, ebBottom]
+          Font.Charset = SYMBOL_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Wingdings'
+          Font.Style = [fsBold]
+          List = True
+          ParentFont = False
+          ShowCaptions = True
+          TabOrder = 1
+          Wrapable = False
+          object ToolButton11: TToolButton
+            Left = 0
+            Top = 0
+            Action = ActionEnableTipoChave
+          end
+          object ToolButton12: TToolButton
+            Left = 24
+            Top = 0
+            Action = ActionDisableTipoChave
+          end
+        end
+      end
+    end
+    object Equipamentos: TTabSheet
+      Caption = 'Equipamentos'
+      ImageIndex = 5
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object Splitter2: TSplitter
+        Left = 97
+        Top = 0
+        Height = 344
+        ExplicitLeft = 248
+        ExplicitTop = 280
+        ExplicitHeight = 100
+      end
+      object Panel2: TPanel
+        Left = 0
+        Top = 0
+        Width = 97
+        Height = 344
+        Align = alLeft
+        BevelOuter = bvNone
+        TabOrder = 0
+        object lbEqpto: TCheckListBox
+          Left = 0
+          Top = 26
+          Width = 97
+          Height = 318
+          OnClickCheck = ActionIncluirEqptoExecute
+          Align = alClient
+          ItemHeight = 13
+          TabOrder = 0
+        end
+        object ToolBar3: TToolBar
+          Left = 0
+          Top = 0
+          Width = 97
+          Height = 26
+          ButtonHeight = 20
+          ButtonWidth = 24
+          Caption = 'ToolBar1'
+          EdgeBorders = [ebTop, ebBottom]
+          Font.Charset = SYMBOL_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Wingdings'
+          Font.Style = [fsBold]
+          List = True
+          ParentFont = False
+          ShowCaptions = True
+          TabOrder = 1
+          Wrapable = False
+          object ToolButton5: TToolButton
+            Left = 0
+            Top = 0
+            Action = ActionEnableEqpto
+          end
+          object ToolButton6: TToolButton
+            Left = 24
+            Top = 0
+            Action = ActionDisableEqpto
+          end
+        end
+      end
+      object sgridParamEqpto: TStringGrid
+        Left = 100
+        Top = 0
+        Width = 512
+        Height = 344
+        Align = alClient
+        Ctl3D = False
+        DefaultColWidth = 39
+        DefaultRowHeight = 17
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goEditing, goTabs]
+        ParentCtl3D = False
+        ScrollBars = ssVertical
+        TabOrder = 1
+        ColWidths = (
+          39
+          39
+          39
+          39
+          39)
+      end
+    end
+    object TabSheet6: TTabSheet
+      Caption = 'Blocos'
+      ImageIndex = 6
+      TabVisible = False
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object Splitter6: TSplitter
+        Left = 97
+        Top = 0
+        Height = 344
+        ExplicitLeft = 248
+        ExplicitTop = 280
+        ExplicitHeight = 100
+      end
+      object Panel6: TPanel
+        Left = 0
+        Top = 0
+        Width = 97
+        Height = 344
+        Align = alLeft
+        BevelOuter = bvNone
+        TabOrder = 0
+        object lbBlocos: TCheckListBox
+          Left = 0
+          Top = 26
+          Width = 97
+          Height = 318
+          OnClickCheck = ActionIncluirEqptoExecute
+          Align = alClient
+          ItemHeight = 13
+          TabOrder = 0
+        end
+        object ToolBar1: TToolBar
+          Left = 0
+          Top = 0
+          Width = 97
+          Height = 26
+          ButtonHeight = 20
+          ButtonWidth = 24
+          Caption = 'ToolBar1'
+          EdgeBorders = [ebTop, ebBottom]
+          Font.Charset = SYMBOL_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Wingdings'
+          Font.Style = [fsBold]
+          List = True
+          ParentFont = False
+          ShowCaptions = True
+          TabOrder = 1
+          Wrapable = False
+          object ToolButton13: TToolButton
+            Left = 0
+            Top = 0
+            Action = ActionEnableEqpto
+          end
+          object ToolButton14: TToolButton
+            Left = 24
+            Top = 0
+            Action = ActionDisableEqpto
+          end
+        end
+      end
+      object sgridParamBloco: TStringGrid
+        Left = 100
+        Top = 0
+        Width = 512
+        Height = 344
+        Align = alClient
+        Ctl3D = False
+        DefaultColWidth = 39
+        DefaultRowHeight = 17
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs]
+        ParentCtl3D = False
+        ScrollBars = ssVertical
+        TabOrder = 1
+        ColWidths = (
+          39
+          39
+          39
+          39
+          39)
+      end
+    end
+    object TabSheet7: TTabSheet
+      Caption = 'Equipamentos mutua'
+      ImageIndex = 7
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object Splitter7: TSplitter
+        Left = 177
+        Top = 0
+        Height = 344
+        ExplicitLeft = 105
+      end
+      object Panel7: TPanel
+        Left = 0
+        Top = 0
+        Width = 97
+        Height = 344
+        Align = alLeft
+        BevelOuter = bvNone
+        TabOrder = 0
+        object lbEqptoMutua: TListBox
+          Left = 0
+          Top = 0
+          Width = 97
+          Height = 344
+          Align = alClient
+          ItemHeight = 13
+          MultiSelect = True
+          TabOrder = 0
+          OnClick = ActionMostraEqptoExecute
+        end
+      end
+      object sgridParamEqptoMutua: TStringGrid
+        Left = 180
+        Top = 0
+        Width = 432
+        Height = 344
+        Align = alClient
+        Ctl3D = False
+        DefaultColWidth = 39
+        DefaultRowHeight = 17
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goEditing, goTabs]
+        ParentCtl3D = False
+        ScrollBars = ssVertical
+        TabOrder = 1
+        ColWidths = (
+          39
+          39
+          39
+          39
+          39)
+      end
+      object GroupBox1: TGroupBox
+        Left = 97
+        Top = 0
+        Width = 80
+        Height = 344
+        Align = alLeft
+        TabOrder = 2
+        object Button1: TButton
+          Left = 2
+          Top = 184
+          Width = 75
+          Height = 25
+          Action = ActionInsereMutua
+          TabOrder = 0
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Trechos'
+      Enabled = False
+      ImageIndex = 1
+      TabVisible = False
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object Splitter1: TSplitter
+        Left = 97
+        Top = 0
+        Height = 344
+        ExplicitLeft = 248
+        ExplicitTop = 280
+        ExplicitHeight = 100
+      end
+      object sgridParamTrecho: TStringGrid
+        Left = 100
+        Top = 0
+        Width = 512
+        Height = 344
+        Align = alClient
+        Ctl3D = False
+        DefaultColWidth = 39
+        DefaultRowHeight = 17
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goEditing, goTabs]
+        ParentCtl3D = False
+        ScrollBars = ssVertical
+        TabOrder = 0
+        ExplicitLeft = 103
+        ColWidths = (
+          39
+          39
+          39
+          39
+          39)
+      end
+      object Panel1: TPanel
+        Left = 0
+        Top = 0
+        Width = 97
+        Height = 344
+        Align = alLeft
+        BevelOuter = bvNone
+        TabOrder = 1
+        object lbTipoTrecho: TCheckListBox
+          Left = 0
+          Top = 26
+          Width = 97
+          Height = 318
+          OnClickCheck = ActionIncluirTipoTrechoExecute
+          Align = alClient
+          ItemHeight = 13
+          TabOrder = 0
+        end
+        object ToolBar2: TToolBar
+          Left = 0
+          Top = 0
+          Width = 97
+          Height = 26
+          ButtonHeight = 20
+          ButtonWidth = 24
+          Caption = 'ToolBar1'
+          EdgeBorders = [ebTop, ebBottom]
+          Font.Charset = SYMBOL_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Wingdings'
+          Font.Style = [fsBold]
+          List = True
+          ParentFont = False
+          ShowCaptions = True
+          TabOrder = 1
+          Wrapable = False
+          object ToolButton1: TToolButton
+            Left = 0
+            Top = 0
+            Action = ActionEnableTipoTrecho
+          end
+          object ToolButton4: TToolButton
+            Left = 24
+            Top = 0
+            Action = ActionDisableTipoTrecho
+          end
+        end
+      end
+    end
+  end
+  object ImageList1: TImageList
+    Left = 224
+    Top = 112
+    Bitmap = {
+      494C010105000900300010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      0000000000003600000028000000400000002000000001002000000000000020
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00000000000000
+      0000FFFFFF000000000000000000FFFFFF000000000000000000FFFFFF000000
+      00000000000000000000FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00000000000000
+      0000FFFFFF000000000000000000FFFFFF000000000000000000FFFFFF000000
+      00000000000000000000FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00000000000000
+      0000FFFFFF000000000000000000FFFFFF000000000000000000FFFFFF000000
+      00000000000000000000FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00000000000000
+      0000FFFFFF000000000000000000FFFFFF000000000000000000FFFFFF000000
+      00000000000000000000FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000BFBFBF00BFBFBF00FF00
+      0000FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000BFBFBF00BFBFBF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000FF000000FF000000FF000000FF000000FF00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000008400000084000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000840000008400000084000000840000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      8400000084000000000000000000000000000000000000000000000000000000
+      00000000840000008400000000000000000000000000000000000000FF000000
+      FF0000000000000000007F7F7F00000000007F7F7F00000000000000FF000000
+      FF000000FF000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000084000000840000008400000084000000840000008400000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      8400000084000000840000000000000000000000000000000000000000000000
+      840000008400000084000000000000000000000000000000FF000000FF000000
+      FF000000FF000000000000000000000000000000000000000000000000000000
+      FF000000FF000000FF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000008400000084000000840000000000000000000000840000008400000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000084000000840000008400000000000000000000000000000084000000
+      840000008400000000000000000000000000000000000000FF00000000000000
+      FF000000FF000000FF007F7F7F00000000007F7F7F0000000000000000000000
+      00000000FF000000FF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000084
+      0000008400000084000000000000000000000000000000840000008400000084
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000840000008400000084000000000000008400000084000000
+      8400000000000000000000000000000000000000FF000000FF00000000000000
+      00000000FF000000FF000000FF00000000000000000000000000000000000000
+      0000000000000000FF000000FF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000084
+      0000008400000000000000000000000000000000000000000000008400000084
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000008400000084000000840000008400000084000000
+      0000000000000000000000000000000000000000FF000000FF00000000000000
+      0000000000000000FF000000FF00000000000000000000000000000000000000
+      0000000000000000FF000000FF000000000031319C0031319C0031319C003131
+      9C0031319C0031319C0031319C0031319C0031319C0031319C0031319C003131
+      9C0031319C0031319C0031319C0031319C000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000008400000084
+      0000008400000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000084000000840000008400000000000000
+      0000000000000000000000000000000000000000FF000000FF00000000000000
+      000000000000000000007F7F7F00000000007F7F7F0000000000000000000000
+      0000000000000000FF000000FF000000000031319C0031319C0031319C003131
+      9C0031319C0031319C0031319C0031319C0031319C0031319C0031319C003131
+      9C0031319C0031319C0031319C0031319C000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000084
+      0000008400000000000000000000000000000000000000000000000000000000
+      0000000000000000000000008400000084000000840000008400000084000000
+      0000000000000000000000000000000000000000FF000000FF00000000000000
+      000000000000000000000000800000000000000080000000FF00000000000000
+      0000000000000000FF000000FF000000000031319C0031319C0031319C003131
+      9C0031319C0031319C0031319C0031319C0031319C0031319C0031319C003131
+      9C0031319C0031319C0031319C0031319C000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000084
+      0000008400000084000000000000000000000000000000000000000000000000
+      0000000000000000840000008400000084000000000000008400000084000000
+      8400000000000000000000000000000000000000FF000000FF00000000000000
+      000000000000000000000000000000000000000000000000FF000000FF000000
+      0000000000000000FF000000FF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000008400000084000000000000000000000000000000000000000000000000
+      0000000084000000840000008400000000000000000000000000000084000000
+      840000008400000000000000000000000000000000000000FF000000FF000000
+      000000000000000000000000000000000000000000000000FF000000FF000000
+      FF00000000000000FF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000008400000084000000000000000000000000000000000000000000000000
+      8400000084000000840000000000000000000000000000000000000000000000
+      840000008400000084000000000000000000000000000000FF000000FF000000
+      FF000000000000000000000000000000000000000000000000000000FF000000
+      FF000000FF000000FF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      8400000084000000000000000000000000000000000000000000000000000000
+      00000000840000008400000000000000000000000000000000000000FF000000
+      FF000000FF00000000007F7F7F00000000007F7F7F0000000000000000000000
+      FF000000FF000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000FF000000FF000000FF000000FF000000FF00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000424D3E000000000000003E000000
+      2800000040000000200000000100010000000000000100000000000000000000
+      000000000000000000000000FFFFFF00FFFF0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      FFFF000000000000FFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFF83FFFFF
+      FE7FFFFFE00FFFFFFC3FE7F3CC47FFFFF81FE3E38463FFFFF19FF1C7A073FFFF
+      E38FF88F31F9FFFFE7CFFC1F38F90000FFC7FE3F3C790000FFE7FC1F3C390000
+      FFE3F88F3C19FFFFFFF3F1C79C0BFFFFFFF3E3E38C43FFFFFFFFE7F3C467FFFF
+      FFFFFFFFE00FFFFFFFFFFFFFF83FFFFF00000000000000000000000000000000
+      000000000000}
+  end
+  object ActionList1: TActionList
+    Images = ImageList1
+    Left = 256
+    Top = 112
+    object ActionCancela: TAction
+      Caption = 'Cancelar'
+      Hint = 'Cancelar edi'#231#227'o da barra'
+      ImageIndex = 1
+      OnExecute = ActionCancelaExecute
+    end
+    object ActionConfirma: TAction
+      Caption = 'Confirmar'
+      Hint = 'Confirmar edi'#231#227'o da barra'
+      ImageIndex = 0
+      OnExecute = ActionConfirmaExecute
+    end
+    object ActionRetira: TAction
+      Caption = 'Retirar'
+      Hint = 'Retirar barra da rede'
+      ImageIndex = 2
+    end
+  end
+  object ActionList2: TActionList
+    Left = 288
+    Top = 112
+    object ActionDisableProt: TAction
+      Caption = 'o'
+      OnExecute = ActionDisableProtExecute
+    end
+    object ActionEnableProt: TAction
+      Caption = #254
+      OnExecute = ActionEnableProtExecute
+    end
+    object ActionIncluirTipoTrecho: TAction
+      Caption = 'Incluir'
+      OnExecute = ActionIncluirTipoTrechoExecute
+    end
+    object ActionEnableTipoTrecho: TAction
+      Caption = #254
+      OnExecute = ActionEnableTipoTrechoExecute
+    end
+    object ActionDisableTipoTrecho: TAction
+      Caption = 'o'
+      OnExecute = ActionDisableTipoTrechoExecute
+    end
+    object ActionIncluirEqpto: TAction
+      Caption = 'ActionIncluirEqpto'
+      OnExecute = ActionIncluirEqptoExecute
+    end
+    object ActionEnableEqpto: TAction
+      Caption = #254
+      OnExecute = ActionEnableEqptoExecute
+    end
+    object ActionDisableEqpto: TAction
+      Caption = 'o'
+      OnExecute = ActionDisableEqptoExecute
+    end
+    object ActionIncluirTipoGerador: TAction
+      Caption = 'ActionIncluirTipoGerador'
+      OnExecute = ActionIncluirTipoGeradorExecute
+    end
+    object ActionIncluirTipoTrafo: TAction
+      Caption = 'ActionIncluirTipoTrafo'
+      OnExecute = ActionIncluirTipoTrafoExecute
+    end
+    object ActionIncluirTipoChave: TAction
+      Caption = 'ActionIncluirTipoChave'
+      OnExecute = ActionIncluirTipoChaveExecute
+    end
+    object ActionEnableTipoGerador: TAction
+      Caption = #254
+      OnExecute = ActionEnableTipoGeradorExecute
+    end
+    object ActionEnableTipoTrafo: TAction
+      Caption = #254
+      OnExecute = ActionEnableTipoTrafoExecute
+    end
+    object ActionEnableTipoChave: TAction
+      Caption = #254
+      OnExecute = ActionEnableTipoChaveExecute
+    end
+    object ActionDisableTipoGerador: TAction
+      Caption = 'o'
+      OnExecute = ActionDisableTipoGeradorExecute
+    end
+    object ActionDisableTipoTrafo: TAction
+      Caption = 'o'
+      OnExecute = ActionDisableTipoTrafoExecute
+    end
+    object ActionDisableTipoChave: TAction
+      Caption = 'o'
+      OnExecute = ActionDisableTipoChaveExecute
+    end
+    object ActionMostraEqpto: TAction
+      Caption = 'ActionMostraEqpto'
+      OnExecute = ActionMostraEqptoExecute
+    end
+    object ActionInsereMutua: TAction
+      Caption = ' >> '
+      OnExecute = ActionInsereMutuaExecute
+    end
+  end
+end
